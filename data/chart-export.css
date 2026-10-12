@@ -1,0 +1,25 @@
+/* Carried inside a saved chart (SVG), so it draws the same outside the page. Light colours. */
+.export { background: #fcfcfb; }
+text { font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #77756f; }
+.bar-label { fill: #52514e; font-size: 12px; font-weight: 600; }
+.target-label { fill: #52514e; font-size: 12px; }
+.grid { stroke: #e7e5de; stroke-width: 1; }
+.axis { stroke: #c3c2b7; stroke-width: 1; }
+.target { stroke: #52514e; stroke-width: 1.5; }
+.line { fill: none !important; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.area { stroke: none !important; opacity: 0.12; }
+.dot { stroke: #fcfcfb !important; stroke-width: 2; }
+.dot.below { fill: #d03b3b !important; }
+.partial { opacity: 0.45; }
+.hit-area, .guide { display: none; }
+.s-requested { fill: #2a78d6; stroke: #2a78d6; }
+.s-pending { fill: #eb6834; stroke: #eb6834; }
+.s-done { fill: #1baf7a; stroke: #1baf7a; }
+.s-excluded { fill: #c3c2b7; stroke: #c3c2b7; }
+.s-received { fill: #6250d6; stroke: #6250d6; }
+.s-rate, .s-open { fill: #2a78d6; stroke: #2a78d6; }
+.s-y1 { fill: #2a78d6; stroke: #2a78d6; } .s-y2 { fill: #eb6834; stroke: #eb6834; }
+.s-y3 { fill: #1baf7a; stroke: #1baf7a; } .s-y4 { fill: #eda100; stroke: #eda100; }
+.s-y5 { fill: #e87ba4; stroke: #e87ba4; } .s-y6 { fill: #008300; stroke: #008300; }
+.s-y7 { fill: #6250d6; stroke: #6250d6; } .s-y8 { fill: #e34948; stroke: #e34948; }
+rect[class^="s-"], path[class^="s-"]:not(.line) { stroke: none; }
