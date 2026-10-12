@@ -185,6 +185,68 @@ mod tests {
     }
 
     #[test]
+    fn every_header_alias_scores_as_written() {
+        for (h, want) in [
+            ("Created", 100),
+            ("Date Created", 95),
+            ("Creation date", 95),
+            ("Opened", 85),
+            ("Date set", 80),
+            ("Assigned", 80),
+            ("Start date", 50),
+            ("Date", 40),
+            ("Ticket created at", 70),
+            ("Assignee", 0),
+        ] {
+            assert_eq!(created_score(h), want, "{h}");
+        }
+        for (h, want) in [
+            ("Status", 100),
+            ("State", 90),
+            ("Status Category", 40),
+            ("Ticket status", 70),
+            ("Progress", 50),
+            ("Priority", 0),
+        ] {
+            assert_eq!(status_score(h), want, "{h}");
+        }
+        for (h, want) in [
+            ("Resolved", 100),
+            ("Resolution date", 95),
+            ("Completed", 90),
+            ("Date completed", 90),
+            ("Turned in", 85),
+            ("Done date", 85),
+            ("Closed", 80),
+            ("Finished", 60),
+            ("Resolution", 0),
+        ] {
+            assert_eq!(resolved_score(h), want, "{h}");
+        }
+        for (h, want) in [
+            ("Due date", 100),
+            ("Due", 100),
+            ("Original due", 60),
+            ("Overdue", 0),
+            ("Days overdue", 0),
+        ] {
+            assert_eq!(due_score(h), want, "{h}");
+        }
+        for (h, want) in [
+            ("Team", 90),
+            ("Student", 90),
+            ("Component/s", 80),
+            ("Section", 80),
+            ("Issue Type", 70),
+            ("Unit", 70),
+            ("Project", 60),
+            ("Summary", 0),
+        ] {
+            assert_eq!(group_score(h), want, "{h}");
+        }
+    }
+
+    #[test]
     fn a_column_is_used_for_one_role_only() {
         let t = parse("Status,Status\nOpen,Open").unwrap();
         let r = guess(&t);

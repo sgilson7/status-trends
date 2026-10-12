@@ -587,6 +587,114 @@ mod tests {
     }
 
     #[test]
+    fn axes_labels_and_hit_areas_sit_where_the_frame_puts_them() {
+        let c = two_columns();
+        // Ticks 0 to 4, step 1, each 4 below its line: y = 300 - 67v + 4
+        // (270 / 4 = 67.5, whole-number division per value).
+        let ticks: Vec<(String, i64, i64)> = c
+            .marks
+            .iter()
+            .filter(|m| m.class == "tick" && attr(m, "x") == 48)
+            .map(|m| (m.text.clone(), attr(m, "x"), attr(m, "y")))
+            .collect();
+        assert_eq!(
+            ticks,
+            vec![
+                ("0".into(), 48, 304),
+                ("1".into(), 48, 237),
+                ("2".into(), 48, 169),
+                ("3".into(), 48, 102),
+                ("4".into(), 48, 34)
+            ]
+        );
+        // Four gridlines (none at 0) and a baseline at 300.
+        assert_eq!(c.marks.iter().filter(|m| m.class == "grid").count(), 4);
+        let base = c.marks.iter().find(|m| m.class == "axis").unwrap();
+        assert_eq!(
+            (attr(base, "x1"), attr(base, "x2"), attr(base, "y1")),
+            (56, 940, 300)
+        );
+        // X labels under each band centre: 277 and 719, at y = 322.
+        let xs: Vec<(i64, i64)> = c
+            .marks
+            .iter()
+            .filter(|m| m.class == "tick" && (m.text == "a" || m.text == "b"))
+            .map(|m| (attr(m, "x"), attr(m, "y")))
+            .collect();
+        assert_eq!(xs, vec![(277, 322), (719, 322)]);
+        // The second hit area covers the second band, top to baseline.
+        let hit = &c
+            .marks
+            .iter()
+            .filter(|m| m.class == "hit")
+            .nth(1)
+            .unwrap()
+            .children[0];
+        assert_eq!(
+            (
+                attr(hit, "x"),
+                attr(hit, "y"),
+                attr(hit, "width"),
+                attr(hit, "height")
+            ),
+            (498, 30, 442, 270)
+        );
+    }
+
+    #[test]
+    fn a_capped_column_has_a_four_unit_rounded_top() {
+        let m = column("s", 265, 24, 163, 30, true);
+        assert_eq!(
+            m.attrs[0].1,
+            "M265 163V34Q265 30 269 30H285Q289 30 289 34V163Z"
+        );
+        // A segment shorter than the radius rounds by its own height.
+        let m = column("s", 0, 24, 12, 10, true);
+        assert_eq!(m.attrs[0].1, "M0 12V12Q0 10 2 10H22Q24 10 24 12V12Z");
+        let m = column("s", 0, 24, 12, 10, false);
+        assert_eq!((attr(&m, "y"), attr(&m, "height")), (10, 2));
+    }
+
+    #[test]
+    fn a_line_and_its_wash_follow_the_points() {
+        // Three bands of 294 from x = 57: centres 204, 498, 792. Top 10 over
+        // 270: y(5) = 165, y(10) = 30, y(0) = 300.
+        let c = lines(Lines {
+            key: "o",
+            title: "T".into(),
+            note: "N".into(),
+            aria: "A".into(),
+            x_labels: vec!["a".into(), "b".into(), "c".into()],
+            series: vec![Series {
+                class: "s-open".into(),
+                label: "Open".into(),
+                values: vec![Some(5), Some(10), Some(0)],
+                area: true,
+            }],
+            tips: vec![vec![], vec![], vec![]],
+            fixed: None,
+            target: None,
+            dots_below_target: false,
+        });
+        let line = c.marks.iter().find(|m| m.class == "s-open line").unwrap();
+        assert_eq!(line.attrs[0].1, "M204 165L498 30L792 300");
+        let area = c.marks.iter().find(|m| m.class == "s-open area").unwrap();
+        assert_eq!(area.attrs[0].1, "M204 300L204 165L498 30L792 300L792 300Z");
+        // A guide line in each hit group, at the band centre.
+        let guide = &c
+            .marks
+            .iter()
+            .filter(|m| m.class == "hit")
+            .nth(1)
+            .unwrap()
+            .children[0];
+        assert_eq!(
+            (guide.class.as_str(), attr(guide, "x1"), attr(guide, "y2")),
+            ("guide", 498, 300)
+        );
+    }
+
+    #[test]
     fn lines_break_at_gaps_and_mark_dots_below_the_target() {
         let c = lines(Lines {
             key: "r",

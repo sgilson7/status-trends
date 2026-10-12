@@ -46,10 +46,13 @@ def requests():
                 team = rng.choices(teams, weights=[3, 3, 2, 2])[0]
                 created = day + dt.timedelta(hours=rng.randint(0, 7), minutes=rng.randint(0, 59))
                 age = (end - created).days
-                # Time to complete: Data slows down in 2026.
-                slow = team == "Data" and created.year == 2026
-                days = int(rng.expovariate(1 / (45 if slow else 15))) + 1
-                p_done = 0.93 if not slow else 0.55
+                # 2026 strains the team, worse each quarter, and Data most:
+                # completion falls and time to complete grows, so every
+                # insight rule has something to find.
+                strain = (created.month - 1) // 3 + 1 if created.year == 2026 else 0
+                slow = team == "Data" and strain > 0
+                days = int(rng.expovariate(1 / (15 + 6 * strain + (25 if slow else 0)))) + 1
+                p_done = 0.94 - 0.05 * strain - (0.3 if slow else 0)
                 roll = rng.random()
                 if roll < 0.04:
                     status = rng.choice(["Won't Do", "Duplicate"])

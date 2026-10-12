@@ -10,12 +10,12 @@
     "privacy_4": "No analytics, no fonts or scripts from other sites, no accounts. The page's security policy blocks connections to any other site, and the source code is public.",
     "privacy_5": "Saving a table, chart or PDF writes a file to your own device, where you choose. Where it goes from there is up to you.",
     "load_heading": "Open your data",
-    "drop_hint": "Drop a CSV file here, or",
+    "drop_hint": "Drop a CSV file here,",
     "choose_file": "Choose a file",
     "paste_label": "Or paste rows copied from a spreadsheet, header row first",
     "paste_button": "Use pasted rows",
-    "sample_label": "Or try invented sample data:",
-    "sample_requests": "Sample: team requests",
+    "sample_label": "Or the invented class sample, for a teacher's view:",
+    "sample_requests": "Load sample dataset",
     "sample_class": "Sample: a class",
     "clear": "Clear data",
     "loaded_file": "Showing",
@@ -84,7 +84,11 @@
     "footer_about": "Status Trends is a static page built with Builder: every rule is in a tested Rust core compiled to WebAssembly, and the page only draws what the core returns.",
     "footer_source": "Source code and checks",
     "source_url": "https://github.com/sgilson7/status-trends",
-    "chart_table": "The same numbers are in the table below the charts."
+    "chart_table": "The same numbers are in the table below the charts.",
+    "or_word": "or",
+    "sample_requests_name": "the sample dataset (invented team requests, 2023 to 2026)",
+    "sample_hint": "The sample dataset is invented. It is built to show every chart, insight and risk, and it is there every time the page opens, so you can try the tool without your own data.",
+    "sample_class_name": "the class sample (invented students and assignments)"
   },
   "vocabularies": [
     {

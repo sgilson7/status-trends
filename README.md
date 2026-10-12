@@ -24,6 +24,10 @@ What these checks do not cover: browser extensions, which can read any page you 
 
 Whether your employer or school allows work data in a browser tool is a policy question this repository cannot answer.
 
+## Trying it without your own data
+
+"Load sample dataset" opens invented team requests from 2023 to 2026, built so every chart, insight and risk appears. It is part of the page, so it works offline once the page is open. "Sample: a class" opens an invented class for a teacher's view.
+
 ## Getting your data out of Jira
 
 Search for the issues you report on (Filters, then View all issues, or your project's issue search), then choose Export, then Export CSV. Status Trends needs a created date and a status for each row. A Resolved date turns on the completed and open-over-time charts and the time-to-complete figures; a Due date turns on the overdue check; a Team or Component column turns on the group table.

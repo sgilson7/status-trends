@@ -143,6 +143,14 @@ def run(page, check, engine):
     check(page.locator(".insight-text", has_text="Students below the 80% target").count() == 1, "the class sample names students below target")
     page.click("#sample-requests")
     page.locator(".tile-label", has_text="Requests received in").first.wait_for()
+    check(text(page, "#loaded-name") == UI["sample_requests_name"], "the sample dataset is named as invented when loaded")
+    levels = set(page.locator(".insight").evaluate_all("els => els.map(e => e.className)"))
+    check({"insight risk", "insight watch", "insight note"} <= levels, f"the sample dataset shows risks, watches and notes ({levels})")
+    sample_rules = ["below the 80% target", "Completion has fallen", "More requests came in", "open longer than",
+                    "past the due date", "Teams below", "Open requests rose", "Requests received rose", "median time to complete"]
+    shown = " ".join(page.locator(".insight-text").all_inner_texts())
+    missing = [r for r in sample_rules if r not in shown]
+    check(not missing, f"the sample dataset triggers every risk and watch rule (missing: {missing})")
     check(page.locator(".chart").count() == 5, "the requests sample draws five charts")
     choose(page, "only_group", "Data")
     page.locator(".notes li", has_text="Showing only").wait_for()

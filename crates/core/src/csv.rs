@@ -197,6 +197,21 @@ mod tests {
     }
 
     #[test]
+    fn delimiters_inside_quotes_and_on_later_lines_do_not_count() {
+        // One comma in the header's first line outside quotes; the
+        // semicolons are inside quotes or on the second line.
+        assert_eq!(detect_delimiter("\"a;b;c\",d\n1;2;3;4;5"), ',');
+        assert_eq!(detect_delimiter("\"a\tb\"\tc;d;e"), ';');
+        assert_eq!(detect_delimiter("a\tb\tc,d"), '\t');
+        // A quote in the middle of a field is kept as text.
+        let t = parse("a,b\nsay \"hi\",x").unwrap();
+        assert_eq!(t.rows[0], vec!["say \"hi\"", "x"]);
+        // CRLF inside quotes counts one line for the error line number.
+        let e = parse("a\r\n\"x\r\ny\r\n\"\r\n\"open").unwrap_err();
+        assert_eq!(e, CsvError::UnclosedQuote { line: 5 });
+    }
+
+    #[test]
     fn short_rows_read_as_empty_cells() {
         let t = parse("a,b,c\n1\n").unwrap();
         assert_eq!(t.cell(0, 0), "1");

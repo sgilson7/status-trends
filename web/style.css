@@ -233,6 +233,12 @@ textarea { width: 100%; font-family: ui-monospace, Menlo, monospace; font-size: 
   background: var(--surface);
   text-align: center;
 }
+.button.sample {
+  background: var(--good-wash);
+  border-color: var(--good-mark);
+  font-weight: 600;
+}
+.sample-hint { margin: 8px 0 0; font-size: 0.88rem; }
 .drop.over { border-color: var(--focus); background: var(--note-wash); }
 .drop input[type="file"] {
   position: absolute;

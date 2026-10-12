@@ -362,9 +362,9 @@ function wire() {
   });
   el("use-paste").addEventListener("click", () => open(strings.ui.paste_label, el("paste").value));
   el("sample-requests").addEventListener("click", () =>
-    openSample("requests", strings.ui.sample_requests, { vocabulary: "requests", granularity: "quarter", fiscal_start: "1" }));
+    openSample("requests", strings.ui.sample_requests_name, { vocabulary: "requests", granularity: "quarter", fiscal_start: "1" }));
   el("sample-class").addEventListener("click", () =>
-    openSample("class", strings.ui.sample_class, { vocabulary: "class", granularity: "month", fiscal_start: "8" }));
+    openSample("class", strings.ui.sample_class_name, { vocabulary: "class", granularity: "month", fiscal_start: "8" }));
   el("clear").addEventListener("click", clearAll);
 
   ["granularity", "fiscal_start", "show", "vocabulary", "only_group", "date_order"].forEach((k) =>

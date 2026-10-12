@@ -234,35 +234,49 @@ fn summary(
             .map(|c| table.header[c].clone())
             .unwrap_or_default();
         notes.push(format!(
-            "{} rows were skipped because the \"{column}\" date could not be read (the first is row {row}: \"{value}\").",
-            thousands(r.skipped_no_date as i64)
+            "{} {} skipped because the \"{column}\" date could not be read (the first is row {row}: \"{value}\").",
+            thousands(r.skipped_no_date as i64),
+            if r.skipped_no_date == 1 { "row was" } else { "rows were" }
         ));
     }
     if r.other_group > 0 {
         notes.push(format!(
-            "Showing only \"{}\": {} other rows are set aside.",
+            "Showing only \"{}\": {} other {} set aside.",
             settings.only_group,
-            thousands(r.other_group as i64)
+            thousands(r.other_group as i64),
+            if r.other_group == 1 {
+                "row is"
+            } else {
+                "rows are"
+            }
         ));
     }
     if r.after_as_of > 0 {
         notes.push(format!(
-            "{} rows created after {as_of} are left out.",
-            thousands(r.after_as_of as i64)
+            "{} {} created after {as_of} {} left out.",
+            thousands(r.after_as_of as i64),
+            if r.after_as_of == 1 { "row" } else { "rows" },
+            if r.after_as_of == 1 { "is" } else { "are" }
         ));
     }
     if r.done_without_date > 0 {
+        let one = r.done_without_date == 1;
         notes.push(format!(
-            "{} completed {} have no completion date, so they count as completed but not in any period's completed count.",
+            "{} completed {} no completion date, so {} as completed but not in any period's completed count.",
             thousands(r.done_without_date as i64),
-            w.items
+            if one { format!("{} has", w.item) } else { format!("{} have", w.items) },
+            if one { "it counts" } else { "they count" }
         ));
     }
     if r.resolved_before_created > 0 {
+        let one = r.resolved_before_created == 1;
         notes.push(format!(
-            "{} {} have a completion date before their created date; they are counted as completed the day they were created.",
+            "{} {} a completion date before {} created date; {} counted as completed the day {} created.",
             thousands(r.resolved_before_created as i64),
-            w.items
+            if one { format!("{} has", w.item) } else { format!("{} have", w.items) },
+            if one { "its" } else { "their" },
+            if one { "it is" } else { "they are" },
+            if one { "it was" } else { "they were" }
         ));
     }
     if !data.has_resolved {

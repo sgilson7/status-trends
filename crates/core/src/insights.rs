@@ -214,8 +214,12 @@ pub fn find(cx: &Context) -> Vec<Insight> {
             &mut out,
             level,
             format!(
-                "{} of {} open {} ({share}%) have been open longer than {} days.",
-                cx.open.old, cx.open.open, w.items, s.aging
+                "{} of {} open {} ({share}%) {} been open longer than {} days.",
+                cx.open.old,
+                cx.open.open,
+                w.items,
+                if cx.open.old == 1 { "has" } else { "have" },
+                s.aging
             ),
         );
     }
