@@ -79,7 +79,10 @@ pub enum StringsError {
     NotJson(String),
     EmptyLabel(String),
     NoVocabulary,
-    EmptyWord { vocabulary: usize, field: &'static str },
+    EmptyWord {
+        vocabulary: usize,
+        field: &'static str,
+    },
 }
 
 impl StringsError {
@@ -157,12 +160,18 @@ pub mod tests {
     #[test]
     fn empty_text_is_refused_by_name() {
         let e = parse(r#"{"ui": {"title": " "}, "vocabularies": []}"#).unwrap_err();
-        assert_eq!(e.message(), "The strings file has an empty label \"title\".");
+        assert_eq!(
+            e.message(),
+            "The strings file has an empty label \"title\"."
+        );
         let e = parse(r#"{"ui": {}, "vocabularies": []}"#).unwrap_err();
         assert_eq!(e, StringsError::NoVocabulary);
         let bad = vocab_json("x").replace("\"team\"", "\"\"");
         let e = parse(&format!(r#"{{"ui": {{}}, "vocabularies": [{bad}]}}"#)).unwrap_err();
-        assert_eq!(e.message(), "Vocabulary 1 in the strings file has an empty \"group\".");
+        assert_eq!(
+            e.message(),
+            "Vocabulary 1 in the strings file has an empty \"group\"."
+        );
         assert!(matches!(parse("{"), Err(StringsError::NotJson(_))));
     }
 }

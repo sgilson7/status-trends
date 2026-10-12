@@ -22,7 +22,13 @@ fn table(v: &Value) -> Vec<Vec<String>> {
         .as_array()
         .unwrap()
         .iter()
-        .map(|r| r.as_array().unwrap().iter().map(|c| c.as_str().unwrap().to_string()).collect())
+        .map(|r| {
+            r.as_array()
+                .unwrap()
+                .iter()
+                .map(|c| c.as_str().unwrap().to_string())
+                .collect()
+        })
         .collect()
 }
 
@@ -48,7 +54,13 @@ fn columns_and_statuses_are_guessed() {
         .as_array()
         .unwrap()
         .iter()
-        .map(|s| (s["name"].as_str().unwrap().into(), s["count"].as_i64().unwrap(), s["group"].as_str().unwrap().into()))
+        .map(|s| {
+            (
+                s["name"].as_str().unwrap().into(),
+                s["count"].as_i64().unwrap(),
+                s["group"].as_str().unwrap().into(),
+            )
+        })
         .collect();
     assert_eq!(
         s,
@@ -60,7 +72,10 @@ fn columns_and_statuses_are_guessed() {
             ("Won't Do".into(), 1, "excluded".into()),
         ]
     );
-    assert_eq!(v["summary"]["text"], "12 requests from 3 Jan 2025 to 5 Apr 2026, read from 12 rows.");
+    assert_eq!(
+        v["summary"]["text"],
+        "12 requests from 3 Jan 2025 to 5 Apr 2026, read from 12 rows."
+    );
 }
 
 #[test]
@@ -88,12 +103,44 @@ fn quarters_by_hand() {
     let m = "\u{2212}";
     let d = "\u{2014}";
     let expected: Vec<Vec<String>> = vec![
-        vec!["2025 Q1", "3", "0", "1", "2", "0", d, d, "67%", "2", "1", "17"],
-        vec!["2025 Q2", "3", "1", "0", "1", "1", "0%", d, "50%", "1", "2", "10"],
-        vec!["2025 Q3", "0", "0", "0", "0", "0", &format!("{m}100%"), d, d, "0", "2", d],
+        vec![
+            "2025 Q1", "3", "0", "1", "2", "0", d, d, "67%", "2", "1", "17",
+        ],
+        vec![
+            "2025 Q2", "3", "1", "0", "1", "1", "0%", d, "50%", "1", "2", "10",
+        ],
+        vec![
+            "2025 Q3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            &format!("{m}100%"),
+            d,
+            d,
+            "0",
+            "2",
+            d,
+        ],
         vec!["2025 Q4", "0", "0", "0", "0", "0", d, d, d, "0", "2", d],
-        vec!["2026 Q1", "4", "1", "1", "2", "0", d, "+33%", "50%", "2", "4", "15"],
-        vec!["2026 Q2 (in progress)", "2", "1", "0", "1", "0", &format!("{m}50%"), &format!("{m}33%"), "50%", "1", "5", "4"],
+        vec![
+            "2026 Q1", "4", "1", "1", "2", "0", d, "+33%", "50%", "2", "4", "15",
+        ],
+        vec![
+            "2026 Q2 (in progress)",
+            "2",
+            "1",
+            "0",
+            "1",
+            "0",
+            &format!("{m}50%"),
+            &format!("{m}33%"),
+            "50%",
+            "1",
+            "5",
+            "4",
+        ],
     ]
     .into_iter()
     .map(|r| r.into_iter().map(String::from).collect())
@@ -118,17 +165,44 @@ fn quarter_tiles_and_insights_by_hand() {
     // Open over 90 days: T-3 (from 20 Mar 2025), T-4 (from 2 Apr 2025).
     assert_eq!(tiles[3]["value"], "5");
     assert_eq!(tiles[3]["detail"], "2 past due, 2 open over 90 days");
-    assert_eq!(tiles[3]["deltas"][0]["text"], "+25% since the end of 2026 Q1");
+    assert_eq!(
+        tiles[3]["deltas"][0]["text"],
+        "+25% since the end of 2026 Q1"
+    );
     assert_eq!(tiles[3]["deltas"][0]["tone"], "bad");
 
-    assert!(insight(&v, "note", "2026 Q2 is still in progress (data to 5 Apr 2026), so comparisons use 2026 Q1."));
-    assert!(insight(&v, "risk", "50% of the requests received in 2026 Q1 are completed, below the 80% target (2 of 4)."));
+    assert!(insight(
+        &v,
+        "note",
+        "2026 Q2 is still in progress (data to 5 Apr 2026), so comparisons use 2026 Q1."
+    ));
+    assert!(insight(
+        &v,
+        "risk",
+        "50% of the requests received in 2026 Q1 are completed, below the 80% target (2 of 4)."
+    ));
     // Open at end: 2 at the end of 2025 Q4, 4 at the end of 2026 Q1: +100%.
-    assert!(insight(&v, "watch", "Open requests rose 100% in 2026 Q1: 2 at the end of 2025 Q4, 4 at the end of 2026 Q1."));
+    assert!(insight(
+        &v,
+        "watch",
+        "Open requests rose 100% in 2026 Q1: 2 at the end of 2025 Q4, 4 at the end of 2026 Q1."
+    ));
     // 2 of 5 open = 40%, at least 25%: a risk.
-    assert!(insight(&v, "risk", "2 of 5 open requests (40%) have been open longer than 90 days."));
-    assert!(insight(&v, "risk", "2 open requests are past the due date on 5 Apr 2026."));
-    assert!(insight(&v, "watch", "Requests received rose 33% on 2025 Q1: 3 in 2025 Q1, 4 in 2026 Q1."));
+    assert!(insight(
+        &v,
+        "risk",
+        "2 of 5 open requests (40%) have been open longer than 90 days."
+    ));
+    assert!(insight(
+        &v,
+        "risk",
+        "2 open requests are past the due date on 5 Apr 2026."
+    ));
+    assert!(insight(
+        &v,
+        "watch",
+        "Requests received rose 33% on 2025 Q1: 3 in 2025 Q1, 4 in 2026 Q1."
+    ));
     // Risks come first.
     assert_eq!(v["insights"][0]["level"], "risk");
 }
@@ -156,7 +230,10 @@ fn an_october_fiscal_year_by_hand() {
     let t = table(&v);
     assert_eq!(t.len(), 2);
     assert_eq!((t[0][0].as_str(), t[0][1].as_str()), ("FY25", "6"));
-    assert_eq!((t[1][0].as_str(), t[1][1].as_str()), ("FY26 (in progress)", "6"));
+    assert_eq!(
+        (t[1][0].as_str(), t[1][1].as_str()),
+        ("FY26 (in progress)", "6")
+    );
 }
 
 #[test]
@@ -168,13 +245,21 @@ fn the_group_table_and_the_group_filter_by_hand() {
     assert_eq!(g["headers"][0], "Team");
     let rows = g["rows"].as_array().unwrap();
     // Data in 2026 Q1: T-8, T-9 = 2; in 2025 Q4: 0, so no change. Open now:
-    // T-3, T-4, T-9, T-12 = 4. Past due: T-3, T-9 = 2. Complete periods
-    // (created before 1 Apr 2026), excluded aside: T-3, T-4, T-8, T-9; done
-    // T-8: 1 of 4 = 25%. Fewer than five counted, so not flagged.
-    assert_eq!(rows[0], serde_json::json!(["Data", "2", "\u{2014}", "4", "2", "25%"]));
-    // Web: 2026 Q1: T-7, T-10 = 2. Open: T-10 = 1. Past due: 0. Complete
-    // periods: T-1, T-2, T-5, T-7, T-10: 4 of 5 done = 80%.
-    assert_eq!(rows[1], serde_json::json!(["Web", "2", "\u{2014}", "1", "0", "80%"]));
+    // T-3, T-4, T-9, T-12 = 4. Past due: T-3, T-9 = 2. Completion over
+    // the four quarters to 2026 Q1 (created 1 Apr 2025 to 31 Mar 2026),
+    // excluded aside: T-4, T-8, T-9; done T-8: 1 of 3 = 33%. Fewer than
+    // five counted, so not flagged.
+    assert_eq!(g["headers"][5], "Completed, the four quarters to 2026 Q1");
+    assert_eq!(
+        rows[0],
+        serde_json::json!(["Data", "2", "\u{2014}", "4", "2", "33%"])
+    );
+    // Web: 2026 Q1: T-7, T-10 = 2. Open: T-10 = 1. Past due: 0. Four
+    // quarters: T-5, T-7, T-10: 2 of 3 done = 67%.
+    assert_eq!(
+        rows[1],
+        serde_json::json!(["Web", "2", "\u{2014}", "1", "0", "67%"])
+    );
 
     let v = view(r#"{"granularity": "quarter", "only_group": "Web"}"#);
     // Web only: 2026 Q1 received 2 (T-7 done, T-10 requested).
@@ -182,7 +267,10 @@ fn the_group_table_and_the_group_filter_by_hand() {
     let q1 = t.iter().find(|r| r[0] == "2026 Q1").unwrap();
     assert_eq!(&q1[1..6], &["2", "1", "0", "1", "0"]);
     assert!(v["group_table"].is_null());
-    assert!(v["summary"]["notes"][0].as_str().unwrap().starts_with("Showing only \"Web\": 6 other rows"));
+    assert!(v["summary"]["notes"][0]
+        .as_str()
+        .unwrap()
+        .starts_with("Showing only \"Web\": 6 other rows"));
 }
 
 #[test]
@@ -193,7 +281,13 @@ fn moving_a_status_changes_the_counts() {
     let q1 = t.iter().find(|r| r[0] == "2026 Q1").unwrap();
     assert_eq!(q1[4], "3");
     assert_eq!(q1[8], "75%");
-    let moved = v["statuses"].as_array().unwrap().iter().find(|s| s["name"] == "In Review").unwrap().clone();
+    let moved = v["statuses"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .find(|s| s["name"] == "In Review")
+        .unwrap()
+        .clone();
     assert_eq!(moved["moved"], true);
 }
 
@@ -204,7 +298,10 @@ fn the_csv_export_matches_the_table() {
     let lines: Vec<&str> = csv.split("\r\n").collect();
     assert_eq!(lines[0], "Period,Requests received,Still requested,Pending,Completed,Excluded,Change on period before,Change on year before,Completion rate,Completed in period,Open at end,Median days to complete");
     assert_eq!(lines[1], "2025 Q1,3,0,1,2,0,,,67%,2,1,17");
-    assert_eq!(lines[6], "2026 Q2 (in progress),2,1,0,1,0,-50%,-33%,50%,1,5,4");
+    assert_eq!(
+        lines[6],
+        "2026 Q2 (in progress),2,1,0,1,0,-50%,-33%,50%,1,5,4"
+    );
     assert_eq!(v["export_name"], "status-trends-by-quarter.csv");
 }
 
@@ -215,5 +312,9 @@ fn an_as_of_day_cuts_the_data() {
     let v = view(r#"{"granularity": "quarter", "as_of": "2026-03-31"}"#);
     let t = table(&v);
     assert_eq!(t.last().unwrap()[0], "2026 Q1");
-    assert!(v["summary"]["notes"].as_array().unwrap().iter().any(|n| n == "2 rows created after 31 Mar 2026 are left out."));
+    assert!(v["summary"]["notes"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .any(|n| n == "2 rows created after 31 Mar 2026 are left out."));
 }

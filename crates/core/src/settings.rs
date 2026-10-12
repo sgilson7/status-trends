@@ -84,7 +84,14 @@ pub const DEFAULT_GROWTH: i64 = 20;
 pub const DEFAULT_AGING: i64 = 90;
 
 /// A whole number in a range, or the default with a note naming the field.
-fn whole(text: &str, name: &str, low: i64, high: i64, default: i64, notes: &mut Vec<String>) -> i64 {
+fn whole(
+    text: &str,
+    name: &str,
+    low: i64,
+    high: i64,
+    default: i64,
+    notes: &mut Vec<String>,
+) -> i64 {
     let t = text.trim().trim_end_matches('%').trim();
     if t.is_empty() {
         return default;
@@ -104,8 +111,16 @@ fn whole(text: &str, name: &str, low: i64, high: i64, default: i64, notes: &mut 
 impl Settings {
     pub fn read(raw: &Raw) -> Settings {
         let mut notes = Vec::new();
-        let granularity = Granularity::from_key(raw.granularity.trim()).unwrap_or(Granularity::Quarter);
-        let fiscal_start = whole(&raw.fiscal_start, "fiscal year start month", 1, 12, 1, &mut notes);
+        let granularity =
+            Granularity::from_key(raw.granularity.trim()).unwrap_or(Granularity::Quarter);
+        let fiscal_start = whole(
+            &raw.fiscal_start,
+            "fiscal year start month",
+            1,
+            12,
+            1,
+            &mut notes,
+        );
         let show = match raw.show.trim() {
             "" | "all" => None,
             t => t.parse::<usize>().ok().filter(|n| *n > 0),
@@ -115,9 +130,30 @@ impl Settings {
             "day" => Some(NumericOrder::DayFirst),
             _ => None,
         };
-        let target = whole(&raw.target, "completion target", 1, 100, DEFAULT_TARGET, &mut notes);
-        let growth = whole(&raw.growth, "change alert", 1, 1000, DEFAULT_GROWTH, &mut notes);
-        let aging = whole(&raw.aging, "open-too-long limit", 1, 3650, DEFAULT_AGING, &mut notes);
+        let target = whole(
+            &raw.target,
+            "completion target",
+            1,
+            100,
+            DEFAULT_TARGET,
+            &mut notes,
+        );
+        let growth = whole(
+            &raw.growth,
+            "change alert",
+            1,
+            1000,
+            DEFAULT_GROWTH,
+            &mut notes,
+        );
+        let aging = whole(
+            &raw.aging,
+            "open-too-long limit",
+            1,
+            3650,
+            DEFAULT_AGING,
+            &mut notes,
+        );
         let statuses = raw
             .statuses
             .iter()
@@ -185,7 +221,9 @@ mod tests {
 
     #[test]
     fn controls_are_read() {
-        let s = read(r#"{"granularity": "month", "fiscal_start": "10", "show": "12", "created": "3", "due": "none", "date_order": "day", "target": "75%", "growth": " 10 ", "aging": "30", "statuses": {"Blocked": "requested", "Odd": "nonsense"}}"#);
+        let s = read(
+            r#"{"granularity": "month", "fiscal_start": "10", "show": "12", "created": "3", "due": "none", "date_order": "day", "target": "75%", "growth": " 10 ", "aging": "30", "statuses": {"Blocked": "requested", "Odd": "nonsense"}}"#,
+        );
         assert_eq!(s.calendar.granularity, Granularity::Month);
         assert_eq!(s.calendar.fiscal_start, 10);
         assert_eq!(s.show, Some(12));
@@ -215,7 +253,10 @@ mod tests {
         assert_eq!(s.as_of(NumericOrder::MonthFirst), None);
         assert_eq!(s.notes.len(), 1);
         let mut s = read(r#"{"as_of": "2026-04-05"}"#);
-        assert_eq!(s.as_of(NumericOrder::MonthFirst), Some(date::days_from_civil(2026, 4, 5)));
+        assert_eq!(
+            s.as_of(NumericOrder::MonthFirst),
+            Some(date::days_from_civil(2026, 4, 5))
+        );
         let mut s = read("{}");
         assert_eq!(s.as_of(NumericOrder::MonthFirst), None);
         assert!(s.notes.is_empty());

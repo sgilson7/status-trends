@@ -1,0 +1,34 @@
+name: checks
+
+# Runs the same command a person runs locally. The logic lives in
+# scripts/check.sh, not here. Nothing in this workflow deploys.
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Rust toolchain
+        run: |
+          rustup toolchain install stable --profile minimal --component clippy,rustfmt
+          rustup target add wasm32-unknown-unknown
+
+      - name: wasm-bindgen CLI (pinned) and wasm-tools
+        uses: taiki-e/install-action@v2
+        with:
+          tool: wasm-bindgen@0.2.127,wasm-tools
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Playwright and three browser engines
+        run: PLAYWRIGHT_WITH_DEPS=1 ./scripts/setup.sh
+
+      - name: ./scripts/check.sh
+        run: ./scripts/check.sh

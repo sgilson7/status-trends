@@ -23,7 +23,8 @@ pub struct Insight {
     pub text: String,
 }
 
-/// A group's completion over the complete periods, for the group rule.
+/// A group's completion over the last year of complete periods, for the
+/// group rule.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct GroupRate {
     pub name: String,
@@ -63,6 +64,8 @@ pub struct Context<'a> {
     pub has_resolved: bool,
     pub has_due: bool,
     pub groups: &'a [GroupRate],
+    /// What span the group rates cover: "the four quarters to 2026 Q1".
+    pub group_span: String,
     pub settings: &'a Settings,
     pub words: &'a Vocabulary,
 }
@@ -83,35 +86,60 @@ pub fn find(cx: &Context) -> Vec<Insight> {
     // In progress: comparisons use the last complete period.
     if let Some(cur) = rows.last().filter(|r| r.partial) {
         if cur.index != l.index {
-            push(&mut out, Level::Note, format!(
-                "{} is still in progress (data to {}), so comparisons use {}.",
-                cur.label, cx.as_of_label, l.label
-            ));
+            push(
+                &mut out,
+                Level::Note,
+                format!(
+                    "{} is still in progress (data to {}), so comparisons use {}.",
+                    cur.label, cx.as_of_label, l.label
+                ),
+            );
         } else {
-            push(&mut out, Level::Note, format!(
+            push(
+                &mut out,
+                Level::Note,
+                format!(
                 "The file covers only part of {}, so there is no complete period to compare yet.",
                 cur.label
-            ));
+            ),
+            );
         }
     }
 
     // Completion against the target.
     if let Some(rate) = l.rate {
         if rate < s.target {
-            push(&mut out, Level::Risk, format!(
-                "{rate}% of the {} received in {} are completed, below the {}% target ({} of {}).",
-                w.items, l.label, s.target, l.done, l.counted()
-            ));
+            push(
+                &mut out,
+                Level::Risk,
+                format!(
+                    "{rate}% of the {} in {} are completed, below the {}% target ({} of {}).",
+                    w.received.to_lowercase(),
+                    l.label,
+                    s.target,
+                    l.done,
+                    l.counted()
+                ),
+            );
         } else {
-            push(&mut out, Level::Good, format!(
-                "{rate}% of the {} received in {} are completed, meeting the {}% target.",
-                w.items, l.label, s.target
-            ));
+            push(
+                &mut out,
+                Level::Good,
+                format!(
+                    "{rate}% of the {} in {} are completed, meeting the {}% target.",
+                    w.received.to_lowercase(),
+                    l.label,
+                    s.target
+                ),
+            );
         }
     }
 
     // Completion falling period after period.
-    let rated: Vec<&Row> = rows[..=cx.last].iter().filter(|r| r.rate.is_some()).collect();
+    let rated: Vec<&Row> = rows[..=cx.last]
+        .iter()
+        .filter(|r| r.rate.is_some())
+        .collect();
     if rated.len() >= RUN {
         let run = &rated[rated.len() - RUN..];
         if run.windows(2).all(|p| p[1].rate < p[0].rate) {
@@ -119,11 +147,15 @@ pub fn find(cx: &Context) -> Vec<Insight> {
                 .iter()
                 .map(|r| format!("{}% in {}", r.rate.unwrap_or(0), r.label))
                 .collect();
-            push(&mut out, Level::Risk, format!(
-                "Completion has fallen {} periods running: {}.",
-                RUN,
-                parts.join(", ")
-            ));
+            push(
+                &mut out,
+                Level::Risk,
+                format!(
+                    "Completion has fallen {} periods running: {}.",
+                    RUN,
+                    parts.join(", ")
+                ),
+            );
         }
     }
 
@@ -131,7 +163,11 @@ pub fn find(cx: &Context) -> Vec<Insight> {
     if cx.has_resolved && cx.last + 1 >= RUN {
         let run = &rows[cx.last + 1 - RUN..=cx.last];
         let building = run.iter().all(|r| r.counted() > r.completed.unwrap_or(0));
-        let first_open = cx.last.checked_sub(RUN).and_then(|i| rows[i].open_end).unwrap_or(0);
+        let first_open = cx
+            .last
+            .checked_sub(RUN)
+            .and_then(|i| rows[i].open_end)
+            .unwrap_or(0);
         if building {
             push(&mut out, Level::Risk, format!(
                 "More {} came in than were completed in each of the last {} periods; open {} went from {} to {}.",
@@ -145,15 +181,23 @@ pub fn find(cx: &Context) -> Vec<Insight> {
         let (p, before) = p;
         if let Some(c) = change(now, before) {
             if c >= s.growth {
-                push(&mut out, Level::Watch, format!(
-                    "Open {} rose {}% in {}: {} at the end of {}, {} at the end of {}.",
-                    w.items, c, l.label, before, p.label, now, l.label
-                ));
+                push(
+                    &mut out,
+                    Level::Watch,
+                    format!(
+                        "Open {} rose {}% in {}: {} at the end of {}, {} at the end of {}.",
+                        w.items, c, l.label, before, p.label, now, l.label
+                    ),
+                );
             } else if c <= -s.growth {
-                push(&mut out, Level::Good, format!(
-                    "Open {} fell {}% in {}: {} at the end of {}, {} at the end of {}.",
-                    w.items, -c, l.label, before, p.label, now, l.label
-                ));
+                push(
+                    &mut out,
+                    Level::Good,
+                    format!(
+                        "Open {} fell {}% in {}: {} at the end of {}, {} at the end of {}.",
+                        w.items, -c, l.label, before, p.label, now, l.label
+                    ),
+                );
             }
         }
     }
@@ -161,19 +205,35 @@ pub fn find(cx: &Context) -> Vec<Insight> {
     // Open too long, and past due.
     if cx.open.old > 0 {
         let share = percent(cx.open.old, cx.open.open).unwrap_or(0);
-        let level = if share >= OLD_SHARE_RISK { Level::Risk } else { Level::Watch };
-        push(&mut out, level, format!(
-            "{} of {} open {} ({share}%) have been open longer than {} days.",
-            cx.open.old, cx.open.open, w.items, s.aging
-        ));
+        let level = if share >= OLD_SHARE_RISK {
+            Level::Risk
+        } else {
+            Level::Watch
+        };
+        push(
+            &mut out,
+            level,
+            format!(
+                "{} of {} open {} ({share}%) have been open longer than {} days.",
+                cx.open.old, cx.open.open, w.items, s.aging
+            ),
+        );
     }
     if cx.has_due && cx.open.overdue > 0 {
-        let noun = if cx.open.overdue == 1 { &w.item } else { &w.items };
+        let noun = if cx.open.overdue == 1 {
+            &w.item
+        } else {
+            &w.items
+        };
         let verb = if cx.open.overdue == 1 { "is" } else { "are" };
-        push(&mut out, Level::Risk, format!(
-            "{} open {noun} {verb} past the due date on {}.",
-            cx.open.overdue, cx.as_of_label
-        ));
+        push(
+            &mut out,
+            Level::Risk,
+            format!(
+                "{} open {noun} {verb} past the due date on {}.",
+                cx.open.overdue, cx.as_of_label
+            ),
+        );
     }
 
     // Volume: on the period before and on the year before.
@@ -193,13 +253,13 @@ pub fn find(cx: &Context) -> Vec<Insight> {
             if let Some(c) = change(now, before) {
                 if c >= s.growth {
                     push(&mut out, Level::Watch, format!(
-                        "Completing a {} took a median of {} days in {}, up from {} days in {}.",
-                        w.item, now, l.label, before, p.label
+                        "The median time to complete fell behind: {} days in {}, up from {} days in {}.",
+                        now, l.label, before, p.label
                     ));
                 } else if c <= -s.growth {
                     push(&mut out, Level::Good, format!(
-                        "Completing a {} took a median of {} days in {}, down from {} days in {}.",
-                        w.item, now, l.label, before, p.label
+                        "The median time to complete improved: {} days in {}, down from {} days in {}.",
+                        now, l.label, before, p.label
                     ));
                 }
             }
@@ -224,26 +284,46 @@ pub fn find(cx: &Context) -> Vec<Insight> {
         } else {
             String::new()
         };
-        push(&mut out, Level::Risk, format!(
-            "{} below the {}% target over the complete periods: {}{more}.",
-            capital(&format!("{}s", w.group)),
-            s.target,
-            named.join(", ")
-        ));
+        push(
+            &mut out,
+            Level::Risk,
+            format!(
+                "{} below the {}% target over {}: {}{more}.",
+                capital(&format!("{}s", w.group)),
+                s.target,
+                cx.group_span,
+                named.join(", ")
+            ),
+        );
     }
 
-    if !out.iter().any(|i| matches!(i.level, Level::Risk | Level::Watch)) {
-        push(&mut out, Level::Good, "No risks found with these thresholds.".to_string());
+    if !out
+        .iter()
+        .any(|i| matches!(i.level, Level::Risk | Level::Watch))
+    {
+        push(
+            &mut out,
+            Level::Good,
+            "No risks found with these thresholds.".to_string(),
+        );
     }
     out.sort_by_key(|i| i.level);
     out
 }
 
-fn volume(out: &mut Vec<Insight>, w: &Vocabulary, growth: i64, c: i64, base: &Row, l: &Row, on: &str) {
+fn volume(
+    out: &mut Vec<Insight>,
+    w: &Vocabulary,
+    growth: i64,
+    c: i64,
+    base: &Row,
+    l: &Row,
+    on: &str,
+) {
     let text = |dir: &str| {
         format!(
-            "{} received {dir} {}% {on} {}: {} in {}, {} in {}.",
-            capital(&w.items),
+            "{} {dir} {}% {on} {}: {} in {}, {} in {}.",
+            w.received,
             c.abs(),
             base.label,
             base.received,
@@ -312,16 +392,24 @@ mod tests {
             has_resolved: true,
             has_due: true,
             groups,
+            group_span: "P0".into(),
             settings: &s,
             words: strings.vocabulary("requests"),
         };
         find(&cx)
     }
 
-    const NONE_OPEN: OpenNow = OpenNow { open: 0, overdue: 0, old: 0 };
+    const NONE_OPEN: OpenNow = OpenNow {
+        open: 0,
+        overdue: 0,
+        old: 0,
+    };
 
     fn texts(found: &[Insight]) -> Vec<String> {
-        found.iter().map(|i| format!("{:?}: {}", i.level, i.text)).collect()
+        found
+            .iter()
+            .map(|i| format!("{:?}: {}", i.level, i.text))
+            .collect()
     }
 
     fn has(found: &[Insight], level: Level, text: &str) -> bool {
@@ -332,8 +420,20 @@ mod tests {
     fn steady_data_finds_no_risk() {
         let rows = vec![row(0, 10, 9, 9, 1), row(1, 10, 9, 10, 1)];
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(has(&found, Level::Good, "90% of the requests received in P1 are completed, meeting the 80% target."), "{:?}", texts(&found));
-        assert!(has(&found, Level::Good, "No risks found with these thresholds."));
+        assert!(
+            has(
+                &found,
+                Level::Good,
+                "90% of the requests received in P1 are completed, meeting the 80% target."
+            ),
+            "{:?}",
+            texts(&found)
+        );
+        assert!(has(
+            &found,
+            Level::Good,
+            "No risks found with these thresholds."
+        ));
         assert_eq!(found.len(), 2);
     }
 
@@ -341,36 +441,107 @@ mod tests {
     fn completion_below_target_is_a_risk() {
         let rows = vec![row(0, 10, 7, 7, 3)];
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(has(&found, Level::Risk, "70% of the requests received in P0 are completed, below the 80% target (7 of 10)."), "{:?}", texts(&found));
+        assert!(
+            has(
+                &found,
+                Level::Risk,
+                "70% of the requests received in P0 are completed, below the 80% target (7 of 10)."
+            ),
+            "{:?}",
+            texts(&found)
+        );
     }
 
     #[test]
     fn completion_falling_three_periods_is_a_risk() {
-        let rows = vec![row(0, 10, 9, 9, 1), row(1, 10, 8, 10, 1), row(2, 10, 7, 10, 1)];
+        let rows = vec![
+            row(0, 10, 9, 9, 1),
+            row(1, 10, 8, 10, 1),
+            row(2, 10, 7, 10, 1),
+        ];
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(has(&found, Level::Risk, "Completion has fallen 3 periods running: 90% in P0, 80% in P1, 70% in P2."), "{:?}", texts(&found));
+        assert!(
+            has(
+                &found,
+                Level::Risk,
+                "Completion has fallen 3 periods running: 90% in P0, 80% in P1, 70% in P2."
+            ),
+            "{:?}",
+            texts(&found)
+        );
         // Level, not falling: no such risk.
-        let rows = vec![row(0, 10, 9, 9, 1), row(1, 10, 8, 10, 1), row(2, 10, 8, 10, 1)];
-        assert!(!run(&rows, NONE_OPEN, &[]).iter().any(|i| i.text.starts_with("Completion has fallen")));
+        let rows = vec![
+            row(0, 10, 9, 9, 1),
+            row(1, 10, 8, 10, 1),
+            row(2, 10, 8, 10, 1),
+        ];
+        assert!(!run(&rows, NONE_OPEN, &[])
+            .iter()
+            .any(|i| i.text.starts_with("Completion has fallen")));
     }
 
     #[test]
     fn a_building_backlog_is_a_risk() {
-        let rows = vec![row(0, 10, 9, 9, 2), row(1, 10, 9, 8, 4), row(2, 10, 9, 8, 6), row(3, 10, 9, 8, 8)];
+        let rows = vec![
+            row(0, 10, 9, 9, 2),
+            row(1, 10, 9, 8, 4),
+            row(2, 10, 9, 8, 6),
+            row(3, 10, 9, 8, 8),
+        ];
         let found = run(&rows, NONE_OPEN, &[]);
         assert!(has(&found, Level::Risk, "More requests came in than were completed in each of the last 3 periods; open requests went from 2 to 8."), "{:?}", texts(&found));
-        assert!(has(&found, Level::Watch, "Open requests rose 33% in P3: 6 at the end of P2, 8 at the end of P3."));
+        assert!(has(
+            &found,
+            Level::Watch,
+            "Open requests rose 33% in P3: 6 at the end of P2, 8 at the end of P3."
+        ));
     }
 
     #[test]
     fn old_and_overdue_items_are_named() {
         let rows = vec![row(0, 10, 9, 9, 5)];
-        let found = run(&rows, OpenNow { open: 5, overdue: 2, old: 2 }, &[]);
-        assert!(has(&found, Level::Risk, "2 of 5 open requests (40%) have been open longer than 90 days."), "{:?}", texts(&found));
-        assert!(has(&found, Level::Risk, "2 open requests are past the due date on 5 Apr 2026."));
-        let found = run(&rows, OpenNow { open: 10, overdue: 1, old: 2 }, &[]);
-        assert!(has(&found, Level::Watch, "2 of 10 open requests (20%) have been open longer than 90 days."));
-        assert!(has(&found, Level::Risk, "1 open request is past the due date on 5 Apr 2026."));
+        let found = run(
+            &rows,
+            OpenNow {
+                open: 5,
+                overdue: 2,
+                old: 2,
+            },
+            &[],
+        );
+        assert!(
+            has(
+                &found,
+                Level::Risk,
+                "2 of 5 open requests (40%) have been open longer than 90 days."
+            ),
+            "{:?}",
+            texts(&found)
+        );
+        assert!(has(
+            &found,
+            Level::Risk,
+            "2 open requests are past the due date on 5 Apr 2026."
+        ));
+        let found = run(
+            &rows,
+            OpenNow {
+                open: 10,
+                overdue: 1,
+                old: 2,
+            },
+            &[],
+        );
+        assert!(has(
+            &found,
+            Level::Watch,
+            "2 of 10 open requests (20%) have been open longer than 90 days."
+        ));
+        assert!(has(
+            &found,
+            Level::Risk,
+            "1 open request is past the due date on 5 Apr 2026."
+        ));
     }
 
     #[test]
@@ -381,13 +552,33 @@ mod tests {
         rows[5].change_prev = change(13, 10);
         rows[5].change_year = change(13, 10);
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(has(&found, Level::Watch, "Requests received rose 30% on P4: 10 in P4, 13 in P5."), "{:?}", texts(&found));
-        assert!(has(&found, Level::Watch, "Requests received rose 30% on P1: 10 in P1, 13 in P5."));
+        assert!(
+            has(
+                &found,
+                Level::Watch,
+                "Requests received rose 30% on P4: 10 in P4, 13 in P5."
+            ),
+            "{:?}",
+            texts(&found)
+        );
+        assert!(has(
+            &found,
+            Level::Watch,
+            "Requests received rose 30% on P1: 10 in P1, 13 in P5."
+        ));
         rows[5].change_prev = Some(-20);
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(found.iter().any(|i| i.level == Level::Note && i.text.contains("fell 20% on P4")), "{:?}", texts(&found));
+        assert!(
+            found
+                .iter()
+                .any(|i| i.level == Level::Note && i.text.contains("fell 20% on P4")),
+            "{:?}",
+            texts(&found)
+        );
         rows[5].change_prev = Some(19);
-        assert!(!run(&rows, NONE_OPEN, &[]).iter().any(|i| i.text.contains("on P4")));
+        assert!(!run(&rows, NONE_OPEN, &[])
+            .iter()
+            .any(|i| i.text.contains("on P4")));
     }
 
     #[test]
@@ -396,18 +587,47 @@ mod tests {
         rows[0].median_days = Some(10);
         rows[1].median_days = Some(12);
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(has(&found, Level::Watch, "Completing a request took a median of 12 days in P1, up from 10 days in P0."), "{:?}", texts(&found));
+        assert!(
+            has(
+                &found,
+                Level::Watch,
+                "The median time to complete fell behind: 12 days in P1, up from 10 days in P0."
+            ),
+            "{:?}",
+            texts(&found)
+        );
         rows[1].median_days = Some(11);
-        assert!(!run(&rows, NONE_OPEN, &[]).iter().any(|i| i.text.starts_with("Completing")));
+        assert!(!run(&rows, NONE_OPEN, &[])
+            .iter()
+            .any(|i| i.text.starts_with("The median time")));
     }
 
     #[test]
     fn groups_below_target_are_named_lowest_first() {
         let rows = vec![row(0, 10, 9, 9, 1)];
-        let g = |name: &str, counted, rate| GroupRate { name: name.into(), counted, rate: Some(rate) };
-        let groups = vec![g("Web", 10, 70), g("Data", 6, 50), g("Ops", 4, 10), g("App", 9, 90), g("Pay", 5, 60), g("Mail", 5, 79)];
+        let g = |name: &str, counted, rate| GroupRate {
+            name: name.into(),
+            counted,
+            rate: Some(rate),
+        };
+        let groups = vec![
+            g("Web", 10, 70),
+            g("Data", 6, 50),
+            g("Ops", 4, 10),
+            g("App", 9, 90),
+            g("Pay", 5, 60),
+            g("Mail", 5, 79),
+        ];
         let found = run(&rows, NONE_OPEN, &groups);
-        assert!(has(&found, Level::Risk, "Teams below the 80% target over the complete periods: Data (50%), Pay (60%), Web (70%), and 1 more."), "{:?}", texts(&found));
+        assert!(
+            has(
+                &found,
+                Level::Risk,
+                "Teams below the 80% target over P0: Data (50%), Pay (60%), Web (70%), and 1 more."
+            ),
+            "{:?}",
+            texts(&found)
+        );
     }
 
     #[test]
@@ -415,7 +635,15 @@ mod tests {
         let mut rows = vec![row(0, 10, 7, 7, 3), row(1, 2, 0, 0, 5)];
         rows[1].partial = true;
         let found = run(&rows, NONE_OPEN, &[]);
-        assert!(has(&found, Level::Note, "P1 is still in progress (data to 5 Apr 2026), so comparisons use P0."), "{:?}", texts(&found));
+        assert!(
+            has(
+                &found,
+                Level::Note,
+                "P1 is still in progress (data to 5 Apr 2026), so comparisons use P0."
+            ),
+            "{:?}",
+            texts(&found)
+        );
         assert!(found.iter().any(|i| i.text.contains("received in P0")));
     }
 

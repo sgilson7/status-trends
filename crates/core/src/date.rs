@@ -46,8 +46,7 @@ pub fn days_in_month(y: i64, m: i64) -> i64 {
 }
 
 fn valid(y: i64, m: i64, d: i64) -> Option<Day> {
-    if (1..=12).contains(&m) && d >= 1 && d <= days_in_month(y, m) && (1900..=2200).contains(&y)
-    {
+    if (1..=12).contains(&m) && d >= 1 && d <= days_in_month(y, m) && (1900..=2200).contains(&y) {
         Some(days_from_civil(y, m, d))
     } else {
         None
@@ -186,8 +185,14 @@ mod tests {
         assert_eq!(days_from_civil(1970, 1, 1), 0);
         assert_eq!(days_from_civil(1970, 2, 1), 31);
         // 2000 is a leap year: 366 days from 2000-01-01 to 2001-01-01.
-        assert_eq!(days_from_civil(2001, 1, 1) - days_from_civil(2000, 1, 1), 366);
-        assert_eq!(days_from_civil(2026, 1, 25) - days_from_civil(2026, 1, 5), 20);
+        assert_eq!(
+            days_from_civil(2001, 1, 1) - days_from_civil(2000, 1, 1),
+            366
+        );
+        assert_eq!(
+            days_from_civil(2026, 1, 25) - days_from_civil(2026, 1, 5),
+            20
+        );
         assert_eq!(civil_from_days(days_from_civil(2024, 2, 29)), (2024, 2, 29));
         assert_eq!(civil_from_days(-1), (1969, 12, 31));
     }
@@ -196,7 +201,10 @@ mod tests {
     fn iso_dates_with_and_without_a_time() {
         assert_eq!(ymd("2026-10-12").as_deref(), Some("2026-10-12"));
         assert_eq!(ymd("2026-10-12 13:13").as_deref(), Some("2026-10-12"));
-        assert_eq!(ymd("2026-10-12T13:13:00.000+0100").as_deref(), Some("2026-10-12"));
+        assert_eq!(
+            ymd("2026-10-12T13:13:00.000+0100").as_deref(),
+            Some("2026-10-12")
+        );
         assert_eq!(ymd("2026/1/5").as_deref(), Some("2026-01-05"));
     }
 
@@ -212,15 +220,34 @@ mod tests {
 
     #[test]
     fn numeric_dates_follow_the_order() {
-        assert_eq!(parse("10/12/2026", MonthFirst).map(iso).as_deref(), Some("2026-10-12"));
-        assert_eq!(parse("10/12/2026", DayFirst).map(iso).as_deref(), Some("2026-12-10"));
+        assert_eq!(
+            parse("10/12/2026", MonthFirst).map(iso).as_deref(),
+            Some("2026-10-12")
+        );
+        assert_eq!(
+            parse("10/12/2026", DayFirst).map(iso).as_deref(),
+            Some("2026-12-10")
+        );
         assert_eq!(parse("13/12/2026", MonthFirst), None);
-        assert_eq!(parse("12.10.26", DayFirst).map(iso).as_deref(), Some("2026-10-12"));
+        assert_eq!(
+            parse("12.10.26", DayFirst).map(iso).as_deref(),
+            Some("2026-10-12")
+        );
     }
 
     #[test]
     fn impossible_or_unreadable_dates_are_none() {
-        for s in ["", "  ", "2026-02-30", "2025-02-29", "soon", "12/Foo/26", "2026-13-01", "123/1/2026", "1/1/1"] {
+        for s in [
+            "",
+            "  ",
+            "2026-02-30",
+            "2025-02-29",
+            "soon",
+            "12/Foo/26",
+            "2026-13-01",
+            "123/1/2026",
+            "1/1/1",
+        ] {
             assert_eq!(ymd(s), None, "{s:?}");
         }
         assert_eq!(ymd("2024-02-29").as_deref(), Some("2024-02-29"));
@@ -228,9 +255,18 @@ mod tests {
 
     #[test]
     fn the_order_is_detected_from_a_first_part_above_twelve() {
-        assert_eq!(detect_order(["1/2/2026", "25/2/2026"].into_iter()), DayFirst);
-        assert_eq!(detect_order(["1/2/2026", "2/25/2026"].into_iter()), MonthFirst);
-        assert_eq!(detect_order(["12/Oct/26", "2026-10-12"].into_iter()), MonthFirst);
+        assert_eq!(
+            detect_order(["1/2/2026", "25/2/2026"].into_iter()),
+            DayFirst
+        );
+        assert_eq!(
+            detect_order(["1/2/2026", "2/25/2026"].into_iter()),
+            MonthFirst
+        );
+        assert_eq!(
+            detect_order(["12/Oct/26", "2026-10-12"].into_iter()),
+            MonthFirst
+        );
         assert_eq!(detect_order(std::iter::empty()), MonthFirst);
     }
 

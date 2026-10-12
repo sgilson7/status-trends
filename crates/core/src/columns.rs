@@ -52,7 +52,9 @@ fn resolved_score(h: &str) -> u32 {
     match h.as_str() {
         "resolved" => 100,
         "resolution date" | "resolved date" | "date resolved" | "resolved on" => 95,
-        "completed" | "completed date" | "date completed" | "completed on" | "completion date" => 90,
+        "completed" | "completed date" | "date completed" | "completed on" | "completion date" => {
+            90
+        }
         "done date" | "date done" | "turned in" | "turned in on" | "date turned in" => 85,
         "closed" | "closed date" | "date closed" | "closed on" => 80,
         "finished" | "finished on" => 60,
@@ -119,7 +121,8 @@ pub fn guess(table: &Table) -> Roles {
     let mut used = Vec::new();
     let status = best(&table.header, status_score, &used);
     used.extend(status);
-    let created = best(&table.header, created_score, &used).or_else(|| first_date_column(table, &used));
+    let created =
+        best(&table.header, created_score, &used).or_else(|| first_date_column(table, &used));
     used.extend(created);
     let resolved = best(&table.header, resolved_score, &used);
     used.extend(resolved);

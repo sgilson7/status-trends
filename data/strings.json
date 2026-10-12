@@ -2,11 +2,11 @@
   "ui": {
     "title": "Status Trends",
     "tagline": "A dashboard of your tracker or gradebook export: how many items came in each year, quarter or month, where they stand, how that is changing, and what looks at risk.",
-    "privacy_short": "Your file stays in this browser tab. Nothing is uploaded, saved or sent anywhere.",
+    "privacy_short": "Your file is read and worked out inside this browser tab. After the page opens it makes no network request, and it keeps nothing once the tab is closed.",
     "privacy_more": "How you can check that",
     "privacy_1": "The page reads your file with the browser's own file reader and works it out on this device, in this tab. There is no server behind it: the site is a handful of fixed files.",
     "privacy_2": "Every file the page needs is fetched when it opens, before you choose any data. After that it makes no network request of any kind. Try it: open the page, turn off Wi-Fi, then open your file. It still works.",
-    "privacy_3": "Nothing is kept: no cookies, no browser storage, no history. Closing or reloading the tab removes your data. \"Clear data\" removes it at once.",
+    "privacy_3": "The page uses no cookies, no browser storage and no history. Closing or reloading the tab removes your data from the page; \"Clear data\" removes it at once.",
     "privacy_4": "No analytics, no fonts or scripts from other sites, no accounts. The page's security policy blocks connections to any other site, and the source code is public.",
     "privacy_5": "Saving a table, chart or PDF writes a file to your own device, where you choose. Where it goes from there is up to you.",
     "load_heading": "Open your data",

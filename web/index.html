@@ -3,20 +3,195 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Reference default. connect-src 'self' keeps fetches on this origin;
-       'wasm-unsafe-eval' lets the page compile its own WebAssembly module;
-       form-action 'none' blocks form posts. A meta policy cannot stop data
-       leaving by navigation, so the browser check still watches requests. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <title>Builder tool</title>
+  <!-- Reference default, tightened for this tool: connect-src 'self' keeps
+       fetches on this origin; 'wasm-unsafe-eval' lets the page compile its
+       own WebAssembly module; form-action 'none' blocks form posts. A meta
+       policy cannot stop data leaving by navigation, so the browser check
+       also fails on any request at all once the page is ready. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <!-- An empty icon, so the browser does not ask the server for one later. -->
+  <link rel="icon" href="data:,">
+  <title>Status Trends</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body data-ready="false">
+  <header class="hero">
+    <img class="hero-art" src="art/title.png" alt="" width="1920" height="720">
+    <div class="hero-text">
+      <h1 data-text="title"></h1>
+      <p data-text="tagline"></p>
+    </div>
+  </header>
+
   <main>
-    <h1 id="title"></h1>
-    <p id="intro"></p>
-    <p id="message" role="status"></p>
+    <section class="privacy" aria-label="Privacy">
+      <p class="privacy-short"><span class="lock" aria-hidden="true"></span><strong data-text="privacy_short"></strong></p>
+      <details>
+        <summary data-text="privacy_more"></summary>
+        <ul>
+          <li data-text="privacy_1"></li>
+          <li data-text="privacy_2"></li>
+          <li data-text="privacy_3"></li>
+          <li data-text="privacy_4"></li>
+          <li data-text="privacy_5"></li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="panel load" aria-labelledby="load-heading">
+      <h2 id="load-heading" data-text="load_heading"></h2>
+      <div id="drop" class="drop">
+        <span data-text="drop_hint"></span>
+        <label class="button primary">
+          <input type="file" id="file" accept=".csv,.tsv,.txt,text/csv,text/tab-separated-values,text/plain">
+          <span data-text="choose_file"></span>
+        </label>
+      </div>
+      <div class="samples">
+        <span data-text="sample_label"></span>
+        <button type="button" id="sample-requests" data-text="sample_requests"></button>
+        <button type="button" id="sample-class" data-text="sample_class"></button>
+      </div>
+      <details class="paste">
+        <summary data-text="paste_label"></summary>
+        <textarea id="paste" rows="6" spellcheck="false" autocomplete="off"></textarea>
+        <button type="button" id="use-paste" data-text="paste_button"></button>
+      </details>
+      <details class="help">
+        <summary data-text="export_help"></summary>
+        <p data-text="export_jira"></p>
+        <p data-text="export_class"></p>
+        <p data-text="export_other"></p>
+      </details>
+      <p id="loaded" class="loaded" hidden>
+        <span data-text="loaded_file"></span>
+        <strong id="loaded-name"></strong>
+        <button type="button" id="clear" data-text="clear"></button>
+      </p>
+      <p id="message" class="message" role="alert"></p>
+    </section>
+
+    <p id="empty" class="empty" data-text="empty_state"></p>
+
+    <div id="dashboard" hidden>
+      <section class="panel controls" aria-label="View">
+        <label><span data-text="view_label"></span>
+          <select id="granularity">
+            <option value="year" data-text="view_year"></option>
+            <option value="quarter" data-text="view_quarter"></option>
+            <option value="month" data-text="view_month"></option>
+          </select>
+        </label>
+        <label><span data-text="fiscal_label"></span>
+          <select id="fiscal_start">
+            <option value="1" data-text="month_1"></option>
+            <option value="2" data-text="month_2"></option>
+            <option value="3" data-text="month_3"></option>
+            <option value="4" data-text="month_4"></option>
+            <option value="5" data-text="month_5"></option>
+            <option value="6" data-text="month_6"></option>
+            <option value="7" data-text="month_7"></option>
+            <option value="8" data-text="month_8"></option>
+            <option value="9" data-text="month_9"></option>
+            <option value="10" data-text="month_10"></option>
+            <option value="11" data-text="month_11"></option>
+            <option value="12" data-text="month_12"></option>
+          </select>
+        </label>
+        <label><span data-text="show_label"></span>
+          <select id="show">
+            <option value="all" data-text="show_all"></option>
+            <option value="4" data-text="show_4"></option>
+            <option value="8" data-text="show_8"></option>
+            <option value="12" data-text="show_12"></option>
+            <option value="24" data-text="show_24"></option>
+          </select>
+        </label>
+        <label><span data-text="words_label"></span>
+          <select id="vocabulary"></select>
+        </label>
+        <label id="only-control"><span data-text="only_label"></span>
+          <select id="only_group"></select>
+        </label>
+      </section>
+
+      <details id="settings" class="panel settings">
+        <summary data-text="settings_heading"></summary>
+        <p class="hint" data-text="settings_help"></p>
+        <div class="settings-grid">
+          <label><span data-text="col_created"></span><select id="created" data-role="created"></select></label>
+          <label><span data-text="col_status"></span><select id="status" data-role="status"></select></label>
+          <label><span data-text="col_resolved"></span><select id="resolved" data-role="resolved"></select></label>
+          <label><span data-text="col_due"></span><select id="due" data-role="due"></select></label>
+          <label><span data-text="col_group"></span><select id="group" data-role="group"></select></label>
+          <label><span data-text="order_label"></span>
+            <select id="date_order">
+              <option value="month" data-text="order_month"></option>
+              <option value="day" data-text="order_day"></option>
+            </select>
+          </label>
+          <label><span data-text="as_of_label"></span><input id="as_of" type="text" autocomplete="off" spellcheck="false"></label>
+          <label><span data-text="target_label"></span><input id="target" type="text" inputmode="numeric" autocomplete="off"></label>
+          <label><span data-text="growth_label"></span><input id="growth" type="text" inputmode="numeric" autocomplete="off"></label>
+          <label><span data-text="aging_label"></span><input id="aging" type="text" inputmode="numeric" autocomplete="off"></label>
+        </div>
+        <h3 data-text="statuses_heading"></h3>
+        <div class="table-wrap">
+          <table class="statuses">
+            <thead><tr><th data-text="status_name"></th><th data-text="status_count"></th><th data-text="status_group"></th></tr></thead>
+            <tbody id="statuses"></tbody>
+          </table>
+        </div>
+      </details>
+
+      <p id="problem" class="problem" role="alert" hidden></p>
+
+      <div id="results">
+        <section class="summary" aria-label="About this file">
+          <p id="summary"></p>
+          <ul id="notes" class="notes"></ul>
+        </section>
+
+        <section id="tiles" class="tiles" aria-label="Summary figures"></section>
+
+        <section class="panel" aria-labelledby="insights-heading">
+          <h2 id="insights-heading" data-text="insights_heading"></h2>
+          <ul id="insights" class="insights"></ul>
+        </section>
+
+        <section aria-labelledby="charts-heading">
+          <h2 id="charts-heading" data-text="charts_heading"></h2>
+          <p class="hint" data-text="chart_table"></p>
+          <div id="charts" class="charts"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="table-heading">
+          <div class="section-head">
+            <h2 id="table-heading" data-text="table_heading"></h2>
+            <div class="actions">
+              <button type="button" id="save-csv" data-text="save_csv"></button>
+              <button type="button" id="print" data-text="print"></button>
+            </div>
+          </div>
+          <div class="table-wrap"><table id="period-table" class="data"></table></div>
+        </section>
+
+        <section id="group-section" class="panel" aria-labelledby="group-heading">
+          <h2 id="group-heading" data-text="group_heading"></h2>
+          <div class="table-wrap"><table id="group-table" class="data"></table></div>
+        </section>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    <p data-text="footer_about"></p>
+    <p><a id="source" rel="noopener noreferrer" data-text="footer_source"></a></p>
+  </footer>
+
+  <div id="tip" class="tip" role="tooltip" hidden></div>
+  <template id="svg-template"><svg class="chart-svg" role="img"></svg></template>
   <noscript><p>This page needs JavaScript and WebAssembly.</p></noscript>
   <script type="module" src="app.js"></script>
 </body>

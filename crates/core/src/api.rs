@@ -61,34 +61,56 @@ mod tests {
 
     #[test]
     fn analyze_reports_each_kind_of_failure_as_an_error() {
-        assert_eq!(analyze("", "{}", STRINGS), r#"{"error":"The file is empty."}"#);
-        assert!(analyze("a,b\n1,2", "{", STRINGS).starts_with(r#"{"error":"The settings could not be read"#));
-        assert!(analyze("a,b\n1,2", "{}", "{}").starts_with(r#"{"error":"The strings file could not be read"#));
+        assert_eq!(
+            analyze("", "{}", STRINGS),
+            r#"{"error":"The file is empty."}"#
+        );
+        assert!(analyze("a,b\n1,2", "{", STRINGS)
+            .starts_with(r#"{"error":"The settings could not be read"#));
+        assert!(analyze("a,b\n1,2", "{}", "{}")
+            .starts_with(r#"{"error":"The strings file could not be read"#));
     }
 
     #[test]
     fn a_file_without_dates_returns_a_problem_and_the_columns() {
-        let v: serde_json::Value = serde_json::from_str(&analyze("Name,Status\nA,Open", "{}", STRINGS)).unwrap();
+        let v: serde_json::Value =
+            serde_json::from_str(&analyze("Name,Status\nA,Open", "{}", STRINGS)).unwrap();
         assert_eq!(v["ok"]["columns"][1]["name"], "Status");
-        assert!(v["ok"]["problem"].as_str().unwrap().starts_with("No column looks like the date"));
+        assert!(v["ok"]["problem"]
+            .as_str()
+            .unwrap()
+            .starts_with("No column looks like the date"));
         assert!(v["ok"]["charts"].as_array().unwrap().is_empty());
     }
 
     #[test]
     fn no_input_makes_any_function_panic() {
         let odd = [
-            "", "\u{feff}", "\"", "a\n\"", ",,,\n,,,", "Created\n2026-01-01", "Created,Status\n9999-99-99,Done",
-            "Created,Resolved,Status\n2026-01-01,2025-01-01,Done", "Created\n1/1/1900\n12/31/2200",
+            "",
+            "\u{feff}",
+            "\"",
+            "a\n\"",
+            ",,,\n,,,",
+            "Created\n2026-01-01",
+            "Created,Status\n9999-99-99,Done",
+            "Created,Resolved,Status\n2026-01-01,2025-01-01,Done",
+            "Created\n1/1/1900\n12/31/2200",
         ];
         let settings = [
-            "{}", r#"{"granularity": "month", "show": "1"}"#, r#"{"created": "99", "status": "-1", "show": "0"}"#,
+            "{}",
+            r#"{"granularity": "month", "show": "1"}"#,
+            r#"{"created": "99", "status": "-1", "show": "0"}"#,
             r#"{"granularity": "year", "fiscal_start": "12", "as_of": "1900-01-01"}"#,
-            r#"{"only_group": "nobody", "group": "0"}"#, r#"{"as_of": "2200-12-31", "granularity": "month"}"#,
+            r#"{"only_group": "nobody", "group": "0"}"#,
+            r#"{"as_of": "2200-12-31", "granularity": "month"}"#,
         ];
         for text in odd {
             for s in settings {
                 let out = analyze(text, s, STRINGS);
-                assert!(out.starts_with("{\"ok\"") || out.starts_with("{\"error\""), "{text:?} {s}: {out}");
+                assert!(
+                    out.starts_with("{\"ok\"") || out.starts_with("{\"error\""),
+                    "{text:?} {s}: {out}"
+                );
             }
         }
     }

@@ -91,7 +91,10 @@ impl Problem {
 }
 
 /// Reads the items. `Err` carries the roles found so far with the problem.
-pub fn read(table: &Table, settings: &mut Settings) -> Result<Data, (Roles, NumericOrder, Problem)> {
+pub fn read(
+    table: &Table,
+    settings: &mut Settings,
+) -> Result<Data, (Roles, NumericOrder, Problem)> {
     let width = table.header.len();
     let guess = columns::guess(table);
     let roles = Roles {
@@ -139,7 +142,10 @@ pub fn read(table: &Table, settings: &mut Settings) -> Result<Data, (Roles, Nume
         })
         .collect();
     statuses.sort_by(|a, b| b.count.cmp(&a.count).then_with(|| a.name.cmp(&b.name)));
-    let group_of: BTreeMap<&str, Group> = statuses.iter().map(|s| (s.name.as_str(), s.group)).collect();
+    let group_of: BTreeMap<&str, Group> = statuses
+        .iter()
+        .map(|s| (s.name.as_str(), s.group))
+        .collect();
 
     let mut reading = Reading {
         rows: n,
@@ -155,7 +161,10 @@ pub fn read(table: &Table, settings: &mut Settings) -> Result<Data, (Roles, Nume
             }
             continue;
         };
-        let group = group_of.get(status_of(r).trim()).copied().unwrap_or(Group::Requested);
+        let group = group_of
+            .get(status_of(r).trim())
+            .copied()
+            .unwrap_or(Group::Requested);
         let resolved = if group == Group::Done {
             let day = date::parse(resolved_of(r), order);
             if roles.resolved.is_some() && day.is_none() {
@@ -427,7 +436,10 @@ pub fn open_now(data: &Data, aging: i64) -> OpenNow {
             .iter()
             .filter(|it| it.due.map(|d| d < data.as_of).unwrap_or(false))
             .count() as i64,
-        old: open.iter().filter(|it| data.as_of - it.created > aging).count() as i64,
+        old: open
+            .iter()
+            .filter(|it| data.as_of - it.created > aging)
+            .count() as i64,
     }
 }
 

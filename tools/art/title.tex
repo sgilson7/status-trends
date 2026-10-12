@@ -1,0 +1,352 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{xcolor}
+% Palette: Sam_Comm_final.png by eye, and the tool's status colours.
+\definecolor{ink}{HTML}{3B2340}
+\definecolor{sky}{HTML}{EFC46A}
+\definecolor{skyhi}{HTML}{F5DA92}
+\definecolor{skylow}{HTML}{E9B060}
+\definecolor{cloud}{HTML}{F2D58A}
+\definecolor{wallA}{HTML}{E88A73}
+\definecolor{wallB}{HTML}{EE9F7E}
+\definecolor{wallC}{HTML}{E47A7E}
+\definecolor{wallD}{HTML}{F0B07E}
+\definecolor{wallE}{HTML}{D9765F}
+\definecolor{wallF}{HTML}{E99A8A}
+\definecolor{far}{HTML}{F0C98A}
+\definecolor{fardark}{HTML}{E8B97A}
+\definecolor{greenA}{HTML}{8DBB7E}
+\definecolor{greenB}{HTML}{6FA77A}
+\definecolor{greenC}{HTML}{A9C97F}
+\definecolor{greenD}{HTML}{5E9C6A}
+\definecolor{window}{HTML}{F6E7A0}
+\definecolor{windark}{HTML}{8C5A64}
+\definecolor{metal}{HTML}{8D9A93}
+\definecolor{metaldark}{HTML}{5E6B66}
+\definecolor{paving}{HTML}{E2BD8C}
+\definecolor{ground}{HTML}{D3A77D}
+\definecolor{road}{HTML}{C9957A}
+\definecolor{cardboard}{HTML}{C9A06A}
+\definecolor{tape}{HTML}{E3CC98}
+\definecolor{screen}{HTML}{2E2638}
+\definecolor{statreq}{HTML}{2A78D6}
+\definecolor{statpend}{HTML}{EB6834}
+\definecolor{statdone}{HTML}{1BAF7A}
+\definecolor{eyewhite}{HTML}{FBF4E4}
+\definecolor{trim}{HTML}{F26B38}
+\definecolor{gold}{HTML}{FFB000}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\useasboundingbox (0,0) rectangle (32,12);
+\clip (0,0) rectangle (32,12);
+\fill[skylow] (0,0) rectangle (32,12);
+\fill[sky] (0,3) rectangle (32,12);
+\fill[skyhi] (0,8.6) rectangle (32,12);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (13.69,10.4) circle (0.495);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (14.23,10.715) circle (0.675);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (14.905,10.58) circle (0.558);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (15.4,10.355) circle (0.405);
+\draw[ink, line width=1pt, line cap=round, line join=round] (13.51,10.13) -- (15.625,10.13);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (20.965,9.6) circle (0.632);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (21.655,10.002) circle (0.862);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (22.517,9.83) circle (0.713);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (23.15,9.543) circle (0.517);
+\draw[ink, line width=1pt, line cap=round, line join=round] (20.735,9.255) -- (23.438,9.255);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (28.48,10.9) circle (0.44);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (28.96,11.18) circle (0.6);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (29.56,11.06) circle (0.496);
+\filldraw[fill=cloud, draw=ink, line width=1pt, line join=round] (30,10.86) circle (0.36);
+\draw[ink, line width=1pt, line cap=round, line join=round] (28.32,10.66) -- (30.2,10.66);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (0,1.5) rectangle (1.266,3.405);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (1.266,1.5) rectangle (3.04,3.087);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (3.04,1.5) rectangle (4.788,2.851);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (4.788,1.5) rectangle (5.895,3.544);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (5.895,1.5) rectangle (6.862,3.065);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (6.862,1.5) rectangle (8.156,3.33);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (8.156,1.5) rectangle (9.131,2.78);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (9.131,1.5) rectangle (10.566,3.292);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (10.566,1.5) rectangle (12.024,2.708);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (12.024,1.5) rectangle (13.003,5.076);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (13.003,1.5) rectangle (13.968,4.532);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (13.968,1.5) rectangle (15.131,3.316);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (15.131,1.5) rectangle (16.543,3.384);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (16.543,1.5) rectangle (18.08,3.186);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (18.08,1.5) rectangle (19.775,4.301);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (19.775,1.5) rectangle (21.301,3.196);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (21.301,1.5) rectangle (22.375,4.974);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (22.375,1.5) rectangle (23.601,4.324);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (23.601,1.5) rectangle (24.668,5.171);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (24.668,1.5) rectangle (25.719,4.21);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (25.719,1.5) rectangle (27.163,3.961);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (27.163,1.5) rectangle (28.088,5.144);
+\filldraw[fill=fardark, draw=ink, line width=0.7pt, line join=round] (28.088,1.5) rectangle (29.115,4.178);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (29.115,1.5) rectangle (30.036,4.867);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (30.036,1.5) rectangle (31.67,3.078);
+\filldraw[fill=far, draw=ink, line width=0.7pt, line join=round] (31.67,1.5) rectangle (32.778,4.825);
+\filldraw[fill=greenD, draw=ink, line width=1.2pt, line join=round] (17.038,1.5) rectangle (20.648,6.069);
+\filldraw[fill=greenB, draw=ink, line width=1.3pt, line join=round] (17.18,7.209) -- (17.465,9.252) -- (18.415,7.922) -- cycle;
+\filldraw[fill=greenB, draw=ink, line width=1.3pt, line join=round] (20.505,7.209) -- (20.22,9.252) -- (19.27,7.922) -- cycle;
+\filldraw[fill=greenC, draw=ink, line width=0.8pt, line join=round] (17.418,7.494) -- (17.56,8.729) -- (18.13,7.922) -- cycle;
+\filldraw[fill=greenC, draw=ink, line width=0.8pt, line join=round] (20.268,7.494) -- (20.125,8.729) -- (19.555,7.922) -- cycle;
+\filldraw[fill=greenA, draw=ink, line width=1.4pt, line join=round] (16.848,5.499) [rounded corners=0.855cm] rectangle (20.838,8.254);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (16.848,7.352) -- (20.838,7.352);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (18.843,7.352) -- (18.843,8.254);
+\filldraw[fill=greenD, draw=ink, line width=0.5pt, line join=round] (17.133,7.874) circle (0.057);
+\filldraw[fill=greenD, draw=ink, line width=0.5pt, line join=round] (17.703,7.874) circle (0.057);
+\filldraw[fill=greenD, draw=ink, line width=0.5pt, line join=round] (19.983,7.874) circle (0.057);
+\filldraw[fill=greenD, draw=ink, line width=0.5pt, line join=round] (20.553,7.874) circle (0.057);
+\filldraw[fill=metaldark, draw=ink, line width=1.2pt, line join=round] (17.94,6.687) circle (0.589);
+\filldraw[fill=eyewhite, draw=ink, line width=0.9pt, line join=round] (17.94,6.687) circle (0.456);
+\filldraw[fill=ink, draw=ink, line width=0.5pt, line join=round] (18.13,6.753) circle (0.209);
+\filldraw[fill=eyewhite, draw=ink, line width=0.3pt, line join=round] (18.054,6.848) circle (0.067);
+\filldraw[fill=metaldark, draw=ink, line width=1.2pt, line join=round] (19.745,6.687) circle (0.589);
+\filldraw[fill=eyewhite, draw=ink, line width=0.9pt, line join=round] (19.745,6.687) circle (0.456);
+\filldraw[fill=ink, draw=ink, line width=0.5pt, line join=round] (19.935,6.753) circle (0.209);
+\filldraw[fill=eyewhite, draw=ink, line width=0.3pt, line join=round] (19.859,6.848) circle (0.067);
+\filldraw[fill=ink, draw=ink, line width=0.6pt, line join=round] (18.672,6.164) -- (19.014,6.164) -- (18.843,5.974) -- cycle;
+\filldraw[fill=trim, draw=ink, line width=1pt, line join=round] (18.178,5.86) -- (19.508,5.86) -- (19.318,5.575) -- (18.368,5.575) -- cycle;
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (18.558,5.86) -- (18.558,5.575);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (18.843,5.86) -- (18.843,5.575);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (19.128,5.86) -- (19.128,5.575);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (18.035,6.088) -- (17.18,6.088);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (18.035,5.927) -- (17.18,5.927);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (19.65,6.088) -- (20.505,6.088);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (19.65,5.927) -- (20.505,5.927);
+\filldraw[fill=wallA, draw=ink, line width=1.1pt, line join=round] (11.106,1.5) rectangle (12.323,4.409);
+\filldraw[fill=wallA, draw=ink, line width=1.1pt, line join=round] (11.026,4.409) rectangle (12.403,4.609);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (11.565,1.95) rectangle (11.865,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (11.565,2.67) rectangle (11.865,3.07);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (11.565,3.39) rectangle (11.865,3.79);
+\filldraw[fill=metal, draw=ink, line width=0.9pt, line join=round] (11.278,4.609) rectangle (11.978,5.059);
+\filldraw[fill=metaldark, draw=ink, line width=0.7pt, line join=round] (11.628,4.829) circle (0.13);
+\draw[ink, line width=1pt, line cap=round, line join=round] (11.467,4.609) -- (11.467,5.756);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (11.217,5.125) -- (11.717,5.125);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (11.217,5.332) -- (11.717,5.332);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (11.217,5.538) -- (11.717,5.538);
+\filldraw[fill=wallB, draw=ink, line width=1.1pt, line join=round] (12.404,1.5) rectangle (13.616,4.126);
+\filldraw[fill=wallB, draw=ink, line width=1.1pt, line join=round] (12.324,4.126) rectangle (13.696,4.326);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (12.86,1.95) rectangle (13.16,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (12.86,2.67) rectangle (13.16,3.07);
+\filldraw[fill=metal, draw=ink, line width=0.9pt, line join=round] (12.715,4.326) rectangle (13.415,4.776);
+\filldraw[fill=metaldark, draw=ink, line width=0.7pt, line join=round] (13.065,4.546) circle (0.13);
+\filldraw[fill=wallC, draw=ink, line width=1.1pt, line join=round] (13.718,1.5) rectangle (14.895,4.783);
+\filldraw[fill=wallC, draw=ink, line width=1.1pt, line join=round] (13.638,4.783) rectangle (14.975,4.983);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (14.156,1.95) rectangle (14.456,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (14.156,2.67) rectangle (14.456,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (14.156,3.39) rectangle (14.456,3.79);
+\filldraw[fill=metal, draw=ink, line width=0.9pt, line join=round] (13.899,4.983) rectangle (14.599,5.433);
+\filldraw[fill=metaldark, draw=ink, line width=0.7pt, line join=round] (14.249,5.203) circle (0.13);
+\filldraw[fill=wallD, draw=ink, line width=1.1pt, line join=round] (14.98,1.5) rectangle (16.224,4.516);
+\filldraw[fill=wallD, draw=ink, line width=1.1pt, line join=round] (14.9,4.516) rectangle (16.304,4.716);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (15.452,1.95) rectangle (15.752,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (15.452,2.67) rectangle (15.752,3.07);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (15.452,3.39) rectangle (15.752,3.79);
+\draw[ink, line width=1pt, line cap=round, line join=round] (15.575,4.716) -- (15.575,6.013);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (15.325,5.299) -- (15.825,5.299);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (15.325,5.533) -- (15.825,5.533);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (15.325,5.766) -- (15.825,5.766);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (15.399,4.716) -- (15.399,5.116);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (15.899,4.716) -- (15.899,5.116);
+\filldraw[fill=wallE, draw=ink, line width=0.9pt, line join=round] (15.299,5.116) rectangle (15.999,5.816);
+\filldraw[fill=wallC, draw=ink, line width=1.1pt, line join=round] (16.322,1.5) rectangle (17.474,5.539);
+\filldraw[fill=wallC, draw=ink, line width=1.1pt, line join=round] (16.242,5.539) rectangle (17.554,5.739);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (16.748,1.95) rectangle (17.048,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (16.748,2.67) rectangle (17.048,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (16.748,3.39) rectangle (17.048,3.79);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (16.748,4.11) rectangle (17.048,4.51);
+\filldraw[fill=wallD, draw=ink, line width=1.1pt, line join=round] (17.633,1.5) rectangle (18.754,5.797);
+\filldraw[fill=wallD, draw=ink, line width=1.1pt, line join=round] (17.553,5.797) rectangle (18.834,5.997);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (18.044,1.95) rectangle (18.344,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (18.044,2.67) rectangle (18.344,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (18.044,3.39) rectangle (18.344,3.79);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (18.044,4.11) rectangle (18.344,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (18.044,4.83) rectangle (18.344,5.23);
+\filldraw[fill=wallE, draw=ink, line width=1.1pt, line join=round] (18.927,1.5) rectangle (20.052,5.919);
+\filldraw[fill=wallE, draw=ink, line width=1.1pt, line join=round] (18.847,5.919) rectangle (20.132,6.119);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (19.34,1.95) rectangle (19.64,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (19.34,2.67) rectangle (19.64,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (19.34,3.39) rectangle (19.64,3.79);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (19.34,4.11) rectangle (19.64,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (19.34,4.83) rectangle (19.64,5.23);
+\filldraw[fill=wallF, draw=ink, line width=1.1pt, line join=round] (20.199,1.5) rectangle (21.372,6.526);
+\filldraw[fill=wallF, draw=ink, line width=1.1pt, line join=round] (20.119,6.526) rectangle (21.452,6.726);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (20.635,1.95) rectangle (20.935,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (20.635,2.67) rectangle (20.935,3.07);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (20.635,3.39) rectangle (20.935,3.79);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (20.635,4.11) rectangle (20.935,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (20.635,4.83) rectangle (20.935,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (20.635,5.55) rectangle (20.935,5.95);
+\filldraw[fill=wallE, draw=ink, line width=1.1pt, line join=round] (21.54,1.5) rectangle (22.622,7.207);
+\filldraw[fill=wallE, draw=ink, line width=1.1pt, line join=round] (21.46,7.207) rectangle (22.702,7.407);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (21.931,1.95) rectangle (22.231,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (21.931,2.67) rectangle (22.231,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (21.931,3.39) rectangle (22.231,3.79);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (21.931,4.11) rectangle (22.231,4.51);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (21.931,4.83) rectangle (22.231,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (21.931,5.55) rectangle (22.231,5.95);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (21.931,6.27) rectangle (22.231,6.67);
+\filldraw[fill=metal, draw=ink, line width=0.9pt, line join=round] (21.707,7.407) rectangle (22.407,7.857);
+\filldraw[fill=metaldark, draw=ink, line width=0.7pt, line join=round] (22.057,7.627) circle (0.13);
+\draw[ink, line width=1pt, line cap=round, line join=round] (21.9,7.407) -- (21.9,8.875);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (21.65,8.068) -- (22.15,8.068);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (21.65,8.332) -- (22.15,8.332);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (21.65,8.596) -- (22.15,8.596);
+\filldraw[fill=wallF, draw=ink, line width=1.1pt, line join=round] (22.802,1.5) rectangle (23.952,7.234);
+\filldraw[fill=wallF, draw=ink, line width=1.1pt, line join=round] (22.722,7.234) rectangle (24.032,7.434);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (23.227,1.95) rectangle (23.527,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (23.227,2.67) rectangle (23.527,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (23.227,3.39) rectangle (23.527,3.79);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (23.227,4.11) rectangle (23.527,4.51);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (23.227,4.83) rectangle (23.527,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (23.227,5.55) rectangle (23.527,5.95);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (23.227,6.27) rectangle (23.527,6.67);
+\filldraw[fill=wallA, draw=ink, line width=1.1pt, line join=round] (24.067,1.5) rectangle (25.279,7.311);
+\filldraw[fill=wallA, draw=ink, line width=1.1pt, line join=round] (23.987,7.311) rectangle (25.359,7.511);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (24.523,1.95) rectangle (24.823,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (24.523,2.67) rectangle (24.823,3.07);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (24.523,3.39) rectangle (24.823,3.79);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (24.523,4.11) rectangle (24.823,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (24.523,4.83) rectangle (24.823,5.23);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (24.523,5.55) rectangle (24.823,5.95);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (24.523,6.27) rectangle (24.823,6.67);
+\draw[ink, line width=1pt, line cap=round, line join=round] (24.567,7.511) -- (24.567,8.962);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (24.317,8.164) -- (24.817,8.164);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (24.317,8.425) -- (24.817,8.425);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (24.317,8.686) -- (24.817,8.686);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (24.412,7.511) -- (24.412,7.911);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (24.912,7.511) -- (24.912,7.911);
+\filldraw[fill=greenD, draw=ink, line width=0.9pt, line join=round] (24.312,7.911) rectangle (25.012,8.611);
+\filldraw[fill=wallB, draw=ink, line width=1.1pt, line join=round] (25.364,1.5) rectangle (26.574,7.501);
+\filldraw[fill=wallB, draw=ink, line width=1.1pt, line join=round] (25.284,7.501) rectangle (26.654,7.701);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (25.819,1.95) rectangle (26.119,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (25.819,2.67) rectangle (26.119,3.07);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (25.819,3.39) rectangle (26.119,3.79);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (25.819,4.11) rectangle (26.119,4.51);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (25.819,4.83) rectangle (26.119,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (25.819,5.55) rectangle (26.119,5.95);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (25.819,6.27) rectangle (26.119,6.67);
+\filldraw[fill=metal, draw=ink, line width=0.9pt, line join=round] (25.629,7.701) rectangle (26.329,8.151);
+\filldraw[fill=metaldark, draw=ink, line width=0.7pt, line join=round] (25.979,7.921) circle (0.13);
+\filldraw[fill=wallA, draw=ink, line width=1.1pt, line join=round] (26.688,1.5) rectangle (27.841,8.806);
+\filldraw[fill=wallA, draw=ink, line width=1.1pt, line join=round] (26.608,8.806) rectangle (27.921,9.006);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (27.115,1.95) rectangle (27.415,2.35);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (27.115,2.67) rectangle (27.415,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (27.115,3.39) rectangle (27.415,3.79);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (27.115,4.11) rectangle (27.415,4.51);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (27.115,4.83) rectangle (27.415,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (27.115,5.55) rectangle (27.415,5.95);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (27.115,6.27) rectangle (27.415,6.67);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (27.115,6.99) rectangle (27.415,7.39);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (27.115,7.71) rectangle (27.415,8.11);
+\filldraw[fill=metal, draw=ink, line width=0.9pt, line join=round] (26.905,9.006) rectangle (27.605,9.456);
+\filldraw[fill=metaldark, draw=ink, line width=0.7pt, line join=round] (27.255,9.226) circle (0.13);
+\filldraw[fill=wallB, draw=ink, line width=1.1pt, line join=round] (27.951,1.5) rectangle (29.17,8.995);
+\filldraw[fill=wallB, draw=ink, line width=1.1pt, line join=round] (27.871,8.995) rectangle (29.25,9.195);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (28.41,1.95) rectangle (28.71,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (28.41,2.67) rectangle (28.71,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (28.41,3.39) rectangle (28.71,3.79);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (28.41,4.11) rectangle (28.71,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (28.41,4.83) rectangle (28.71,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (28.41,5.55) rectangle (28.71,5.95);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (28.41,6.27) rectangle (28.71,6.67);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (28.41,6.99) rectangle (28.71,7.39);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (28.41,7.71) rectangle (28.71,8.11);
+\draw[ink, line width=1pt, line cap=round, line join=round] (28.719,9.195) -- (28.719,10);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (28.469,9.558) -- (28.969,9.558);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (28.469,9.702) -- (28.969,9.702);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (28.469,9.847) -- (28.969,9.847);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (28.327,9.195) -- (28.327,9.595);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (28.827,9.195) -- (28.827,9.595);
+\filldraw[fill=greenD, draw=ink, line width=0.9pt, line join=round] (28.227,9.595) rectangle (28.927,10.295);
+\filldraw[fill=wallC, draw=ink, line width=1.1pt, line join=round] (29.268,1.5) rectangle (30.444,9.26);
+\filldraw[fill=wallC, draw=ink, line width=1.1pt, line join=round] (29.188,9.26) rectangle (30.524,9.46);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,1.95) rectangle (30.006,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,2.67) rectangle (30.006,3.07);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,3.39) rectangle (30.006,3.79);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (29.706,4.11) rectangle (30.006,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,4.83) rectangle (30.006,5.23);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (29.706,5.55) rectangle (30.006,5.95);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,6.27) rectangle (30.006,6.67);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,6.99) rectangle (30.006,7.39);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (29.706,7.71) rectangle (30.006,8.11);
+\draw[ink, line width=1pt, line cap=round, line join=round] (30.118,9.46) -- (30.118,10.33);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (29.868,9.852) -- (30.368,9.852);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (29.868,10.008) -- (30.368,10.008);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (29.868,10.165) -- (30.368,10.165);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (29.581,9.46) -- (29.581,9.86);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (30.081,9.46) -- (30.081,9.86);
+\filldraw[fill=greenB, draw=ink, line width=0.9pt, line join=round] (29.481,9.86) rectangle (30.181,10.56);
+\filldraw[fill=wallD, draw=ink, line width=1.1pt, line join=round] (30.567,1.5) rectangle (31.737,9.361);
+\filldraw[fill=wallD, draw=ink, line width=1.1pt, line join=round] (30.487,9.361) rectangle (31.817,9.561);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (31.002,1.95) rectangle (31.302,2.35);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,2.67) rectangle (31.302,3.07);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (31.002,3.39) rectangle (31.302,3.79);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,4.11) rectangle (31.302,4.51);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,4.83) rectangle (31.302,5.23);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,5.55) rectangle (31.302,5.95);
+\filldraw[fill=window, draw=ink, line width=0.55pt, line join=round] (31.002,6.27) rectangle (31.302,6.67);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,6.99) rectangle (31.302,7.39);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,7.71) rectangle (31.302,8.11);
+\filldraw[fill=windark, draw=ink, line width=0.55pt, line join=round] (31.002,8.43) rectangle (31.302,8.83);
+\draw[ink, line width=1pt, line cap=round, line join=round] (31.081,9.561) -- (31.081,10.762);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (30.831,10.102) -- (31.331,10.102);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (30.831,10.318) -- (31.331,10.318);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (30.831,10.534) -- (31.331,10.534);
+\filldraw[fill=metaldark, draw=ink, line width=0.8pt, line join=round] (22.517,7.434) rectangle (22.637,8.134);
+\filldraw[fill=metaldark, draw=ink, line width=0.8pt, line join=round] (24.117,7.434) rectangle (24.237,8.134);
+\draw[ink, line width=0.9pt, line cap=round, line join=round] (22.577,7.734) -- (24.177,7.734);
+\filldraw[fill=screen, draw=ink, line width=1.4pt, line join=round] (21.777,8.134) rectangle (24.977,10.134);
+\filldraw[fill=eyewhite, draw=ink, line width=0.8pt, line join=round] (21.897,8.254) rectangle (24.857,10.014);
+\filldraw[fill=statdone, draw=ink, line width=0.6pt, line join=round] (22.155,8.434) rectangle (22.432,8.705);
+\filldraw[fill=statpend, draw=ink, line width=0.6pt, line join=round] (22.155,8.705) rectangle (22.432,8.801);
+\filldraw[fill=statreq, draw=ink, line width=0.6pt, line join=round] (22.155,8.801) rectangle (22.432,8.871);
+\filldraw[fill=statdone, draw=ink, line width=0.6pt, line join=round] (22.588,8.434) rectangle (22.866,8.806);
+\filldraw[fill=statpend, draw=ink, line width=0.6pt, line join=round] (22.588,8.806) rectangle (22.866,8.938);
+\filldraw[fill=statreq, draw=ink, line width=0.6pt, line join=round] (22.588,8.938) rectangle (22.866,9.034);
+\filldraw[fill=statdone, draw=ink, line width=0.6pt, line join=round] (23.022,8.434) rectangle (23.299,8.907);
+\filldraw[fill=statpend, draw=ink, line width=0.6pt, line join=round] (23.022,8.907) rectangle (23.299,9.074);
+\filldraw[fill=statreq, draw=ink, line width=0.6pt, line join=round] (23.022,9.074) rectangle (23.299,9.196);
+\filldraw[fill=statdone, draw=ink, line width=0.6pt, line join=round] (23.455,8.434) rectangle (23.732,9.007);
+\filldraw[fill=statpend, draw=ink, line width=0.6pt, line join=round] (23.455,9.007) rectangle (23.732,9.211);
+\filldraw[fill=statreq, draw=ink, line width=0.6pt, line join=round] (23.455,9.211) rectangle (23.732,9.359);
+\filldraw[fill=statdone, draw=ink, line width=0.6pt, line join=round] (23.888,8.434) rectangle (24.166,9.108);
+\filldraw[fill=statpend, draw=ink, line width=0.6pt, line join=round] (23.888,9.108) rectangle (24.166,9.347);
+\filldraw[fill=statreq, draw=ink, line width=0.6pt, line join=round] (23.888,9.347) rectangle (24.166,9.521);
+\filldraw[fill=statdone, draw=ink, line width=0.6pt, line join=round] (24.322,8.434) rectangle (24.599,9.209);
+\filldraw[fill=statpend, draw=ink, line width=0.6pt, line join=round] (24.322,9.209) rectangle (24.599,9.484);
+\filldraw[fill=statreq, draw=ink, line width=0.6pt, line join=round] (24.322,9.484) rectangle (24.599,9.684);
+\draw[ink, line width=1.6pt, line cap=round, line join=round] (22.294,8.991) -- (22.727,9.154) -- (23.16,9.316) -- (23.594,9.479) -- (24.027,9.641) -- (24.46,9.804);
+\filldraw[fill=ink, draw=ink, line width=0.6pt, line join=round] (24.51,9.854) -- (24.24,9.824) -- (24.42,9.604) -- cycle;
+\filldraw[fill=paving, draw=ink, line width=1.2pt, line join=round] (0,0) rectangle (32,1.5);
+\draw[ink, line width=0.8pt, line cap=round, line join=round] (0,0.675) -- (32,0.675);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (0.4,0.675) -- (0.15,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (2,0.675) -- (1.75,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (3.6,0.675) -- (3.35,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (5.2,0.675) -- (4.95,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (6.8,0.675) -- (6.55,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (8.4,0.675) -- (8.15,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (10,0.675) -- (9.75,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (11.6,0.675) -- (11.35,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (13.2,0.675) -- (12.95,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (14.8,0.675) -- (14.55,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (16.4,0.675) -- (16.15,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (18,0.675) -- (17.75,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (19.6,0.675) -- (19.35,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (21.2,0.675) -- (20.95,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (22.8,0.675) -- (22.55,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (24.4,0.675) -- (24.15,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (26,0.675) -- (25.75,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (27.6,0.675) -- (27.35,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (29.2,0.675) -- (28.95,0);
+\draw[ink, line width=0.7pt, line cap=round, line join=round] (30.8,0.675) -- (30.55,0);
+\filldraw[fill=cardboard, draw=ink, line width=1pt, line join=round] (12.4,0.695) rectangle (13.4,1.515);
+\filldraw[fill=tape, draw=ink, line width=0.6pt, line join=round] (12.82,1.355) rectangle (12.98,1.515);
+\draw[statdone, line width=1.6pt, line cap=round, line join=round] (12.72,1.075) -- (12.86,0.935) -- (13.12,1.255);
+\filldraw[fill=cardboard, draw=ink, line width=1pt, line join=round] (13.45,0.695) rectangle (14.35,1.433);
+\filldraw[fill=tape, draw=ink, line width=0.6pt, line join=round] (13.828,1.273) rectangle (13.972,1.433);
+\filldraw[fill=cardboard, draw=ink, line width=1pt, line join=round] (12.85,1.515) rectangle (13.65,2.171);
+\filldraw[fill=tape, draw=ink, line width=0.6pt, line join=round] (13.186,2.011) rectangle (13.314,2.171);
+\draw[statdone, line width=1.6pt, line cap=round, line join=round] (13.106,1.819) -- (13.218,1.707) -- (13.426,1.963);
+\filldraw[fill=cardboard, draw=ink, line width=1pt, line join=round] (14.55,0.695) rectangle (15.3,1.31);
+\filldraw[fill=tape, draw=ink, line width=0.6pt, line join=round] (14.865,1.15) rectangle (14.985,1.31);
+\end{tikzpicture}
+\end{document}

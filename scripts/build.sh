@@ -19,7 +19,7 @@ rm -rf dist
 mkdir -p dist/pkg dist/data
 wasm-bindgen --target web --no-typescript --out-dir dist/pkg \
   target/wasm32-unknown-unknown/release/tool_shim.wasm
-cp web/* dist/
+cp -R web/. dist/
 cp data/* dist/data/
 
 echo "Built dist/:"

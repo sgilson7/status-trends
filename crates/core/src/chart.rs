@@ -122,7 +122,7 @@ pub fn thousands(v: i64) -> String {
     let digits = v.abs().to_string();
     let mut out = String::new();
     for (i, c) in digits.chars().enumerate() {
-        if i > 0 && (digits.len() - i) % 3 == 0 {
+        if i > 0 && (digits.len() - i).is_multiple_of(3) {
             out.push(',');
         }
         out.push(c);
@@ -179,13 +179,32 @@ fn axes(f: &Frame, step: i64, suffix: &str) -> Vec<Mark> {
     while v <= f.top {
         let y = f.y(v);
         if v > 0 {
-            out.push(mark("line", "grid", vec![("x1", LEFT), ("x2", WIDTH - RIGHT), ("y1", y), ("y2", y)]));
+            out.push(mark(
+                "line",
+                "grid",
+                vec![("x1", LEFT), ("x2", WIDTH - RIGHT), ("y1", y), ("y2", y)],
+            ));
         }
-        out.push(text("tick", LEFT - 8, y + 4, "end", format!("{}{suffix}", compact(v))));
+        out.push(text(
+            "tick",
+            LEFT - 8,
+            y + 4,
+            "end",
+            format!("{}{suffix}", compact(v)),
+        ));
         v += step;
     }
     let base = f.y(0);
-    out.push(mark("line", "axis", vec![("x1", LEFT), ("x2", WIDTH - RIGHT), ("y1", base), ("y2", base)]));
+    out.push(mark(
+        "line",
+        "axis",
+        vec![
+            ("x1", LEFT),
+            ("x2", WIDTH - RIGHT),
+            ("y1", base),
+            ("y2", base),
+        ],
+    ));
     out
 }
 
@@ -201,13 +220,21 @@ fn x_labels(f: &Frame, labels: &[String]) -> Vec<Mark> {
 /// A hit area over a whole band, with a guide line shown on hover.
 fn hit(f: &Frame, i: usize, tip: usize, guide: bool) -> Mark {
     let x = f.start + f.band * i as i64;
-    let mut area = mark("rect", "hit-area", vec![("x", x), ("y", TOP), ("width", f.band), ("height", PLOT_H)]);
+    let mut area = mark(
+        "rect",
+        "hit-area",
+        vec![("x", x), ("y", TOP), ("width", f.band), ("height", PLOT_H)],
+    );
     area.attrs.push(("tabindex", "0".to_string()));
     area.tip = Some(tip);
     let mut g = mark("g", "hit", vec![]);
     if guide {
         let cx = f.cx(i);
-        g.children.push(mark("line", "guide", vec![("x1", cx), ("x2", cx), ("y1", TOP), ("y2", TOP + PLOT_H)]));
+        g.children.push(mark(
+            "line",
+            "guide",
+            vec![("x1", cx), ("x2", cx), ("y1", TOP), ("y2", TOP + PLOT_H)],
+        ));
     }
     g.children.push(area);
     g
@@ -216,7 +243,16 @@ fn hit(f: &Frame, i: usize, tip: usize, guide: bool) -> Mark {
 /// A column segment from `y_low` up to `y_high`; rounded on top if `cap`.
 fn column(class: &str, x: i64, w: i64, y_low: i64, y_high: i64, cap: bool) -> Mark {
     if !cap {
-        return mark("rect", class, vec![("x", x), ("y", y_high), ("width", w), ("height", y_low - y_high)]);
+        return mark(
+            "rect",
+            class,
+            vec![
+                ("x", x),
+                ("y", y_high),
+                ("width", w),
+                ("height", y_low - y_high),
+            ],
+        );
     }
     let r = RADIUS.min(y_low - y_high).min(w / 2);
     path(
@@ -249,7 +285,11 @@ pub struct Stacked<'a> {
 }
 
 pub fn stacked(s: Stacked) -> Chart {
-    let totals: Vec<i64> = s.stacks.iter().map(|st| st.iter().map(|(_, v)| v).sum()).collect();
+    let totals: Vec<i64> = s
+        .stacks
+        .iter()
+        .map(|st| st.iter().map(|(_, v)| v).sum())
+        .collect();
     let (step, top) = scale(totals.iter().copied().max().unwrap_or(0));
     let f = Frame::new(s.stacks.len(), top);
     let mut marks = axes(&f, step, "");
@@ -266,12 +306,22 @@ pub fn stacked(s: Stacked) -> Chart {
             if y_low <= y_high {
                 continue;
             }
-            let class = if s.partial[i] { format!("{class} partial") } else { class.to_string() };
+            let class = if s.partial[i] {
+                format!("{class} partial")
+            } else {
+                class.to_string()
+            };
             marks.push(column(&class, x, w, y_low, y_high, j + 1 == drawn.len()));
         }
         let labelled = n <= LABEL_ALL_UP_TO || i + LABEL_LAST >= n;
         if let (true, Some(label)) = (labelled, &s.labels_above[i]) {
-            marks.push(text("bar-label", f.cx(i), f.y(totals[i]) - 8, "middle", label.clone()));
+            marks.push(text(
+                "bar-label",
+                f.cx(i),
+                f.y(totals[i]) - 8,
+                "middle",
+                label.clone(),
+            ));
         }
     }
     marks.extend(x_labels(&f, &s.x_labels));
@@ -336,8 +386,18 @@ pub fn lines(l: Lines) -> Chart {
     let mut marks = axes(&f, step, suffix);
     if let Some((v, label)) = &l.target {
         let y = f.y(*v);
-        marks.push(mark("line", "target", vec![("x1", LEFT), ("x2", WIDTH - RIGHT), ("y1", y), ("y2", y)]));
-        marks.push(text("target-label", WIDTH - RIGHT, y - 6, "end", label.clone()));
+        marks.push(mark(
+            "line",
+            "target",
+            vec![("x1", LEFT), ("x2", WIDTH - RIGHT), ("y1", y), ("y2", y)],
+        ));
+        marks.push(text(
+            "target-label",
+            WIDTH - RIGHT,
+            y - 6,
+            "end",
+            label.clone(),
+        ));
     }
     let dots_everywhere = n <= MAX_X_LABELS as usize;
     for s in &l.series {
@@ -381,7 +441,11 @@ pub fn lines(l: Lines) -> Chart {
                     let below = l.dots_below_target
                         && matches!((&l.target, s.values[i]), (Some((t, _)), Some(v)) if v < *t);
                     let class = format!("{} dot{}", s.class, if below { " below" } else { "" });
-                    marks.push(mark("circle", &class, vec![("cx", *x), ("cy", *y), ("r", RADIUS)]));
+                    marks.push(mark(
+                        "circle",
+                        &class,
+                        vec![("cx", *x), ("cy", *y), ("r", RADIUS)],
+                    ));
                 }
             }
         }
@@ -419,7 +483,13 @@ mod tests {
     use super::*;
 
     fn attr(m: &Mark, k: &str) -> i64 {
-        m.attrs.iter().find(|(a, _)| *a == k).unwrap().1.parse().unwrap()
+        m.attrs
+            .iter()
+            .find(|(a, _)| *a == k)
+            .unwrap()
+            .1
+            .parse()
+            .unwrap()
     }
 
     #[test]
@@ -453,7 +523,10 @@ mod tests {
             aria: "A".into(),
             legend: vec![],
             x_labels: vec!["a".into(), "b".into()],
-            stacks: vec![vec![("s-done", 2), ("s-pending", 2)], vec![("s-done", 4), ("s-pending", 0)]],
+            stacks: vec![
+                vec![("s-done", 2), ("s-pending", 2)],
+                vec![("s-done", 4), ("s-pending", 0)],
+            ],
             partial: vec![false, true],
             labels_above: vec![None, Some("+0%".into())],
             tips: vec![vec!["a".into()], vec!["b".into()]],
@@ -464,14 +537,22 @@ mod tests {
     fn stacked_segments_meet_the_scale_with_a_gap() {
         let c = two_columns();
         // Top is 4 over a plot 270 high: 0 at y=300, 2 at y=165, 4 at y=30.
-        let segs: Vec<&Mark> = c.marks.iter().filter(|m| m.class.starts_with("s-")).collect();
+        let segs: Vec<&Mark> = c
+            .marks
+            .iter()
+            .filter(|m| m.class.starts_with("s-"))
+            .collect();
         assert_eq!(segs.len(), 3);
         assert_eq!(segs[0].tag, "rect");
         assert_eq!(attr(segs[0], "y"), 165);
         assert_eq!(attr(segs[0], "height"), 135);
         // The top segment is a path with a rounded top, 2 above the lower one.
         assert_eq!(segs[1].tag, "path");
-        assert!(segs[1].attrs[0].1.starts_with("M") && segs[1].attrs[0].1.contains("163V34Q"), "{:?}", segs[1].attrs);
+        assert!(
+            segs[1].attrs[0].1.starts_with("M") && segs[1].attrs[0].1.contains("163V34Q"),
+            "{:?}",
+            segs[1].attrs
+        );
         assert_eq!(segs[2].class, "s-done partial");
         let labels: Vec<&Mark> = c.marks.iter().filter(|m| m.class == "bar-label").collect();
         assert_eq!(labels.len(), 1);
@@ -533,7 +614,10 @@ mod tests {
         let target = c.marks.iter().find(|m| m.class == "target").unwrap();
         // 80 of 100 over 270: y = 300 - 216 = 84.
         assert_eq!(attr(target, "y1"), 84);
-        assert!(c.marks.iter().any(|m| m.class == "tick" && m.text == "100%"));
+        assert!(c
+            .marks
+            .iter()
+            .any(|m| m.class == "tick" && m.text == "100%"));
         assert!(c.legend.is_empty());
     }
 }

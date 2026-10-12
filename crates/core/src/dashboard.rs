@@ -149,7 +149,11 @@ pub fn build(table: &Table, settings: &mut Settings, strings: &Strings) -> View 
     let last = analysis::last_complete(&all_rows);
     let open = analysis::open_now(&data, settings.aging);
     let as_of_label = date::label(data.as_of);
-    let group_rates = group_rates(&data, settings, &all_rows);
+    let group_rates = group_rates(&data, settings, &all_rows, last);
+    let span = all_rows
+        .get(last)
+        .map(|l| group_span(settings, l))
+        .unwrap_or_default();
     let found = insights::find(&insights::Context {
         rows: &all_rows,
         last,
@@ -158,6 +162,7 @@ pub fn build(table: &Table, settings: &mut Settings, strings: &Strings) -> View 
         has_resolved: data.has_resolved,
         has_due: data.has_due,
         groups: &group_rates,
+        group_span: span.clone(),
         settings,
         words: &words,
     });
@@ -174,13 +179,18 @@ pub fn build(table: &Table, settings: &mut Settings, strings: &Strings) -> View 
     let period_table = period_table(shown, &data, &words, settings);
     let export_csv = to_csv(&period_table);
     let group_table = (data.roles.group.is_some() && settings.only_group.is_empty())
-        .then(|| group_table(&data, &group_rates, &all_rows, last, settings, table));
+        .then(|| group_table(&data, &group_rates, &all_rows, last, settings, &span, table));
     View {
         columns,
         roles: data.roles.clone(),
         date_order: order_key(data.order),
         statuses: data.statuses.clone(),
-        groups: data.teams.iter().take(MAX_GROUPS).map(|(n, _)| n.clone()).collect(),
+        groups: data
+            .teams
+            .iter()
+            .take(MAX_GROUPS)
+            .map(|(n, _)| n.clone())
+            .collect(),
         problem: None,
         summary: Some(summary),
         tiles,
@@ -193,9 +203,20 @@ pub fn build(table: &Table, settings: &mut Settings, strings: &Strings) -> View 
     }
 }
 
-fn summary(data: &Data, w: &Vocabulary, as_of: &str, table: &Table, settings: &Settings) -> Summary {
+fn summary(
+    data: &Data,
+    w: &Vocabulary,
+    as_of: &str,
+    table: &Table,
+    settings: &Settings,
+) -> Summary {
     let r = &data.reading;
-    let first = data.items.iter().map(|i| i.created).min().unwrap_or(data.as_of);
+    let first = data
+        .items
+        .iter()
+        .map(|i| i.created)
+        .min()
+        .unwrap_or(data.as_of);
     let text = format!(
         "{} {} from {} to {}, read from {} rows.",
         thousands(r.used as i64),
@@ -207,7 +228,11 @@ fn summary(data: &Data, w: &Vocabulary, as_of: &str, table: &Table, settings: &S
     let mut notes = settings.notes.clone();
     if r.skipped_no_date > 0 {
         let (row, value) = r.first_skipped.clone().unwrap_or((0, String::new()));
-        let column = data.roles.created.map(|c| table.header[c].clone()).unwrap_or_default();
+        let column = data
+            .roles
+            .created
+            .map(|c| table.header[c].clone())
+            .unwrap_or_default();
         notes.push(format!(
             "{} rows were skipped because the \"{column}\" date could not be read (the first is row {row}: \"{value}\").",
             thousands(r.skipped_no_date as i64)
@@ -246,7 +271,14 @@ fn summary(data: &Data, w: &Vocabulary, as_of: &str, table: &Table, settings: &S
     Summary { text, notes }
 }
 
-fn tiles(rows: &[Row], last: usize, open: OpenNow, data: &Data, s: &Settings, w: &Vocabulary) -> Vec<Tile> {
+fn tiles(
+    rows: &[Row],
+    last: usize,
+    open: OpenNow,
+    data: &Data,
+    s: &Settings,
+    w: &Vocabulary,
+) -> Vec<Tile> {
     let l = &rows[last];
     let prev = last.checked_sub(1).map(|i| &rows[i]);
     let year_back = last
@@ -257,26 +289,47 @@ fn tiles(rows: &[Row], last: usize, open: OpenNow, data: &Data, s: &Settings, w:
 
     let mut deltas = Vec::new();
     if let (Some(p), Some(c)) = (prev, l.change_prev) {
-        deltas.push(Delta { text: format!("{} on {}", signed(c), p.label), tone: "neutral" });
+        deltas.push(Delta {
+            text: format!("{} on {}", signed(c), p.label),
+            tone: "neutral",
+        });
     }
     if let (Some(y), Some(c)) = (year_back, l.change_year) {
-        deltas.push(Delta { text: format!("{} on {}", signed(c), y.label), tone: "neutral" });
+        deltas.push(Delta {
+            text: format!("{} on {}", signed(c), y.label),
+            tone: "neutral",
+        });
     }
     out.push(Tile {
         label: format!("{} in {}", w.received, l.label),
         value: thousands(l.received),
-        detail: format!("{} {}, {} {}", thousands(l.done), w.done.to_lowercase(), thousands(l.count(Group::Requested) + l.count(Group::Pending)), "still open"),
+        detail: format!(
+            "{} {}, {} {}",
+            thousands(l.done),
+            w.done.to_lowercase(),
+            thousands(l.count(Group::Requested) + l.count(Group::Pending)),
+            "still open"
+        ),
         deltas,
     });
 
     let mut deltas = Vec::new();
     if let (Some(p), Some(now), Some(before)) = (prev, l.rate, prev.and_then(|p| p.rate)) {
         let d = now - before;
-        let sign = if d > 0 { "+" } else if d < 0 { "\u{2212}" } else { "" };
-        deltas.push(Delta { text: format!("{sign}{} pts on {}", d.abs(), p.label), tone: tone(d, Some(true)) });
+        let sign = if d > 0 {
+            "+"
+        } else if d < 0 {
+            "\u{2212}"
+        } else {
+            ""
+        };
+        deltas.push(Delta {
+            text: format!("{sign}{} pts on {}", d.abs(), p.label),
+            tone: tone(d, Some(true)),
+        });
     }
     out.push(Tile {
-        label: format!("Completed, of {} received in {}", w.items, l.label),
+        label: format!("Completion rate, {}", l.label),
         value: opt(l.rate, |r| format!("{r}%")),
         detail: format!(
             "Target {}%{}",
@@ -292,19 +345,32 @@ fn tiles(rows: &[Row], last: usize, open: OpenNow, data: &Data, s: &Settings, w:
 
     if data.has_resolved {
         let mut deltas = Vec::new();
-        if let (Some(p), Some(now), Some(before)) = (prev, l.completed, prev.and_then(|p| p.completed)) {
+        if let (Some(p), Some(now), Some(before)) =
+            (prev, l.completed, prev.and_then(|p| p.completed))
+        {
             if let Some(c) = change(now, before) {
-                deltas.push(Delta { text: format!("{} on {}", signed(c), p.label), tone: tone(c, Some(true)) });
+                deltas.push(Delta {
+                    text: format!("{} on {}", signed(c), p.label),
+                    tone: tone(c, Some(true)),
+                });
             }
         }
         out.push(Tile {
             label: format!("{} in {}", w.done, l.label),
             value: opt(l.completed, thousands),
-            detail: format!("Median {} to complete", opt(l.median_days, |d| format!("{d} days"))),
+            detail: format!(
+                "Median {} to complete",
+                opt(l.median_days, |d| format!("{d} days"))
+            ),
             deltas: {
-                if let (Some(p), Some(now), Some(before)) = (prev, l.median_days, prev.and_then(|p| p.median_days)) {
+                if let (Some(p), Some(now), Some(before)) =
+                    (prev, l.median_days, prev.and_then(|p| p.median_days))
+                {
                     if let Some(c) = change(now, before) {
-                        deltas.push(Delta { text: format!("median {} on {}", signed(c), p.label), tone: tone(c, Some(false)) });
+                        deltas.push(Delta {
+                            text: format!("median {} on {}", signed(c), p.label),
+                            tone: tone(c, Some(false)),
+                        });
                     }
                 }
                 deltas
@@ -313,16 +379,26 @@ fn tiles(rows: &[Row], last: usize, open: OpenNow, data: &Data, s: &Settings, w:
     }
 
     let mut deltas = Vec::new();
-    if let Some(before) = l.open_end.filter(|_| rows.last().map(|r| r.partial).unwrap_or(false)) {
+    if let Some(before) = l
+        .open_end
+        .filter(|_| rows.last().map(|r| r.partial).unwrap_or(false))
+    {
         if let Some(c) = change(open.open, before) {
-            deltas.push(Delta { text: format!("{} since the end of {}", signed(c), l.label), tone: tone(c, Some(false)) });
+            deltas.push(Delta {
+                text: format!("{} since the end of {}", signed(c), l.label),
+                tone: tone(c, Some(false)),
+            });
         }
     }
     let mut detail = Vec::new();
     if data.has_due {
         detail.push(format!("{} past due", thousands(open.overdue)));
     }
-    detail.push(format!("{} open over {} days", thousands(open.old), s.aging));
+    detail.push(format!(
+        "{} open over {} days",
+        thousands(open.old),
+        s.aging
+    ));
     out.push(Tile {
         label: format!("Open {} on {}", w.items, date::label(data.as_of)),
         value: thousands(open.open),
@@ -333,10 +409,22 @@ fn tiles(rows: &[Row], last: usize, open: OpenNow, data: &Data, s: &Settings, w:
 }
 
 #[allow(clippy::too_many_arguments)]
-fn charts(shown: &[Row], all: &[Row], shown_from: usize, data: &Data, s: &Settings, w: &Vocabulary, word: &str) -> Vec<Chart> {
+fn charts(
+    shown: &[Row],
+    all: &[Row],
+    shown_from: usize,
+    data: &Data,
+    s: &Settings,
+    w: &Vocabulary,
+    word: &str,
+) -> Vec<Chart> {
     let mut out = Vec::new();
     let labels: Vec<String> = shown.iter().map(|r| r.short.clone()).collect();
-    let prev_label = |i: usize| (shown_from + i).checked_sub(1).map(|j| all[j].label.clone());
+    let prev_label = |i: usize| {
+        (shown_from + i)
+            .checked_sub(1)
+            .map(|j| all[j].label.clone())
+    };
 
     // Received, by status today.
     let tips: Vec<Vec<String>> = shown
@@ -344,10 +432,19 @@ fn charts(shown: &[Row], all: &[Row], shown_from: usize, data: &Data, s: &Settin
         .enumerate()
         .map(|(i, r)| {
             let mut t = vec![
-                format!("{}{}", r.label, if r.partial { " (in progress)" } else { "" }),
+                format!(
+                    "{}{}",
+                    r.label,
+                    if r.partial { " (in progress)" } else { "" }
+                ),
                 format!("{}: {}", w.received, thousands(r.received)),
             ];
-            for g in [Group::Requested, Group::Pending, Group::Done, Group::Excluded] {
+            for g in [
+                Group::Requested,
+                Group::Pending,
+                Group::Done,
+                Group::Excluded,
+            ] {
                 if r.count(g) > 0 || g != Group::Excluded {
                     t.push(format!("{}: {}", w.group_label(g), thousands(r.count(g))));
                 }
@@ -387,12 +484,12 @@ fn charts(shown: &[Row], all: &[Row], shown_from: usize, data: &Data, s: &Settin
         out.push(chart::lines(Lines {
             key: "flow",
             title: format!("Received and completed per {word}"),
-            note: format!("Received counts {} by the day they came in; completed counts them by the day they were finished, whenever they came in.", w.items),
+            note: format!("Received counts {} by the day they came in; completed counts them by the day they were finished, whenever they came in. A {word} still in progress is left off.", w.items),
             aria: format!("Line chart of {} received and completed per {word}.", w.items),
             x_labels: labels.clone(),
             series: vec![
-                Series { class: "s-received".into(), label: "Received".into(), values: shown.iter().map(|r| Some(r.received)).collect(), area: false },
-                Series { class: "s-done".into(), label: w.done.clone(), values: shown.iter().map(|r| r.completed).collect(), area: false },
+                Series { class: "s-received".into(), label: "Received".into(), values: shown.iter().map(|r| (!r.partial).then_some(r.received)).collect(), area: false },
+                Series { class: "s-done".into(), label: w.done.clone(), values: shown.iter().map(|r| r.completed.filter(|_| !r.partial)).collect(), area: false },
             ],
             tips: shown
                 .iter()
@@ -412,14 +509,14 @@ fn charts(shown: &[Row], all: &[Row], shown_from: usize, data: &Data, s: &Settin
     out.push(chart::lines(Lines {
         key: "rate",
         title: format!("Completion rate per {word}"),
-        note: format!("The share of each {word}'s {} that are completed today, leaving out {}. Recent {word}s are lower while their {} are still being worked on.", w.items, w.excluded.to_lowercase(), w.items),
+        note: format!("The share of each {word}'s {} that are completed today, leaving out {}. Recent {word}s are lower while their {} are still being worked on; a {word} still in progress is left off.", w.items, w.excluded.to_lowercase(), w.items),
         aria: format!("Line chart of the completion rate per {word} against a {}% target.", s.target),
         x_labels: labels.clone(),
-        series: vec![Series { class: "s-rate".into(), label: "Completion rate".into(), values: shown.iter().map(|r| r.rate).collect(), area: false }],
+        series: vec![Series { class: "s-rate".into(), label: "Completion rate".into(), values: shown.iter().map(|r| r.rate.filter(|_| !r.partial)).collect(), area: false }],
         tips: shown
             .iter()
             .map(|r| vec![
-                r.label.clone(),
+                format!("{}{}", r.label, if r.partial { " (in progress, not drawn)" } else { "" }),
                 format!("Completed: {}", opt(r.rate, |v| format!("{v}%"))),
                 format!("{} of {}", thousands(r.done), thousands(r.counted())),
                 match r.rate {
@@ -529,7 +626,11 @@ fn period_table(shown: &[Row], data: &Data, w: &Vocabulary, s: &Settings) -> Tab
         .iter()
         .map(|r| {
             let mut cells = vec![
-                if r.partial { format!("{} (in progress)", r.label) } else { r.label.clone() },
+                if r.partial {
+                    format!("{} (in progress)", r.label)
+                } else {
+                    r.label.clone()
+                },
                 thousands(r.received),
                 thousands(r.requested),
                 thousands(r.pending),
@@ -556,36 +657,65 @@ fn period_table(shown: &[Row], data: &Data, w: &Vocabulary, s: &Settings) -> Tab
     }
 }
 
-/// Each group's completion over the complete periods (the items created
-/// before the period in progress).
-fn group_rates(data: &Data, s: &Settings, rows: &[Row]) -> Vec<GroupRate> {
-    if data.roles.group.is_none() || !s.only_group.is_empty() {
+/// Each group's completion over the last year of complete periods: the
+/// items created from the start of the period a year before the last
+/// complete one (or the first period, if later) to the end of that one.
+fn group_rates(data: &Data, s: &Settings, rows: &[Row], last: usize) -> Vec<GroupRate> {
+    if data.roles.group.is_none() || !s.only_group.is_empty() || rows.is_empty() {
         return Vec::new();
     }
-    let cutoff = rows
-        .iter()
-        .find(|r| r.partial)
-        .map(|r| s.calendar.start(r.index))
-        .unwrap_or(data.as_of + 1);
+    let cal = s.calendar;
+    let l = &rows[last];
+    let from = cal.start((l.index - cal.per_year() + 1).max(rows[0].index));
+    let to = if l.partial {
+        data.as_of + 1
+    } else {
+        cal.end(l.index)
+    };
     data.teams
         .iter()
         .map(|(name, _)| {
-            let items = data
-                .items
-                .iter()
-                .filter(|i| &i.team == name && i.created < cutoff && i.group != Group::Excluded);
+            let items = data.items.iter().filter(|i| {
+                &i.team == name && i.created >= from && i.created < to && i.group != Group::Excluded
+            });
             let counted = items.clone().count() as i64;
             let done = items.filter(|i| i.group == Group::Done).count() as i64;
-            GroupRate { name: name.clone(), counted, rate: percent(done, counted) }
+            GroupRate {
+                name: name.clone(),
+                counted,
+                rate: percent(done, counted),
+            }
         })
         .collect()
 }
 
-fn group_table(data: &Data, rates: &[GroupRate], rows: &[Row], last: usize, s: &Settings, table: &Table) -> TableView {
+/// The span `group_rates` covers, for the table heading and the insight.
+fn group_span(s: &Settings, l: &Row) -> String {
+    match s.calendar.granularity {
+        Granularity::Year => l.label.clone(),
+        Granularity::Quarter => format!("the four quarters to {}", l.label),
+        Granularity::Month => format!("the twelve months to {}", l.label),
+    }
+}
+
+fn group_table(
+    data: &Data,
+    rates: &[GroupRate],
+    rows: &[Row],
+    last: usize,
+    settings: &Settings,
+    span: &str,
+    table: &Table,
+) -> TableView {
+    let s = settings;
     let cal = s.calendar;
     let l = &rows[last];
     let prev = last.checked_sub(1).map(|i| rows[i].index);
-    let column = data.roles.group.map(|c| table.header[c].clone()).unwrap_or_default();
+    let column = data
+        .roles
+        .group
+        .map(|c| table.header[c].clone())
+        .unwrap_or_default();
     let count_in = |name: &str, index: Option<i64>| {
         index.map(|ix| {
             data.items
@@ -602,24 +732,41 @@ fn group_table(data: &Data, rates: &[GroupRate], rows: &[Row], last: usize, s: &
     if data.has_due {
         headers.push("Past due".to_string());
     }
-    headers.push("Completed, complete periods".to_string());
+    headers.push(format!("Completed, {span}"));
     let out_rows = rates
         .iter()
         .take(MAX_GROUPS)
         .map(|g| {
-            let name = if g.name.is_empty() { "(blank)".to_string() } else { g.name.clone() };
+            let name = if g.name.is_empty() {
+                "(blank)".to_string()
+            } else {
+                g.name.clone()
+            };
             let now = count_in(&g.name, Some(l.index)).unwrap_or(0);
-            let open: Vec<&analysis::Item> = data.items.iter().filter(|i| i.team == g.name && i.group.is_open()).collect();
+            let open: Vec<&analysis::Item> = data
+                .items
+                .iter()
+                .filter(|i| i.team == g.name && i.group.is_open())
+                .collect();
             let mut cells = vec![name, thousands(now)];
             if prev.is_some() {
-                cells.push(opt(count_in(&g.name, prev).and_then(|b| change(now, b)), signed));
+                cells.push(opt(
+                    count_in(&g.name, prev).and_then(|b| change(now, b)),
+                    signed,
+                ));
             }
             cells.push(thousands(open.len() as i64));
             if data.has_due {
-                cells.push(thousands(open.iter().filter(|i| i.due.map(|d| d < data.as_of).unwrap_or(false)).count() as i64));
+                cells.push(thousands(
+                    open.iter()
+                        .filter(|i| i.due.map(|d| d < data.as_of).unwrap_or(false))
+                        .count() as i64,
+                ));
             }
             let flag = match g.rate {
-                Some(r) if r < s.target && g.counted >= insights::GROUP_MINIMUM => " (below target)",
+                Some(r) if r < s.target && g.counted >= insights::GROUP_MINIMUM => {
+                    " (below target)"
+                }
                 _ => "",
             };
             cells.push(format!("{}{flag}", opt(g.rate, |r| format!("{r}%"))));
@@ -637,9 +784,14 @@ fn group_table(data: &Data, rates: &[GroupRate], rows: &[Row], last: usize, s: &
 /// leading = or @, or a + or - not followed by a digit, gets an apostrophe
 /// so a spreadsheet does not run it as a formula.
 fn field(s: &str) -> String {
-    let signed_number = s.starts_with(['+', '-']) && s[1..].starts_with(|c: char| c.is_ascii_digit());
+    let signed_number =
+        s.starts_with(['+', '-']) && s[1..].starts_with(|c: char| c.is_ascii_digit());
     let risky = s.starts_with(['=', '@']) || (s.starts_with(['+', '-']) && !signed_number);
-    let s = if risky { format!("'{s}") } else { s.to_string() };
+    let s = if risky {
+        format!("'{s}")
+    } else {
+        s.to_string()
+    };
     if s.contains([',', '"', '\n', '\r']) {
         format!("\"{}\"", s.replace('"', "\"\""))
     } else {
@@ -650,7 +802,10 @@ fn field(s: &str) -> String {
 pub fn to_csv(t: &TableView) -> String {
     let mut out = String::new();
     for line in std::iter::once(&t.headers).chain(t.rows.iter()) {
-        let cells: Vec<String> = line.iter().map(|c| field(&c.replace('\u{2212}', "-").replace('\u{2014}', ""))).collect();
+        let cells: Vec<String> = line
+            .iter()
+            .map(|c| field(&c.replace('\u{2212}', "-").replace('\u{2014}', "")))
+            .collect();
         out.push_str(&cells.join(","));
         out.push_str("\r\n");
     }
@@ -667,7 +822,14 @@ mod tests {
         assert_eq!(field("say \"hi\""), "\"say \"\"hi\"\"\"");
         assert_eq!(field("=SUM(A1)"), "'=SUM(A1)");
         assert_eq!(field("plain"), "plain");
-        let t = TableView { headers: vec!["P".into(), "C".into()], rows: vec![vec!["Q1".into(), "\u{2212}5%".into()], vec!["Q2".into(), "\u{2014}".into()]], partial: vec![false, false] };
+        let t = TableView {
+            headers: vec!["P".into(), "C".into()],
+            rows: vec![
+                vec!["Q1".into(), "\u{2212}5%".into()],
+                vec!["Q2".into(), "\u{2014}".into()],
+            ],
+            partial: vec![false, false],
+        };
         // A minus sign becomes a plain hyphen; an empty dash an empty cell.
         assert_eq!(to_csv(&t), "P,C\r\nQ1,-5%\r\nQ2,\r\n");
         assert_eq!(field("+12%"), "+12%");

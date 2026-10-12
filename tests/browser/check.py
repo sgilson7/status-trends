@@ -10,6 +10,11 @@ own interactions from tests/browser/interactions.py. The run fails on:
 - any request to another origin, during load, idle or the interactions;
 - a Content-Security-Policy violation (a blocked attempt is still an attempt);
 - a WebSocket, a popup, a worker or a service worker opened by the page;
+- any request at all after the page reports ready, even to its own origin
+  (this tool fetches every file it needs before then, so a later request
+  could only be the page sending something; blob: and data: URLs, which
+  stay inside the browser, are the exception);
+- anything left in cookies, localStorage, sessionStorage or IndexedDB;
 - a failed check inside the interactions.
 
 What a pass establishes is what happened on that path, in those engines, on
@@ -79,14 +84,21 @@ def run_engine(p, engine, base, interactions):
     print(f"\n[{engine}] {base}/")
     scheme_host = base.split("/", 3)
     origin = "/".join(scheme_host[:3])
-    seen = {"foreign": [], "console": [], "errors": [], "sockets": [], "popups": [], "workers": []}
+    seen = {"foreign": [], "console": [], "errors": [], "sockets": [], "popups": [], "workers": [], "after_ready": []}
+    ready = {"yes": False}
+
+    def on_request(r):
+        if not same_origin(r.url):
+            seen["foreign"].append(r.url)
+        if ready["yes"] and not (r.url.startswith("blob:") or r.url.startswith("data:")):
+            seen["after_ready"].append(r.url)
 
     def same_origin(url):
         return url.startswith(origin + "/") or url.startswith("blob:" + origin) or url.startswith("data:")
 
     browser = getattr(p, engine).launch()
     context = browser.new_context(accept_downloads=True)
-    context.on("request", lambda r: None if same_origin(r.url) else seen["foreign"].append(r.url))
+    context.on("request", on_request)
 
     def route(r):
         if same_origin(r.request.url):
@@ -111,6 +123,7 @@ def run_engine(p, engine, base, interactions):
 
     page.goto(base + "/index.html")
     page.wait_for_selector("body[data-ready='true']", timeout=20000)
+    ready["yes"] = True
     check(True, "page reported ready")
     page.wait_for_timeout(IDLE_MS)
     check(not seen["foreign"], f"no off-origin request during load and {IDLE_MS // 1000}s idle {seen['foreign']}")
@@ -126,6 +139,13 @@ def run_engine(p, engine, base, interactions):
     check(not seen["sockets"], f"no WebSocket {seen['sockets']}")
     check(not seen["popups"], f"no popup {seen['popups']}")
     check(not seen["workers"] and sw == 0, f"no worker or service worker {seen['workers']} sw={sw}")
+    check(not seen["after_ready"], f"no request of any kind after the page reported ready {seen['after_ready']}")
+    stored = page.evaluate("""async () => {
+        let idb = 0;
+        if (indexedDB.databases) { idb = (await indexedDB.databases()).length; }
+        return {cookie: document.cookie, local: localStorage.length, session: sessionStorage.length, idb};
+    }""")
+    check(stored == {"cookie": "", "local": 0, "session": 0, "idb": 0}, f"nothing kept in cookies or browser storage {stored}")
     browser.close()
 
 

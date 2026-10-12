@@ -48,4 +48,8 @@ These stay with the person and go in `BRIEF.md` or `PLAN.md`:
 
 | Default | Changed to | Reason | Recorded in |
 | --- | --- | --- | --- |
-| | | | |
+| D4 CSP | Tightened: also `font-src 'none'`, `frame-src 'none'`, `worker-src 'none'`, `manifest-src 'none'`, `img-src` adds `blob:`; plus `<meta name="referrer" content="no-referrer">` and an empty `data:` icon | Privacy is the brief's first requirement; nothing the page does needs fonts, frames, workers or a manifest. The empty icon stops a later favicon request. | `SECOND-ORDER.md` rows 3, 4 |
+| D7 browser check | Added, not changed: fails on **any** request after the page reports ready (same origin included), and on anything in cookies or browser storage | A same-origin request can carry data in its URL to the host's logs; the template only watched other origins. | `SECOND-ORDER.md` rows 5, 6 |
+| D5 strings | Kept, and extended: page labels are `data-text` keys filled from `data/strings.json` | Every reader-visible label in one file | `PLAN.md` decision 13 |
+| (none) | Added `crates/core/tests/no_storage.rs` (from Feedback Drafts) | The brief forbids browser storage | `SECOND-ORDER.md` row 6 |
+| (none) | Added `scripts/prove-privacy.sh`, an optional audit that plants five leaks and requires each to be caught | A privacy check that has never failed proves nothing | `SECOND-ORDER.md` row 12 |

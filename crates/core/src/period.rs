@@ -43,7 +43,11 @@ fn month_number(day: Day) -> i64 {
 }
 
 fn first_day_of_month(month_number: i64) -> Day {
-    date::days_from_civil(month_number.div_euclid(12), month_number.rem_euclid(12) + 1, 1)
+    date::days_from_civil(
+        month_number.div_euclid(12),
+        month_number.rem_euclid(12) + 1,
+        1,
+    )
 }
 
 impl Calendar {
@@ -116,9 +120,9 @@ impl Calendar {
         match self.granularity {
             Granularity::Year => String::new(),
             Granularity::Quarter => format!("Q{}", position + 1),
-            Granularity::Month => {
-                MONTH_NAMES[((position + self.fiscal_start - 1).rem_euclid(12)) as usize].to_string()
-            }
+            Granularity::Month => MONTH_NAMES
+                [((position + self.fiscal_start - 1).rem_euclid(12)) as usize]
+                .to_string(),
         }
     }
 
@@ -127,11 +131,19 @@ impl Calendar {
         match self.granularity {
             Granularity::Year => self.year_name(index * self.per_year(), false),
             Granularity::Quarter => {
-                format!("{} {}", self.year_name(index, false), self.position_label(self.position(index)))
+                format!(
+                    "{} {}",
+                    self.year_name(index, false),
+                    self.position_label(self.position(index))
+                )
             }
             Granularity::Month => {
                 let m = index + self.fiscal_start - 1;
-                format!("{} {}", MONTH_NAMES[m.rem_euclid(12) as usize], m.div_euclid(12))
+                format!(
+                    "{} {}",
+                    MONTH_NAMES[m.rem_euclid(12) as usize],
+                    m.div_euclid(12)
+                )
             }
         }
     }
@@ -142,7 +154,11 @@ impl Calendar {
             Granularity::Year => self.label(index),
             Granularity::Quarter if self.fiscal() => self.label(index),
             Granularity::Quarter => {
-                format!("{} {}", self.position_label(self.position(index)), self.year_name(index, true))
+                format!(
+                    "{} {}",
+                    self.position_label(self.position(index)),
+                    self.year_name(index, true)
+                )
             }
             Granularity::Month => {
                 let m = index + self.fiscal_start - 1;
@@ -223,7 +239,10 @@ mod tests {
         assert_eq!(c.label(i + 1), "2026");
         assert_eq!(c.per_year(), 1);
         let q = cal(Granularity::Quarter, 1);
-        assert_eq!(q.year_of(q.index(d(2025, 12, 31))) + 1, q.year_of(q.index(d(2026, 1, 1))));
+        assert_eq!(
+            q.year_of(q.index(d(2025, 12, 31))) + 1,
+            q.year_of(q.index(d(2026, 1, 1)))
+        );
         assert_eq!(q.year_label(q.index(d(2025, 5, 5))), "2025");
         assert_eq!(Granularity::from_key("month"), Some(Granularity::Month));
         assert_eq!(Granularity::from_key("week"), None);

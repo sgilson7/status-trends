@@ -18,7 +18,12 @@ pub enum Group {
 }
 
 /// The order groups are listed and stacked in, from the baseline up.
-pub const STACK_ORDER: [Group; 4] = [Group::Done, Group::Pending, Group::Requested, Group::Excluded];
+pub const STACK_ORDER: [Group; 4] = [
+    Group::Done,
+    Group::Pending,
+    Group::Requested,
+    Group::Excluded,
+];
 
 impl Group {
     pub fn key(self) -> &'static str {
@@ -47,20 +52,73 @@ impl Group {
 }
 
 const EXCLUDED_WORDS: &[&str] = &[
-    "won't", "wont", "will not", "cancel", "duplicate", "reject", "declin", "invalid",
-    "obsolete", "excused", "exempt", "withdrawn", "not applicable", "abandon",
+    "won't",
+    "wont",
+    "will not",
+    "cancel",
+    "duplicate",
+    "reject",
+    "declin",
+    "invalid",
+    "obsolete",
+    "excused",
+    "exempt",
+    "withdrawn",
+    "not applicable",
+    "abandon",
 ];
 const DONE_WORDS: &[&str] = &[
-    "done", "closed", "resolved", "complete", "finished", "released", "deployed", "shipped",
-    "delivered", "fixed", "graded", "turned in", "mastered", "passed", "approved", "accepted",
+    "done",
+    "closed",
+    "resolved",
+    "complete",
+    "finished",
+    "released",
+    "deployed",
+    "shipped",
+    "delivered",
+    "fixed",
+    "graded",
+    "turned in",
+    "mastered",
+    "passed",
+    "approved",
+    "accepted",
 ];
 const REQUESTED_WORDS: &[&str] = &[
-    "to do", "todo", "open", "new", "backlog", "not started", "requested", "submitted",
-    "triage", "selected", "missing", "assigned", "queued",
+    "to do",
+    "todo",
+    "open",
+    "new",
+    "backlog",
+    "not started",
+    "requested",
+    "submitted",
+    "triage",
+    "selected",
+    "missing",
+    "assigned",
+    "queued",
 ];
 const PENDING_WORDS: &[&str] = &[
-    "progress", "review", "pending", "waiting", "awaiting", "blocked", "hold", "testing", "qa",
-    "doing", "develop", "investigat", "verif", "validat", "started", "draft", "revis", "late",
+    "progress",
+    "review",
+    "pending",
+    "waiting",
+    "awaiting",
+    "blocked",
+    "hold",
+    "testing",
+    "qa",
+    "doing",
+    "develop",
+    "investigat",
+    "verif",
+    "validat",
+    "started",
+    "draft",
+    "revis",
+    "late",
 ];
 
 /// The default group for a status name: excluded words first, then done,

@@ -1,0 +1,2209 @@
+Student,Unit,Assignment,Assigned,Due,Status,Turned in
+Student 01,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-27
+Student 02,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-22
+Student 03,Unit 1,Assignment 1,2025-08-19,2025-08-26,Turned in,2025-08-23
+Student 04,Unit 1,Assignment 1,2025-08-19,2025-08-26,Turned in,2025-08-23
+Student 05,Unit 1,Assignment 1,2025-08-19,2025-08-26,Turned in,2025-08-24
+Student 06,Unit 1,Assignment 1,2025-08-19,2025-08-26,Missing,
+Student 07,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-26
+Student 08,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-23
+Student 09,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-22
+Student 10,Unit 1,Assignment 1,2025-08-19,2025-08-26,Turned in,2025-08-28
+Student 11,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-23
+Student 12,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-28
+Student 13,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-23
+Student 14,Unit 1,Assignment 1,2025-08-19,2025-08-26,Turned in,2025-08-29
+Student 15,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-30
+Student 16,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-22
+Student 17,Unit 1,Assignment 1,2025-08-19,2025-08-26,Turned in,2025-08-23
+Student 18,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-25
+Student 19,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-21
+Student 20,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-29
+Student 21,Unit 1,Assignment 1,2025-08-19,2025-08-26,In progress,
+Student 22,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-29
+Student 23,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-21
+Student 24,Unit 1,Assignment 1,2025-08-19,2025-08-26,Graded,2025-08-26
+Student 01,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-28
+Student 02,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-25
+Student 03,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-28
+Student 04,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-30
+Student 05,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-23
+Student 06,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-25
+Student 07,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-29
+Student 08,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-26
+Student 09,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-25
+Student 10,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-24
+Student 11,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-30
+Student 12,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-30
+Student 13,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-29
+Student 14,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-28
+Student 15,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-09-06
+Student 16,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-27
+Student 17,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-25
+Student 18,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-26
+Student 19,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-30
+Student 20,Unit 1,Assignment 2,2025-08-21,2025-08-28,Turned in,2025-08-24
+Student 21,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-30
+Student 22,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-29
+Student 23,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-23
+Student 24,Unit 1,Assignment 2,2025-08-21,2025-08-28,Graded,2025-08-30
+Student 01,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-08-29
+Student 02,Unit 1,Assignment 3,2025-08-26,2025-09-02,Turned in,2025-08-29
+Student 03,Unit 1,Assignment 3,2025-08-26,2025-09-02,Turned in,2025-09-01
+Student 04,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-02
+Student 05,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-01
+Student 06,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-03
+Student 07,Unit 1,Assignment 3,2025-08-26,2025-09-02,Missing,
+Student 08,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-02
+Student 09,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-04
+Student 10,Unit 1,Assignment 3,2025-08-26,2025-09-02,Turned in,2025-08-30
+Student 11,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-05
+Student 12,Unit 1,Assignment 3,2025-08-26,2025-09-02,Missing,
+Student 13,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-08-28
+Student 14,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-08-30
+Student 15,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-08
+Student 16,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-08-28
+Student 17,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-01
+Student 18,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-08-29
+Student 19,Unit 1,Assignment 3,2025-08-26,2025-09-02,Turned in,2025-09-03
+Student 20,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-03
+Student 21,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-02
+Student 22,Unit 1,Assignment 3,2025-08-26,2025-09-02,Excused,
+Student 23,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-08-29
+Student 24,Unit 1,Assignment 3,2025-08-26,2025-09-02,Graded,2025-09-02
+Student 01,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-08-31
+Student 02,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-08-31
+Student 03,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-01
+Student 04,Unit 1,Assignment 4,2025-08-28,2025-09-04,Turned in,2025-09-02
+Student 05,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-07
+Student 06,Unit 1,Assignment 4,2025-08-28,2025-09-04,Turned in,2025-09-02
+Student 07,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-13
+Student 08,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-08-30
+Student 09,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-02
+Student 10,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-04
+Student 11,Unit 1,Assignment 4,2025-08-28,2025-09-04,Missing,
+Student 12,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-08-30
+Student 13,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-06
+Student 14,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-05
+Student 15,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-08
+Student 16,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-04
+Student 17,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-08-31
+Student 18,Unit 1,Assignment 4,2025-08-28,2025-09-04,Missing,
+Student 19,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-06
+Student 20,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-03
+Student 21,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-03
+Student 22,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-13
+Student 23,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-04
+Student 24,Unit 1,Assignment 4,2025-08-28,2025-09-04,Graded,2025-09-07
+Student 01,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-08
+Student 02,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-05
+Student 03,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-09
+Student 04,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-12
+Student 05,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-09
+Student 06,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-11
+Student 07,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-16
+Student 08,Unit 1,Assignment 5,2025-09-02,2025-09-09,Turned in,2025-09-09
+Student 09,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-05
+Student 10,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-09
+Student 11,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-04
+Student 12,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-06
+Student 13,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-04
+Student 14,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-06
+Student 15,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-07
+Student 16,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-10
+Student 17,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-04
+Student 18,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-12
+Student 19,Unit 1,Assignment 5,2025-09-02,2025-09-09,Turned in,2025-09-10
+Student 20,Unit 1,Assignment 5,2025-09-02,2025-09-09,Missing,
+Student 21,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-12
+Student 22,Unit 1,Assignment 5,2025-09-02,2025-09-09,Missing,
+Student 23,Unit 1,Assignment 5,2025-09-02,2025-09-09,Graded,2025-09-07
+Student 24,Unit 1,Assignment 5,2025-09-02,2025-09-09,Excused,
+Student 01,Unit 1,Assignment 6,2025-09-04,2025-09-11,In progress,
+Student 02,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-07
+Student 03,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-11
+Student 04,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-06
+Student 05,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-09
+Student 06,Unit 1,Assignment 6,2025-09-04,2025-09-11,Turned in,2025-09-10
+Student 07,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-18
+Student 08,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-13
+Student 09,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-11
+Student 10,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-06
+Student 11,Unit 1,Assignment 6,2025-09-04,2025-09-11,Turned in,2025-09-08
+Student 12,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-14
+Student 13,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-11
+Student 14,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-07
+Student 15,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-19
+Student 16,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-12
+Student 17,Unit 1,Assignment 6,2025-09-04,2025-09-11,Turned in,2025-09-10
+Student 18,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-06
+Student 19,Unit 1,Assignment 6,2025-09-04,2025-09-11,Turned in,2025-09-13
+Student 20,Unit 1,Assignment 6,2025-09-04,2025-09-11,Turned in,2025-09-06
+Student 21,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-07
+Student 22,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-19
+Student 23,Unit 1,Assignment 6,2025-09-04,2025-09-11,Graded,2025-09-07
+Student 24,Unit 1,Assignment 6,2025-09-04,2025-09-11,Turned in,2025-09-12
+Student 01,Unit 1,Assignment 7,2025-09-09,2025-09-16,Turned in,2025-09-13
+Student 02,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-16
+Student 03,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-16
+Student 04,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-11
+Student 05,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-12
+Student 06,Unit 1,Assignment 7,2025-09-09,2025-09-16,Turned in,2025-09-18
+Student 07,Unit 1,Assignment 7,2025-09-09,2025-09-16,Missing,
+Student 08,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-19
+Student 09,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-16
+Student 10,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-11
+Student 11,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-12
+Student 12,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-15
+Student 13,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-13
+Student 14,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-13
+Student 15,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-15
+Student 16,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-17
+Student 17,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-18
+Student 18,Unit 1,Assignment 7,2025-09-09,2025-09-16,Turned in,2025-09-16
+Student 19,Unit 1,Assignment 7,2025-09-09,2025-09-16,Turned in,2025-09-15
+Student 20,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-18
+Student 21,Unit 1,Assignment 7,2025-09-09,2025-09-16,Turned in,2025-09-18
+Student 22,Unit 1,Assignment 7,2025-09-09,2025-09-16,Turned in,2025-09-25
+Student 23,Unit 1,Assignment 7,2025-09-09,2025-09-16,Missing,
+Student 24,Unit 1,Assignment 7,2025-09-09,2025-09-16,Graded,2025-09-15
+Student 01,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-18
+Student 02,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-17
+Student 03,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-21
+Student 04,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-20
+Student 05,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-21
+Student 06,Unit 1,Assignment 8,2025-09-11,2025-09-18,Missing,
+Student 07,Unit 1,Assignment 8,2025-09-11,2025-09-18,Turned in,2025-09-23
+Student 08,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-20
+Student 09,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-21
+Student 10,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-15
+Student 11,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-14
+Student 12,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-16
+Student 13,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-16
+Student 14,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-15
+Student 15,Unit 1,Assignment 8,2025-09-11,2025-09-18,In progress,
+Student 16,Unit 1,Assignment 8,2025-09-11,2025-09-18,Turned in,2025-09-16
+Student 17,Unit 1,Assignment 8,2025-09-11,2025-09-18,Turned in,2025-09-20
+Student 18,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-13
+Student 19,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-14
+Student 20,Unit 1,Assignment 8,2025-09-11,2025-09-18,Turned in,2025-09-13
+Student 21,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-21
+Student 22,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-16
+Student 23,Unit 1,Assignment 8,2025-09-11,2025-09-18,Graded,2025-09-14
+Student 24,Unit 1,Assignment 8,2025-09-11,2025-09-18,Missing,
+Student 01,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-19
+Student 02,Unit 1,Assignment 9,2025-09-16,2025-09-23,Turned in,2025-09-24
+Student 03,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-22
+Student 04,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-24
+Student 05,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-24
+Student 06,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-26
+Student 07,Unit 1,Assignment 9,2025-09-16,2025-09-23,Turned in,2025-09-28
+Student 08,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-22
+Student 09,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-21
+Student 10,Unit 1,Assignment 9,2025-09-16,2025-09-23,Turned in,2025-09-24
+Student 11,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-23
+Student 12,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-20
+Student 13,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-20
+Student 14,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-23
+Student 15,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-29
+Student 16,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-24
+Student 17,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-21
+Student 18,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-19
+Student 19,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-18
+Student 20,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-23
+Student 21,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-23
+Student 22,Unit 1,Assignment 9,2025-09-16,2025-09-23,Missing,
+Student 23,Unit 1,Assignment 9,2025-09-16,2025-09-23,Turned in,2025-09-18
+Student 24,Unit 1,Assignment 9,2025-09-16,2025-09-23,Graded,2025-09-20
+Student 01,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-22
+Student 02,Unit 1,Assignment 10,2025-09-18,2025-09-25,Turned in,2025-09-25
+Student 03,Unit 1,Assignment 10,2025-09-18,2025-09-25,In progress,
+Student 04,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-21
+Student 05,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-28
+Student 06,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-28
+Student 07,Unit 1,Assignment 10,2025-09-18,2025-09-25,Missing,
+Student 08,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-21
+Student 09,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-23
+Student 10,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-21
+Student 11,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-24
+Student 12,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-26
+Student 13,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-20
+Student 14,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-21
+Student 15,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-29
+Student 16,Unit 1,Assignment 10,2025-09-18,2025-09-25,Turned in,2025-09-27
+Student 17,Unit 1,Assignment 10,2025-09-18,2025-09-25,Turned in,2025-09-24
+Student 18,Unit 1,Assignment 10,2025-09-18,2025-09-25,Turned in,2025-09-20
+Student 19,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-21
+Student 20,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-26
+Student 21,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-22
+Student 22,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-10-01
+Student 23,Unit 1,Assignment 10,2025-09-18,2025-09-25,Turned in,2025-09-27
+Student 24,Unit 1,Assignment 10,2025-09-18,2025-09-25,Graded,2025-09-24
+Student 01,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-10-02
+Student 02,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-30
+Student 03,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-28
+Student 04,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-28
+Student 05,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-28
+Student 06,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-27
+Student 07,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-10-04
+Student 08,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-29
+Student 09,Unit 1,Assignment 11,2025-09-23,2025-09-30,Turned in,2025-10-02
+Student 10,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-25
+Student 11,Unit 1,Assignment 11,2025-09-23,2025-09-30,Turned in,2025-10-01
+Student 12,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-30
+Student 13,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-29
+Student 14,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-28
+Student 15,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-10-06
+Student 16,Unit 1,Assignment 11,2025-09-23,2025-09-30,Turned in,2025-10-02
+Student 17,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-28
+Student 18,Unit 1,Assignment 11,2025-09-23,2025-09-30,Turned in,2025-10-03
+Student 19,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-26
+Student 20,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-25
+Student 21,Unit 1,Assignment 11,2025-09-23,2025-09-30,Turned in,2025-09-30
+Student 22,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-10-05
+Student 23,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-27
+Student 24,Unit 1,Assignment 11,2025-09-23,2025-09-30,Graded,2025-09-26
+Student 01,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-04
+Student 02,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-04
+Student 03,Unit 1,Assignment 12,2025-09-25,2025-10-02,Turned in,2025-10-03
+Student 04,Unit 1,Assignment 12,2025-09-25,2025-10-02,Turned in,2025-10-03
+Student 05,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-02
+Student 06,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-04
+Student 07,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-11
+Student 08,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-03
+Student 09,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-05
+Student 10,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-09-28
+Student 11,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-01
+Student 12,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-09-29
+Student 13,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-03
+Student 14,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-04
+Student 15,Unit 1,Assignment 12,2025-09-25,2025-10-02,Turned in,2025-10-06
+Student 16,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-03
+Student 17,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-09-27
+Student 18,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-04
+Student 19,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-09-29
+Student 20,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-04
+Student 21,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-01
+Student 22,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-11
+Student 23,Unit 1,Assignment 12,2025-09-25,2025-10-02,Graded,2025-10-05
+Student 24,Unit 1,Assignment 12,2025-09-25,2025-10-02,Turned in,2025-10-01
+Student 01,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-09
+Student 02,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-06
+Student 03,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-10
+Student 04,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-07
+Student 05,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-05
+Student 06,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-07
+Student 07,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-05
+Student 08,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-07
+Student 09,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-09
+Student 10,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-09
+Student 11,Unit 1,Assignment 13,2025-09-30,2025-10-07,Missing,
+Student 12,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-02
+Student 13,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-04
+Student 14,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-05
+Student 15,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-07
+Student 16,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-03
+Student 17,Unit 1,Assignment 13,2025-09-30,2025-10-07,Turned in,2025-10-08
+Student 18,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-03
+Student 19,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-02
+Student 20,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-02
+Student 21,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-03
+Student 22,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-12
+Student 23,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-09
+Student 24,Unit 1,Assignment 13,2025-09-30,2025-10-07,Graded,2025-10-10
+Student 01,Unit 1,Assignment 14,2025-10-02,2025-10-09,Missing,
+Student 02,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-12
+Student 03,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-11
+Student 04,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-11
+Student 05,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-07
+Student 06,Unit 1,Assignment 14,2025-10-02,2025-10-09,Turned in,2025-10-11
+Student 07,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-17
+Student 08,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-11
+Student 09,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-05
+Student 10,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-07
+Student 11,Unit 1,Assignment 14,2025-10-02,2025-10-09,Turned in,2025-10-04
+Student 12,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-06
+Student 13,Unit 1,Assignment 14,2025-10-02,2025-10-09,Turned in,2025-10-09
+Student 14,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-09
+Student 15,Unit 1,Assignment 14,2025-10-02,2025-10-09,Excused,
+Student 16,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-04
+Student 17,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-08
+Student 18,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-06
+Student 19,Unit 1,Assignment 14,2025-10-02,2025-10-09,Missing,
+Student 20,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-05
+Student 21,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-11
+Student 22,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-18
+Student 23,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-11
+Student 24,Unit 1,Assignment 14,2025-10-02,2025-10-09,Graded,2025-10-09
+Student 01,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-16
+Student 02,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-13
+Student 03,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-12
+Student 04,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-15
+Student 05,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-16
+Student 06,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-17
+Student 07,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-20
+Student 08,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-15
+Student 09,Unit 2,Assignment 15,2025-10-07,2025-10-14,Missing,
+Student 10,Unit 2,Assignment 15,2025-10-07,2025-10-14,Turned in,2025-10-15
+Student 11,Unit 2,Assignment 15,2025-10-07,2025-10-14,In progress,
+Student 12,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-10
+Student 13,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-13
+Student 14,Unit 2,Assignment 15,2025-10-07,2025-10-14,Turned in,2025-10-16
+Student 15,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-14
+Student 16,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-09
+Student 17,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-13
+Student 18,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-15
+Student 19,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-17
+Student 20,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-09
+Student 21,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-09
+Student 22,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-13
+Student 23,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-09
+Student 24,Unit 2,Assignment 15,2025-10-07,2025-10-14,Graded,2025-10-09
+Student 01,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-18
+Student 02,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-19
+Student 03,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-16
+Student 04,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-13
+Student 05,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-17
+Student 06,Unit 2,Assignment 16,2025-10-09,2025-10-16,Turned in,2025-10-17
+Student 07,Unit 2,Assignment 16,2025-10-09,2025-10-16,Excused,
+Student 08,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-12
+Student 09,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-14
+Student 10,Unit 2,Assignment 16,2025-10-09,2025-10-16,Missing,
+Student 11,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-16
+Student 12,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-15
+Student 13,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-15
+Student 14,Unit 2,Assignment 16,2025-10-09,2025-10-16,Turned in,2025-10-17
+Student 15,Unit 2,Assignment 16,2025-10-09,2025-10-16,Turned in,2025-10-21
+Student 16,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-15
+Student 17,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-12
+Student 18,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-18
+Student 19,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-12
+Student 20,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-13
+Student 21,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-16
+Student 22,Unit 2,Assignment 16,2025-10-09,2025-10-16,Turned in,2025-10-25
+Student 23,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-11
+Student 24,Unit 2,Assignment 16,2025-10-09,2025-10-16,Graded,2025-10-17
+Student 01,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-18
+Student 02,Unit 2,Assignment 17,2025-10-14,2025-10-21,Turned in,2025-10-16
+Student 03,Unit 2,Assignment 17,2025-10-14,2025-10-21,Turned in,2025-10-17
+Student 04,Unit 2,Assignment 17,2025-10-14,2025-10-21,Missing,
+Student 05,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-19
+Student 06,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-20
+Student 07,Unit 2,Assignment 17,2025-10-14,2025-10-21,Turned in,2025-10-24
+Student 08,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-22
+Student 09,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-17
+Student 10,Unit 2,Assignment 17,2025-10-14,2025-10-21,Turned in,2025-10-24
+Student 11,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-22
+Student 12,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-18
+Student 13,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-16
+Student 14,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-23
+Student 15,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-29
+Student 16,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-17
+Student 17,Unit 2,Assignment 17,2025-10-14,2025-10-21,Missing,
+Student 18,Unit 2,Assignment 17,2025-10-14,2025-10-21,Turned in,2025-10-17
+Student 19,Unit 2,Assignment 17,2025-10-14,2025-10-21,Turned in,2025-10-23
+Student 20,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-17
+Student 21,Unit 2,Assignment 17,2025-10-14,2025-10-21,Missing,
+Student 22,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-30
+Student 23,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-22
+Student 24,Unit 2,Assignment 17,2025-10-14,2025-10-21,Graded,2025-10-18
+Student 01,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-22
+Student 02,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-26
+Student 03,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-21
+Student 04,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-23
+Student 05,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-20
+Student 06,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-22
+Student 07,Unit 2,Assignment 18,2025-10-16,2025-10-23,Turned in,2025-10-26
+Student 08,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-21
+Student 09,Unit 2,Assignment 18,2025-10-16,2025-10-23,Missing,
+Student 10,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-19
+Student 11,Unit 2,Assignment 18,2025-10-16,2025-10-23,In progress,
+Student 12,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-24
+Student 13,Unit 2,Assignment 18,2025-10-16,2025-10-23,Turned in,2025-10-22
+Student 14,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-22
+Student 15,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-22
+Student 16,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-25
+Student 17,Unit 2,Assignment 18,2025-10-16,2025-10-23,Turned in,2025-10-26
+Student 18,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-22
+Student 19,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-18
+Student 20,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-23
+Student 21,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-24
+Student 22,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-29
+Student 23,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-18
+Student 24,Unit 2,Assignment 18,2025-10-16,2025-10-23,Graded,2025-10-23
+Student 01,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-28
+Student 02,Unit 2,Assignment 19,2025-10-21,2025-10-28,Turned in,2025-10-24
+Student 03,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-25
+Student 04,Unit 2,Assignment 19,2025-10-21,2025-10-28,Missing,
+Student 05,Unit 2,Assignment 19,2025-10-21,2025-10-28,Turned in,2025-10-25
+Student 06,Unit 2,Assignment 19,2025-10-21,2025-10-28,Turned in,2025-10-26
+Student 07,Unit 2,Assignment 19,2025-10-21,2025-10-28,In progress,
+Student 08,Unit 2,Assignment 19,2025-10-21,2025-10-28,Turned in,2025-10-23
+Student 09,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-25
+Student 10,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-30
+Student 11,Unit 2,Assignment 19,2025-10-21,2025-10-28,Turned in,2025-10-30
+Student 12,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-31
+Student 13,Unit 2,Assignment 19,2025-10-21,2025-10-28,Turned in,2025-10-27
+Student 14,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-31
+Student 15,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-11-03
+Student 16,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-30
+Student 17,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-28
+Student 18,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-28
+Student 19,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-27
+Student 20,Unit 2,Assignment 19,2025-10-21,2025-10-28,Excused,
+Student 21,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-30
+Student 22,Unit 2,Assignment 19,2025-10-21,2025-10-28,In progress,
+Student 23,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-23
+Student 24,Unit 2,Assignment 19,2025-10-21,2025-10-28,Graded,2025-10-30
+Student 01,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-26
+Student 02,Unit 2,Assignment 20,2025-10-23,2025-10-30,Turned in,2025-11-01
+Student 03,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-26
+Student 04,Unit 2,Assignment 20,2025-10-23,2025-10-30,Turned in,2025-10-28
+Student 05,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-26
+Student 06,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-28
+Student 07,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-30
+Student 08,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-11-02
+Student 09,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-31
+Student 10,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-11-01
+Student 11,Unit 2,Assignment 20,2025-10-23,2025-10-30,Turned in,2025-11-01
+Student 12,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-30
+Student 13,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-27
+Student 14,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-28
+Student 15,Unit 2,Assignment 20,2025-10-23,2025-10-30,Missing,
+Student 16,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-28
+Student 17,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-28
+Student 18,Unit 2,Assignment 20,2025-10-23,2025-10-30,Missing,
+Student 19,Unit 2,Assignment 20,2025-10-23,2025-10-30,In progress,
+Student 20,Unit 2,Assignment 20,2025-10-23,2025-10-30,Missing,
+Student 21,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-28
+Student 22,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-11-07
+Student 23,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-28
+Student 24,Unit 2,Assignment 20,2025-10-23,2025-10-30,Graded,2025-10-29
+Student 01,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 02,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-05
+Student 03,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 04,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-06
+Student 05,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 06,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 07,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-13
+Student 08,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-04
+Student 09,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-03
+Student 10,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-02
+Student 11,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-30
+Student 12,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-01
+Student 13,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-07
+Student 14,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 15,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-07
+Student 16,Unit 2,Assignment 21,2025-10-28,2025-11-04,Missing,
+Student 17,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 18,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-10-31
+Student 19,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-04
+Student 20,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-07
+Student 21,Unit 2,Assignment 21,2025-10-28,2025-11-04,Graded,2025-11-03
+Student 22,Unit 2,Assignment 21,2025-10-28,2025-11-04,Turned in,2025-11-13
+Student 23,Unit 2,Assignment 21,2025-10-28,2025-11-04,Turned in,2025-11-02
+Student 24,Unit 2,Assignment 21,2025-10-28,2025-11-04,Turned in,2025-11-07
+Student 01,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-09
+Student 02,Unit 2,Assignment 22,2025-10-30,2025-11-06,Turned in,2025-11-09
+Student 03,Unit 2,Assignment 22,2025-10-30,2025-11-06,Turned in,2025-11-09
+Student 04,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-05
+Student 05,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-05
+Student 06,Unit 2,Assignment 22,2025-10-30,2025-11-06,Turned in,2025-11-06
+Student 07,Unit 2,Assignment 22,2025-10-30,2025-11-06,Missing,
+Student 08,Unit 2,Assignment 22,2025-10-30,2025-11-06,Excused,
+Student 09,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-08
+Student 10,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-04
+Student 11,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-04
+Student 12,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-02
+Student 13,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-03
+Student 14,Unit 2,Assignment 22,2025-10-30,2025-11-06,Missing,
+Student 15,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-14
+Student 16,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-01
+Student 17,Unit 2,Assignment 22,2025-10-30,2025-11-06,Turned in,2025-11-03
+Student 18,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-04
+Student 19,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-03
+Student 20,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-08
+Student 21,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-04
+Student 22,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-07
+Student 23,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-03
+Student 24,Unit 2,Assignment 22,2025-10-30,2025-11-06,Graded,2025-11-02
+Student 01,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-10
+Student 02,Unit 2,Assignment 23,2025-11-04,2025-11-11,Turned in,2025-11-10
+Student 03,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-06
+Student 04,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-09
+Student 05,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-11
+Student 06,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-06
+Student 07,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-20
+Student 08,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-12
+Student 09,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-13
+Student 10,Unit 2,Assignment 23,2025-11-04,2025-11-11,Excused,
+Student 11,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-09
+Student 12,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-13
+Student 13,Unit 2,Assignment 23,2025-11-04,2025-11-11,Missing,
+Student 14,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-14
+Student 15,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-18
+Student 16,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-09
+Student 17,Unit 2,Assignment 23,2025-11-04,2025-11-11,Turned in,2025-11-13
+Student 18,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-06
+Student 19,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-06
+Student 20,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-12
+Student 21,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-09
+Student 22,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-12
+Student 23,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-13
+Student 24,Unit 2,Assignment 23,2025-11-04,2025-11-11,Graded,2025-11-11
+Student 01,Unit 2,Assignment 24,2025-11-06,2025-11-13,Excused,
+Student 02,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-13
+Student 03,Unit 2,Assignment 24,2025-11-06,2025-11-13,Missing,
+Student 04,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-15
+Student 05,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-09
+Student 06,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-11
+Student 07,Unit 2,Assignment 24,2025-11-06,2025-11-13,Turned in,2025-11-16
+Student 08,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-08
+Student 09,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-16
+Student 10,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-16
+Student 11,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-11
+Student 12,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-12
+Student 13,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-13
+Student 14,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-14
+Student 15,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-22
+Student 16,Unit 2,Assignment 24,2025-11-06,2025-11-13,Turned in,2025-11-11
+Student 17,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-16
+Student 18,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-15
+Student 19,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-15
+Student 20,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-10
+Student 21,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-12
+Student 22,Unit 2,Assignment 24,2025-11-06,2025-11-13,Turned in,2025-11-16
+Student 23,Unit 2,Assignment 24,2025-11-06,2025-11-13,Turned in,2025-11-13
+Student 24,Unit 2,Assignment 24,2025-11-06,2025-11-13,Graded,2025-11-13
+Student 01,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-19
+Student 02,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-19
+Student 03,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-19
+Student 04,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-15
+Student 05,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-19
+Student 06,Unit 2,Assignment 25,2025-11-11,2025-11-18,Missing,
+Student 07,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-24
+Student 08,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-19
+Student 09,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-18
+Student 10,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-16
+Student 11,Unit 2,Assignment 25,2025-11-11,2025-11-18,Turned in,2025-11-16
+Student 12,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-21
+Student 13,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-16
+Student 14,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-15
+Student 15,Unit 2,Assignment 25,2025-11-11,2025-11-18,In progress,
+Student 16,Unit 2,Assignment 25,2025-11-11,2025-11-18,In progress,
+Student 17,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-21
+Student 18,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-21
+Student 19,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-21
+Student 20,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-15
+Student 21,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-19
+Student 22,Unit 2,Assignment 25,2025-11-11,2025-11-18,Turned in,2025-11-16
+Student 23,Unit 2,Assignment 25,2025-11-11,2025-11-18,Turned in,2025-11-20
+Student 24,Unit 2,Assignment 25,2025-11-11,2025-11-18,Graded,2025-11-16
+Student 01,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-18
+Student 02,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-16
+Student 03,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-15
+Student 04,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-19
+Student 05,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-16
+Student 06,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-20
+Student 07,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-29
+Student 08,Unit 2,Assignment 26,2025-11-13,2025-11-20,Missing,
+Student 09,Unit 2,Assignment 26,2025-11-13,2025-11-20,Turned in,2025-11-15
+Student 10,Unit 2,Assignment 26,2025-11-13,2025-11-20,Missing,
+Student 11,Unit 2,Assignment 26,2025-11-13,2025-11-20,Turned in,2025-11-20
+Student 12,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-19
+Student 13,Unit 2,Assignment 26,2025-11-13,2025-11-20,In progress,
+Student 14,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-20
+Student 15,Unit 2,Assignment 26,2025-11-13,2025-11-20,In progress,
+Student 16,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-15
+Student 17,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-19
+Student 18,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-19
+Student 19,Unit 2,Assignment 26,2025-11-13,2025-11-20,Turned in,2025-11-20
+Student 20,Unit 2,Assignment 26,2025-11-13,2025-11-20,Missing,
+Student 21,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-21
+Student 22,Unit 2,Assignment 26,2025-11-13,2025-11-20,Graded,2025-11-22
+Student 23,Unit 2,Assignment 26,2025-11-13,2025-11-20,Turned in,2025-11-20
+Student 24,Unit 2,Assignment 26,2025-11-13,2025-11-20,Turned in,2025-11-18
+Student 01,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-20
+Student 02,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-25
+Student 03,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-21
+Student 04,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-21
+Student 05,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-27
+Student 06,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-21
+Student 07,Unit 2,Assignment 27,2025-11-18,2025-11-25,Missing,
+Student 08,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-22
+Student 09,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-28
+Student 10,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-27
+Student 11,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-26
+Student 12,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-26
+Student 13,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-21
+Student 14,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-23
+Student 15,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-23
+Student 16,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-23
+Student 17,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-28
+Student 18,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-28
+Student 19,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-24
+Student 20,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-28
+Student 21,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-21
+Student 22,Unit 2,Assignment 27,2025-11-18,2025-11-25,Turned in,2025-11-28
+Student 23,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-25
+Student 24,Unit 2,Assignment 27,2025-11-18,2025-11-25,Graded,2025-11-28
+Student 01,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-26
+Student 02,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-27
+Student 03,Unit 2,Assignment 28,2025-11-20,2025-11-27,Missing,
+Student 04,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-27
+Student 05,Unit 2,Assignment 28,2025-11-20,2025-11-27,Turned in,2025-11-25
+Student 06,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-28
+Student 07,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-30
+Student 08,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-24
+Student 09,Unit 2,Assignment 28,2025-11-20,2025-11-27,Excused,
+Student 10,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-25
+Student 11,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-28
+Student 12,Unit 2,Assignment 28,2025-11-20,2025-11-27,Excused,
+Student 13,Unit 2,Assignment 28,2025-11-20,2025-11-27,Turned in,2025-11-29
+Student 14,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-30
+Student 15,Unit 2,Assignment 28,2025-11-20,2025-11-27,In progress,
+Student 16,Unit 2,Assignment 28,2025-11-20,2025-11-27,Turned in,2025-11-28
+Student 17,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-23
+Student 18,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-22
+Student 19,Unit 2,Assignment 28,2025-11-20,2025-11-27,Turned in,2025-11-30
+Student 20,Unit 2,Assignment 28,2025-11-20,2025-11-27,Turned in,2025-11-22
+Student 21,Unit 2,Assignment 28,2025-11-20,2025-11-27,Turned in,2025-11-23
+Student 22,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-28
+Student 23,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-27
+Student 24,Unit 2,Assignment 28,2025-11-20,2025-11-27,Graded,2025-11-23
+Student 01,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-12-05
+Student 02,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-01
+Student 03,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-11-28
+Student 04,Unit 3,Assignment 29,2025-11-25,2025-12-02,Excused,
+Student 05,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-12-01
+Student 06,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-12-02
+Student 07,Unit 3,Assignment 29,2025-11-25,2025-12-02,In progress,
+Student 08,Unit 3,Assignment 29,2025-11-25,2025-12-02,Missing,
+Student 09,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-02
+Student 10,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-11-27
+Student 11,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-04
+Student 12,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-01
+Student 13,Unit 3,Assignment 29,2025-11-25,2025-12-02,Missing,
+Student 14,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-11-28
+Student 15,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-06
+Student 16,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-11-28
+Student 17,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-05
+Student 18,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-11-30
+Student 19,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-11-30
+Student 20,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-05
+Student 21,Unit 3,Assignment 29,2025-11-25,2025-12-02,Turned in,2025-12-04
+Student 22,Unit 3,Assignment 29,2025-11-25,2025-12-02,In progress,
+Student 23,Unit 3,Assignment 29,2025-11-25,2025-12-02,Graded,2025-12-04
+Student 24,Unit 3,Assignment 29,2025-11-25,2025-12-02,Excused,
+Student 01,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-02
+Student 02,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-05
+Student 03,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-11-29
+Student 04,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-04
+Student 05,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-06
+Student 06,Unit 3,Assignment 30,2025-11-27,2025-12-04,Turned in,2025-11-30
+Student 07,Unit 3,Assignment 30,2025-11-27,2025-12-04,Turned in,2025-12-05
+Student 08,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-11-30
+Student 09,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-01
+Student 10,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-11-29
+Student 11,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-11-29
+Student 12,Unit 3,Assignment 30,2025-11-27,2025-12-04,Turned in,2025-12-05
+Student 13,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-06
+Student 14,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-06
+Student 15,Unit 3,Assignment 30,2025-11-27,2025-12-04,Turned in,2025-12-12
+Student 16,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-07
+Student 17,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-07
+Student 18,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-02
+Student 19,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-03
+Student 20,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-02
+Student 21,Unit 3,Assignment 30,2025-11-27,2025-12-04,Missing,
+Student 22,Unit 3,Assignment 30,2025-11-27,2025-12-04,Turned in,2025-12-02
+Student 23,Unit 3,Assignment 30,2025-11-27,2025-12-04,Graded,2025-12-01
+Student 24,Unit 3,Assignment 30,2025-11-27,2025-12-04,In progress,
+Student 01,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-08
+Student 02,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-08
+Student 03,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-11
+Student 04,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-11
+Student 05,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-05
+Student 06,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-11
+Student 07,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-11
+Student 08,Unit 3,Assignment 31,2025-12-02,2025-12-09,Missing,
+Student 09,Unit 3,Assignment 31,2025-12-02,2025-12-09,Turned in,2025-12-07
+Student 10,Unit 3,Assignment 31,2025-12-02,2025-12-09,In progress,
+Student 11,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-12
+Student 12,Unit 3,Assignment 31,2025-12-02,2025-12-09,Turned in,2025-12-08
+Student 13,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-09
+Student 14,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-04
+Student 15,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-10
+Student 16,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-10
+Student 17,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-06
+Student 18,Unit 3,Assignment 31,2025-12-02,2025-12-09,Turned in,2025-12-09
+Student 19,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-11
+Student 20,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-10
+Student 21,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-06
+Student 22,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-13
+Student 23,Unit 3,Assignment 31,2025-12-02,2025-12-09,Graded,2025-12-08
+Student 24,Unit 3,Assignment 31,2025-12-02,2025-12-09,Missing,
+Student 01,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-07
+Student 02,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-08
+Student 03,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-14
+Student 04,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-07
+Student 05,Unit 3,Assignment 32,2025-12-04,2025-12-11,Turned in,2025-12-07
+Student 06,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-13
+Student 07,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-09
+Student 08,Unit 3,Assignment 32,2025-12-04,2025-12-11,Missing,
+Student 09,Unit 3,Assignment 32,2025-12-04,2025-12-11,Excused,
+Student 10,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-12
+Student 11,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-13
+Student 12,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-08
+Student 13,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-06
+Student 14,Unit 3,Assignment 32,2025-12-04,2025-12-11,Missing,
+Student 15,Unit 3,Assignment 32,2025-12-04,2025-12-11,Missing,
+Student 16,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-13
+Student 17,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-07
+Student 18,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-07
+Student 19,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-12
+Student 20,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-14
+Student 21,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-07
+Student 22,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-12
+Student 23,Unit 3,Assignment 32,2025-12-04,2025-12-11,Turned in,2025-12-11
+Student 24,Unit 3,Assignment 32,2025-12-04,2025-12-11,Graded,2025-12-09
+Student 01,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-19
+Student 02,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-19
+Student 03,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-13
+Student 04,Unit 3,Assignment 33,2025-12-09,2025-12-16,Turned in,2025-12-17
+Student 05,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-13
+Student 06,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-17
+Student 07,Unit 3,Assignment 33,2025-12-09,2025-12-16,Missing,
+Student 08,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-19
+Student 09,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-13
+Student 10,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-14
+Student 11,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-13
+Student 12,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-19
+Student 13,Unit 3,Assignment 33,2025-12-09,2025-12-16,Turned in,2025-12-11
+Student 14,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-18
+Student 15,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-16
+Student 16,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-15
+Student 17,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-11
+Student 18,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-18
+Student 19,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-15
+Student 20,Unit 3,Assignment 33,2025-12-09,2025-12-16,Missing,
+Student 21,Unit 3,Assignment 33,2025-12-09,2025-12-16,Turned in,2025-12-19
+Student 22,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-15
+Student 23,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-18
+Student 24,Unit 3,Assignment 33,2025-12-09,2025-12-16,Graded,2025-12-19
+Student 01,Unit 3,Assignment 34,2025-12-11,2025-12-18,Missing,
+Student 02,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-17
+Student 03,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-17
+Student 04,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-14
+Student 05,Unit 3,Assignment 34,2025-12-11,2025-12-18,Missing,
+Student 06,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-21
+Student 07,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-26
+Student 08,Unit 3,Assignment 34,2025-12-11,2025-12-18,Turned in,2025-12-20
+Student 09,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-18
+Student 10,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-17
+Student 11,Unit 3,Assignment 34,2025-12-11,2025-12-18,Turned in,2025-12-17
+Student 12,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-17
+Student 13,Unit 3,Assignment 34,2025-12-11,2025-12-18,Turned in,2025-12-19
+Student 14,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-13
+Student 15,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-22
+Student 16,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-13
+Student 17,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-19
+Student 18,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-21
+Student 19,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-16
+Student 20,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-21
+Student 21,Unit 3,Assignment 34,2025-12-11,2025-12-18,Turned in,2025-12-16
+Student 22,Unit 3,Assignment 34,2025-12-11,2025-12-18,Missing,
+Student 23,Unit 3,Assignment 34,2025-12-11,2025-12-18,Graded,2025-12-19
+Student 24,Unit 3,Assignment 34,2025-12-11,2025-12-18,Turned in,2025-12-18
+Student 01,Unit 3,Assignment 35,2025-12-16,2025-12-23,Turned in,2025-12-26
+Student 02,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-18
+Student 03,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-20
+Student 04,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-25
+Student 05,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-23
+Student 06,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-24
+Student 07,Unit 3,Assignment 35,2025-12-16,2025-12-23,Missing,
+Student 08,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-19
+Student 09,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-19
+Student 10,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-23
+Student 11,Unit 3,Assignment 35,2025-12-16,2025-12-23,Turned in,2025-12-22
+Student 12,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-20
+Student 13,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-18
+Student 14,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-19
+Student 15,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-27
+Student 16,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-18
+Student 17,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-25
+Student 18,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-24
+Student 19,Unit 3,Assignment 35,2025-12-16,2025-12-23,Turned in,2025-12-23
+Student 20,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-22
+Student 21,Unit 3,Assignment 35,2025-12-16,2025-12-23,Turned in,2025-12-22
+Student 22,Unit 3,Assignment 35,2025-12-16,2025-12-23,Missing,
+Student 23,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-21
+Student 24,Unit 3,Assignment 35,2025-12-16,2025-12-23,Graded,2025-12-18
+Student 01,Unit 3,Assignment 36,2025-12-18,2025-12-25,Missing,
+Student 02,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-26
+Student 03,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-23
+Student 04,Unit 3,Assignment 36,2025-12-18,2025-12-25,Turned in,2025-12-27
+Student 05,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-21
+Student 06,Unit 3,Assignment 36,2025-12-18,2025-12-25,Turned in,2025-12-27
+Student 07,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2026-01-02
+Student 08,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-21
+Student 09,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-26
+Student 10,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-24
+Student 11,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-23
+Student 12,Unit 3,Assignment 36,2025-12-18,2025-12-25,Missing,
+Student 13,Unit 3,Assignment 36,2025-12-18,2025-12-25,Missing,
+Student 14,Unit 3,Assignment 36,2025-12-18,2025-12-25,Turned in,2025-12-21
+Student 15,Unit 3,Assignment 36,2025-12-18,2025-12-25,In progress,
+Student 16,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-24
+Student 17,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-28
+Student 18,Unit 3,Assignment 36,2025-12-18,2025-12-25,Missing,
+Student 19,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-28
+Student 20,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-21
+Student 21,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-20
+Student 22,Unit 3,Assignment 36,2025-12-18,2025-12-25,Graded,2025-12-24
+Student 23,Unit 3,Assignment 36,2025-12-18,2025-12-25,Turned in,2025-12-22
+Student 24,Unit 3,Assignment 36,2025-12-18,2025-12-25,Turned in,2025-12-27
+Student 01,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-23
+Student 02,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 03,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-19
+Student 04,Unit 4,Assignment 37,2026-01-13,2026-01-20,Turned in,2026-01-16
+Student 05,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-16
+Student 06,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 07,Unit 4,Assignment 37,2026-01-13,2026-01-20,Missing,
+Student 08,Unit 4,Assignment 37,2026-01-13,2026-01-20,Turned in,2026-01-21
+Student 09,Unit 4,Assignment 37,2026-01-13,2026-01-20,Turned in,2026-01-22
+Student 10,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 11,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-22
+Student 12,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 13,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-20
+Student 14,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-16
+Student 15,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-22
+Student 16,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-17
+Student 17,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-15
+Student 18,Unit 4,Assignment 37,2026-01-13,2026-01-20,Turned in,2026-01-16
+Student 19,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-17
+Student 20,Unit 4,Assignment 37,2026-01-13,2026-01-20,Turned in,2026-01-20
+Student 21,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 22,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 23,Unit 4,Assignment 37,2026-01-13,2026-01-20,Graded,2026-01-18
+Student 24,Unit 4,Assignment 37,2026-01-13,2026-01-20,Turned in,2026-01-21
+Student 01,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-18
+Student 02,Unit 4,Assignment 38,2026-01-15,2026-01-22,Turned in,2026-01-24
+Student 03,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-19
+Student 04,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-18
+Student 05,Unit 4,Assignment 38,2026-01-15,2026-01-22,Turned in,2026-01-17
+Student 06,Unit 4,Assignment 38,2026-01-15,2026-01-22,Missing,
+Student 07,Unit 4,Assignment 38,2026-01-15,2026-01-22,Missing,
+Student 08,Unit 4,Assignment 38,2026-01-15,2026-01-22,Missing,
+Student 09,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-19
+Student 10,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-19
+Student 11,Unit 4,Assignment 38,2026-01-15,2026-01-22,Missing,
+Student 12,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-22
+Student 13,Unit 4,Assignment 38,2026-01-15,2026-01-22,Turned in,2026-01-23
+Student 14,Unit 4,Assignment 38,2026-01-15,2026-01-22,Turned in,2026-01-17
+Student 15,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-29
+Student 16,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-23
+Student 17,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-21
+Student 18,Unit 4,Assignment 38,2026-01-15,2026-01-22,Excused,
+Student 19,Unit 4,Assignment 38,2026-01-15,2026-01-22,Turned in,2026-01-21
+Student 20,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-21
+Student 21,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-23
+Student 22,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-21
+Student 23,Unit 4,Assignment 38,2026-01-15,2026-01-22,Turned in,2026-01-21
+Student 24,Unit 4,Assignment 38,2026-01-15,2026-01-22,Graded,2026-01-25
+Student 01,Unit 4,Assignment 39,2026-01-20,2026-01-27,Turned in,2026-01-23
+Student 02,Unit 4,Assignment 39,2026-01-20,2026-01-27,Turned in,2026-01-24
+Student 03,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-28
+Student 04,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-26
+Student 05,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-28
+Student 06,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-22
+Student 07,Unit 4,Assignment 39,2026-01-20,2026-01-27,Missing,
+Student 08,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-25
+Student 09,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-25
+Student 10,Unit 4,Assignment 39,2026-01-20,2026-01-27,Turned in,2026-01-25
+Student 11,Unit 4,Assignment 39,2026-01-20,2026-01-27,Turned in,2026-01-28
+Student 12,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-22
+Student 13,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-24
+Student 14,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-30
+Student 15,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-02-04
+Student 16,Unit 4,Assignment 39,2026-01-20,2026-01-27,Missing,
+Student 17,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-23
+Student 18,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-28
+Student 19,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-25
+Student 20,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-29
+Student 21,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-25
+Student 22,Unit 4,Assignment 39,2026-01-20,2026-01-27,In progress,
+Student 23,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-28
+Student 24,Unit 4,Assignment 39,2026-01-20,2026-01-27,Graded,2026-01-27
+Student 01,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-31
+Student 02,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-25
+Student 03,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-25
+Student 04,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-28
+Student 05,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-25
+Student 06,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-02-01
+Student 07,Unit 4,Assignment 40,2026-01-22,2026-01-29,Missing,
+Student 08,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-24
+Student 09,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-27
+Student 10,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-24
+Student 11,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-02-01
+Student 12,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-02-01
+Student 13,Unit 4,Assignment 40,2026-01-22,2026-01-29,Turned in,2026-01-25
+Student 14,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-26
+Student 15,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-02-05
+Student 16,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-27
+Student 17,Unit 4,Assignment 40,2026-01-22,2026-01-29,Turned in,2026-01-27
+Student 18,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-25
+Student 19,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-24
+Student 20,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-26
+Student 21,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-27
+Student 22,Unit 4,Assignment 40,2026-01-22,2026-01-29,Turned in,2026-01-31
+Student 23,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-26
+Student 24,Unit 4,Assignment 40,2026-01-22,2026-01-29,Graded,2026-01-25
+Student 01,Unit 4,Assignment 41,2026-01-27,2026-02-03,Turned in,2026-02-02
+Student 02,Unit 4,Assignment 41,2026-01-27,2026-02-03,Missing,
+Student 03,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-01-30
+Student 04,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-02
+Student 05,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-04
+Student 06,Unit 4,Assignment 41,2026-01-27,2026-02-03,Excused,
+Student 07,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-06
+Student 08,Unit 4,Assignment 41,2026-01-27,2026-02-03,Turned in,2026-01-29
+Student 09,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-01
+Student 10,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-06
+Student 11,Unit 4,Assignment 41,2026-01-27,2026-02-03,Turned in,2026-01-30
+Student 12,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-05
+Student 13,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-01
+Student 14,Unit 4,Assignment 41,2026-01-27,2026-02-03,Turned in,2026-02-02
+Student 15,Unit 4,Assignment 41,2026-01-27,2026-02-03,Turned in,2026-02-11
+Student 16,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-05
+Student 17,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-06
+Student 18,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-04
+Student 19,Unit 4,Assignment 41,2026-01-27,2026-02-03,Turned in,2026-01-29
+Student 20,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-02
+Student 21,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-01-30
+Student 22,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-01
+Student 23,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-01-31
+Student 24,Unit 4,Assignment 41,2026-01-27,2026-02-03,Graded,2026-02-03
+Student 01,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-07
+Student 02,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-06
+Student 03,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-01
+Student 04,Unit 4,Assignment 42,2026-01-29,2026-02-05,Turned in,2026-02-01
+Student 05,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-08
+Student 06,Unit 4,Assignment 42,2026-01-29,2026-02-05,Turned in,2026-02-04
+Student 07,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-05
+Student 08,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-04
+Student 09,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-04
+Student 10,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-01-31
+Student 11,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-02
+Student 12,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-01-31
+Student 13,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-07
+Student 14,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-07
+Student 15,Unit 4,Assignment 42,2026-01-29,2026-02-05,Turned in,2026-02-12
+Student 16,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-04
+Student 17,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-02
+Student 18,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-04
+Student 19,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-01-31
+Student 20,Unit 4,Assignment 42,2026-01-29,2026-02-05,Turned in,2026-02-05
+Student 21,Unit 4,Assignment 42,2026-01-29,2026-02-05,Turned in,2026-02-02
+Student 22,Unit 4,Assignment 42,2026-01-29,2026-02-05,Missing,
+Student 23,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-01
+Student 24,Unit 4,Assignment 42,2026-01-29,2026-02-05,Graded,2026-02-01
+Student 01,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-07
+Student 02,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-05
+Student 03,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-05
+Student 04,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-09
+Student 05,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-05
+Student 06,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-11
+Student 07,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-13
+Student 08,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-10
+Student 09,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-07
+Student 10,Unit 4,Assignment 43,2026-02-03,2026-02-10,Turned in,2026-02-12
+Student 11,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-07
+Student 12,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-12
+Student 13,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-06
+Student 14,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-13
+Student 15,Unit 4,Assignment 43,2026-02-03,2026-02-10,Missing,
+Student 16,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-08
+Student 17,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-09
+Student 18,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-09
+Student 19,Unit 4,Assignment 43,2026-02-03,2026-02-10,Excused,
+Student 20,Unit 4,Assignment 43,2026-02-03,2026-02-10,Turned in,2026-02-10
+Student 21,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-13
+Student 22,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-12
+Student 23,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-12
+Student 24,Unit 4,Assignment 43,2026-02-03,2026-02-10,Graded,2026-02-09
+Student 01,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-14
+Student 02,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-15
+Student 03,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-13
+Student 04,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-08
+Student 05,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-07
+Student 06,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-09
+Student 07,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-14
+Student 08,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-07
+Student 09,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-15
+Student 10,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-12
+Student 11,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-13
+Student 12,Unit 4,Assignment 44,2026-02-05,2026-02-12,Missing,
+Student 13,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-13
+Student 14,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-12
+Student 15,Unit 4,Assignment 44,2026-02-05,2026-02-12,Missing,
+Student 16,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-14
+Student 17,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-11
+Student 18,Unit 4,Assignment 44,2026-02-05,2026-02-12,Turned in,2026-02-12
+Student 19,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-11
+Student 20,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-09
+Student 21,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-11
+Student 22,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-17
+Student 23,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-12
+Student 24,Unit 4,Assignment 44,2026-02-05,2026-02-12,Graded,2026-02-11
+Student 01,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-13
+Student 02,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-19
+Student 03,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-15
+Student 04,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-15
+Student 05,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-18
+Student 06,Unit 4,Assignment 45,2026-02-10,2026-02-17,Turned in,2026-02-16
+Student 07,Unit 4,Assignment 45,2026-02-10,2026-02-17,Missing,
+Student 08,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-15
+Student 09,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-19
+Student 10,Unit 4,Assignment 45,2026-02-10,2026-02-17,Turned in,2026-02-13
+Student 11,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-14
+Student 12,Unit 4,Assignment 45,2026-02-10,2026-02-17,Excused,
+Student 13,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-16
+Student 14,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-18
+Student 15,Unit 4,Assignment 45,2026-02-10,2026-02-17,Missing,
+Student 16,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-13
+Student 17,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-15
+Student 18,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-15
+Student 19,Unit 4,Assignment 45,2026-02-10,2026-02-17,Turned in,2026-02-16
+Student 20,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-16
+Student 21,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-15
+Student 22,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-24
+Student 23,Unit 4,Assignment 45,2026-02-10,2026-02-17,Turned in,2026-02-14
+Student 24,Unit 4,Assignment 45,2026-02-10,2026-02-17,Graded,2026-02-17
+Student 01,Unit 4,Assignment 46,2026-02-12,2026-02-19,Turned in,2026-02-20
+Student 02,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-20
+Student 03,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-20
+Student 04,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-22
+Student 05,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-18
+Student 06,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-14
+Student 07,Unit 4,Assignment 46,2026-02-12,2026-02-19,Missing,
+Student 08,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-18
+Student 09,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-17
+Student 10,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-16
+Student 11,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-21
+Student 12,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-14
+Student 13,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-18
+Student 14,Unit 4,Assignment 46,2026-02-12,2026-02-19,Excused,
+Student 15,Unit 4,Assignment 46,2026-02-12,2026-02-19,Turned in,2026-02-18
+Student 16,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-16
+Student 17,Unit 4,Assignment 46,2026-02-12,2026-02-19,Turned in,2026-02-16
+Student 18,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-17
+Student 19,Unit 4,Assignment 46,2026-02-12,2026-02-19,Turned in,2026-02-19
+Student 20,Unit 4,Assignment 46,2026-02-12,2026-02-19,Missing,
+Student 21,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-19
+Student 22,Unit 4,Assignment 46,2026-02-12,2026-02-19,Graded,2026-02-26
+Student 23,Unit 4,Assignment 46,2026-02-12,2026-02-19,Turned in,2026-02-21
+Student 24,Unit 4,Assignment 46,2026-02-12,2026-02-19,Turned in,2026-02-18
+Student 01,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-25
+Student 02,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-25
+Student 03,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-21
+Student 04,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-21
+Student 05,Unit 4,Assignment 47,2026-02-17,2026-02-24,Turned in,2026-02-20
+Student 06,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-19
+Student 07,Unit 4,Assignment 47,2026-02-17,2026-02-24,Missing,
+Student 08,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-23
+Student 09,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-21
+Student 10,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-24
+Student 11,Unit 4,Assignment 47,2026-02-17,2026-02-24,Turned in,2026-02-20
+Student 12,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-25
+Student 13,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-23
+Student 14,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-23
+Student 15,Unit 4,Assignment 47,2026-02-17,2026-02-24,Missing,
+Student 16,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-19
+Student 17,Unit 4,Assignment 47,2026-02-17,2026-02-24,Turned in,2026-02-27
+Student 18,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-25
+Student 19,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-25
+Student 20,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-24
+Student 21,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-26
+Student 22,Unit 4,Assignment 47,2026-02-17,2026-02-24,Missing,
+Student 23,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-27
+Student 24,Unit 4,Assignment 47,2026-02-17,2026-02-24,Graded,2026-02-24
+Student 01,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-26
+Student 02,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-21
+Student 03,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-25
+Student 04,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-02-24
+Student 05,Unit 4,Assignment 48,2026-02-19,2026-02-26,In progress,
+Student 06,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-02-21
+Student 07,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-03-07
+Student 08,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-22
+Student 09,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-24
+Student 10,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-26
+Student 11,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-03-01
+Student 12,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-23
+Student 13,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-24
+Student 14,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-02-27
+Student 15,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-03-05
+Student 16,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-02-28
+Student 17,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-28
+Student 18,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-24
+Student 19,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-24
+Student 20,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-03-01
+Student 21,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-02-21
+Student 22,Unit 4,Assignment 48,2026-02-19,2026-02-26,Turned in,2026-03-04
+Student 23,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-22
+Student 24,Unit 4,Assignment 48,2026-02-19,2026-02-26,Graded,2026-02-28
+Student 01,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-04
+Student 02,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-02-26
+Student 03,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-06
+Student 04,Unit 4,Assignment 49,2026-02-24,2026-03-03,Turned in,2026-03-03
+Student 05,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-01
+Student 06,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-03
+Student 07,Unit 4,Assignment 49,2026-02-24,2026-03-03,Missing,
+Student 08,Unit 4,Assignment 49,2026-02-24,2026-03-03,Turned in,2026-03-03
+Student 09,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-04
+Student 10,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-05
+Student 11,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-02-26
+Student 12,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-01
+Student 13,Unit 4,Assignment 49,2026-02-24,2026-03-03,Turned in,2026-03-03
+Student 14,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-02-26
+Student 15,Unit 4,Assignment 49,2026-02-24,2026-03-03,Missing,
+Student 16,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-05
+Student 17,Unit 4,Assignment 49,2026-02-24,2026-03-03,Missing,
+Student 18,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-02
+Student 19,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-02
+Student 20,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-02-28
+Student 21,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-02-28
+Student 22,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-03
+Student 23,Unit 4,Assignment 49,2026-02-24,2026-03-03,Graded,2026-03-01
+Student 24,Unit 4,Assignment 49,2026-02-24,2026-03-03,Excused,
+Student 01,Unit 4,Assignment 50,2026-02-26,2026-03-05,Turned in,2026-03-07
+Student 02,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-02-28
+Student 03,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-02
+Student 04,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-02
+Student 05,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-02-28
+Student 06,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-04
+Student 07,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-03
+Student 08,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-07
+Student 09,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-02-28
+Student 10,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-01
+Student 11,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-02-28
+Student 12,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-07
+Student 13,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-03
+Student 14,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-07
+Student 15,Unit 4,Assignment 50,2026-02-26,2026-03-05,Turned in,2026-03-13
+Student 16,Unit 4,Assignment 50,2026-02-26,2026-03-05,Turned in,2026-03-07
+Student 17,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-06
+Student 18,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-07
+Student 19,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-08
+Student 20,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-01
+Student 21,Unit 4,Assignment 50,2026-02-26,2026-03-05,Turned in,2026-03-06
+Student 22,Unit 4,Assignment 50,2026-02-26,2026-03-05,In progress,
+Student 23,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-03
+Student 24,Unit 4,Assignment 50,2026-02-26,2026-03-05,Graded,2026-03-05
+Student 01,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-06
+Student 02,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-06
+Student 03,Unit 5,Assignment 51,2026-03-03,2026-03-10,Turned in,2026-03-11
+Student 04,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-10
+Student 05,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-07
+Student 06,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-11
+Student 07,Unit 5,Assignment 51,2026-03-03,2026-03-10,Missing,
+Student 08,Unit 5,Assignment 51,2026-03-03,2026-03-10,Turned in,2026-03-08
+Student 09,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-10
+Student 10,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-07
+Student 11,Unit 5,Assignment 51,2026-03-03,2026-03-10,Missing,
+Student 12,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-10
+Student 13,Unit 5,Assignment 51,2026-03-03,2026-03-10,Turned in,2026-03-10
+Student 14,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-11
+Student 15,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-11
+Student 16,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-09
+Student 17,Unit 5,Assignment 51,2026-03-03,2026-03-10,Turned in,2026-03-11
+Student 18,Unit 5,Assignment 51,2026-03-03,2026-03-10,Turned in,2026-03-05
+Student 19,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-07
+Student 20,Unit 5,Assignment 51,2026-03-03,2026-03-10,Turned in,2026-03-10
+Student 21,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-06
+Student 22,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-18
+Student 23,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-05
+Student 24,Unit 5,Assignment 51,2026-03-03,2026-03-10,Graded,2026-03-12
+Student 01,Unit 5,Assignment 52,2026-03-05,2026-03-12,Turned in,2026-03-10
+Student 02,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-10
+Student 03,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-13
+Student 04,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-14
+Student 05,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-15
+Student 06,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-07
+Student 07,Unit 5,Assignment 52,2026-03-05,2026-03-12,Missing,
+Student 08,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-09
+Student 09,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-08
+Student 10,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-11
+Student 11,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-07
+Student 12,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-14
+Student 13,Unit 5,Assignment 52,2026-03-05,2026-03-12,Turned in,2026-03-11
+Student 14,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-09
+Student 15,Unit 5,Assignment 52,2026-03-05,2026-03-12,Missing,
+Student 16,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-08
+Student 17,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-12
+Student 18,Unit 5,Assignment 52,2026-03-05,2026-03-12,Turned in,2026-03-09
+Student 19,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-13
+Student 20,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-10
+Student 21,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-11
+Student 22,Unit 5,Assignment 52,2026-03-05,2026-03-12,Turned in,2026-03-18
+Student 23,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-15
+Student 24,Unit 5,Assignment 52,2026-03-05,2026-03-12,Graded,2026-03-15
+Student 01,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-15
+Student 02,Unit 5,Assignment 53,2026-03-10,2026-03-17,Turned in,2026-03-14
+Student 03,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-18
+Student 04,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-20
+Student 05,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-20
+Student 06,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-14
+Student 07,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-15
+Student 08,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-12
+Student 09,Unit 5,Assignment 53,2026-03-10,2026-03-17,Turned in,2026-03-19
+Student 10,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-12
+Student 11,Unit 5,Assignment 53,2026-03-10,2026-03-17,Turned in,2026-03-14
+Student 12,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-20
+Student 13,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-13
+Student 14,Unit 5,Assignment 53,2026-03-10,2026-03-17,Turned in,2026-03-13
+Student 15,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-26
+Student 16,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-14
+Student 17,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-19
+Student 18,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-15
+Student 19,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-15
+Student 20,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-13
+Student 21,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-13
+Student 22,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-20
+Student 23,Unit 5,Assignment 53,2026-03-10,2026-03-17,Graded,2026-03-16
+Student 24,Unit 5,Assignment 53,2026-03-10,2026-03-17,Turned in,2026-03-12
+Student 01,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-19
+Student 02,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-17
+Student 03,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-17
+Student 04,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-22
+Student 05,Unit 5,Assignment 54,2026-03-12,2026-03-19,Turned in,2026-03-15
+Student 06,Unit 5,Assignment 54,2026-03-12,2026-03-19,Turned in,2026-03-19
+Student 07,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-26
+Student 08,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-14
+Student 09,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-22
+Student 10,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-20
+Student 11,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-19
+Student 12,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-14
+Student 13,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-14
+Student 14,Unit 5,Assignment 54,2026-03-12,2026-03-19,Missing,
+Student 15,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-18
+Student 16,Unit 5,Assignment 54,2026-03-12,2026-03-19,Turned in,2026-03-19
+Student 17,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-20
+Student 18,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-19
+Student 19,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-17
+Student 20,Unit 5,Assignment 54,2026-03-12,2026-03-19,In progress,
+Student 21,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-17
+Student 22,Unit 5,Assignment 54,2026-03-12,2026-03-19,In progress,
+Student 23,Unit 5,Assignment 54,2026-03-12,2026-03-19,Graded,2026-03-17
+Student 24,Unit 5,Assignment 54,2026-03-12,2026-03-19,Turned in,2026-03-21
+Student 01,Unit 5,Assignment 55,2026-03-17,2026-03-24,Missing,
+Student 02,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-27
+Student 03,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-27
+Student 04,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-27
+Student 05,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-19
+Student 06,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-27
+Student 07,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-30
+Student 08,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-24
+Student 09,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-26
+Student 10,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-23
+Student 11,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-24
+Student 12,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-23
+Student 13,Unit 5,Assignment 55,2026-03-17,2026-03-24,Turned in,2026-03-25
+Student 14,Unit 5,Assignment 55,2026-03-17,2026-03-24,Turned in,2026-03-20
+Student 15,Unit 5,Assignment 55,2026-03-17,2026-03-24,Missing,
+Student 16,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-19
+Student 17,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-24
+Student 18,Unit 5,Assignment 55,2026-03-17,2026-03-24,Turned in,2026-03-26
+Student 19,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-26
+Student 20,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-21
+Student 21,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-26
+Student 22,Unit 5,Assignment 55,2026-03-17,2026-03-24,Turned in,2026-03-23
+Student 23,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-22
+Student 24,Unit 5,Assignment 55,2026-03-17,2026-03-24,Graded,2026-03-25
+Student 01,Unit 5,Assignment 56,2026-03-19,2026-03-26,Excused,
+Student 02,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-28
+Student 03,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-26
+Student 04,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-28
+Student 05,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-26
+Student 06,Unit 5,Assignment 56,2026-03-19,2026-03-26,Turned in,2026-03-22
+Student 07,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-30
+Student 08,Unit 5,Assignment 56,2026-03-19,2026-03-26,Turned in,2026-03-29
+Student 09,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-29
+Student 10,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-27
+Student 11,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-28
+Student 12,Unit 5,Assignment 56,2026-03-19,2026-03-26,Turned in,2026-03-28
+Student 13,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-21
+Student 14,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-22
+Student 15,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-04-04
+Student 16,Unit 5,Assignment 56,2026-03-19,2026-03-26,Excused,
+Student 17,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-26
+Student 18,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-23
+Student 19,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-26
+Student 20,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-26
+Student 21,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-21
+Student 22,Unit 5,Assignment 56,2026-03-19,2026-03-26,In progress,
+Student 23,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-28
+Student 24,Unit 5,Assignment 56,2026-03-19,2026-03-26,Graded,2026-03-27
+Student 01,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-29
+Student 02,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-27
+Student 03,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-26
+Student 04,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-27
+Student 05,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-28
+Student 06,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-30
+Student 07,Unit 5,Assignment 57,2026-03-24,2026-03-31,Missing,
+Student 08,Unit 5,Assignment 57,2026-03-24,2026-03-31,Turned in,2026-04-02
+Student 09,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-04-02
+Student 10,Unit 5,Assignment 57,2026-03-24,2026-03-31,Turned in,2026-03-29
+Student 11,Unit 5,Assignment 57,2026-03-24,2026-03-31,Turned in,2026-03-30
+Student 12,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-04-01
+Student 13,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-04-03
+Student 14,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-30
+Student 15,Unit 5,Assignment 57,2026-03-24,2026-03-31,Turned in,2026-04-07
+Student 16,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-04-02
+Student 17,Unit 5,Assignment 57,2026-03-24,2026-03-31,Excused,
+Student 18,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-04-01
+Student 19,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-26
+Student 20,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-30
+Student 21,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-28
+Student 22,Unit 5,Assignment 57,2026-03-24,2026-03-31,Missing,
+Student 23,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-03-26
+Student 24,Unit 5,Assignment 57,2026-03-24,2026-03-31,Graded,2026-04-03
+Student 01,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-04-05
+Student 02,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 03,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-04-04
+Student 04,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-30
+Student 05,Unit 5,Assignment 58,2026-03-26,2026-04-02,Turned in,2026-04-05
+Student 06,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 07,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-04-09
+Student 08,Unit 5,Assignment 58,2026-03-26,2026-04-02,Turned in,2026-03-29
+Student 09,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 10,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-28
+Student 11,Unit 5,Assignment 58,2026-03-26,2026-04-02,Missing,
+Student 12,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-04-03
+Student 13,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 14,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 15,Unit 5,Assignment 58,2026-03-26,2026-04-02,Missing,
+Student 16,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-28
+Student 17,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-04-01
+Student 18,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 19,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-31
+Student 20,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-29
+Student 21,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-30
+Student 22,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-04-04
+Student 23,Unit 5,Assignment 58,2026-03-26,2026-04-02,Turned in,2026-04-01
+Student 24,Unit 5,Assignment 58,2026-03-26,2026-04-02,Graded,2026-03-30
+Student 01,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-08
+Student 02,Unit 5,Assignment 59,2026-03-31,2026-04-07,Turned in,2026-04-08
+Student 03,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-09
+Student 04,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-07
+Student 05,Unit 5,Assignment 59,2026-03-31,2026-04-07,Turned in,2026-04-03
+Student 06,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-07
+Student 07,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-16
+Student 08,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-07
+Student 09,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-04
+Student 10,Unit 5,Assignment 59,2026-03-31,2026-04-07,Turned in,2026-04-08
+Student 11,Unit 5,Assignment 59,2026-03-31,2026-04-07,Turned in,2026-04-10
+Student 12,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-04
+Student 13,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-03
+Student 14,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-06
+Student 15,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-16
+Student 16,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-09
+Student 17,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-08
+Student 18,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-05
+Student 19,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-07
+Student 20,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-06
+Student 21,Unit 5,Assignment 59,2026-03-31,2026-04-07,Turned in,2026-04-09
+Student 22,Unit 5,Assignment 59,2026-03-31,2026-04-07,Missing,
+Student 23,Unit 5,Assignment 59,2026-03-31,2026-04-07,Turned in,2026-04-08
+Student 24,Unit 5,Assignment 59,2026-03-31,2026-04-07,Graded,2026-04-02
+Student 01,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-11
+Student 02,Unit 5,Assignment 60,2026-04-02,2026-04-09,Missing,
+Student 03,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-10
+Student 04,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-04
+Student 05,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-09
+Student 06,Unit 5,Assignment 60,2026-04-02,2026-04-09,Turned in,2026-04-06
+Student 07,Unit 5,Assignment 60,2026-04-02,2026-04-09,Missing,
+Student 08,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-12
+Student 09,Unit 5,Assignment 60,2026-04-02,2026-04-09,Turned in,2026-04-07
+Student 10,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-05
+Student 11,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-09
+Student 12,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-06
+Student 13,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-05
+Student 14,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-11
+Student 15,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-16
+Student 16,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-10
+Student 17,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-08
+Student 18,Unit 5,Assignment 60,2026-04-02,2026-04-09,Turned in,2026-04-11
+Student 19,Unit 5,Assignment 60,2026-04-02,2026-04-09,Turned in,2026-04-12
+Student 20,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-12
+Student 21,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-12
+Student 22,Unit 5,Assignment 60,2026-04-02,2026-04-09,Missing,
+Student 23,Unit 5,Assignment 60,2026-04-02,2026-04-09,Graded,2026-04-04
+Student 24,Unit 5,Assignment 60,2026-04-02,2026-04-09,Turned in,2026-04-09
+Student 01,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-15
+Student 02,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-11
+Student 03,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-17
+Student 04,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-09
+Student 05,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-09
+Student 06,Unit 5,Assignment 61,2026-04-07,2026-04-14,Missing,
+Student 07,Unit 5,Assignment 61,2026-04-07,2026-04-14,Missing,
+Student 08,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-16
+Student 09,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-12
+Student 10,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-10
+Student 11,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-12
+Student 12,Unit 5,Assignment 61,2026-04-07,2026-04-14,Excused,
+Student 13,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-17
+Student 14,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-16
+Student 15,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-21
+Student 16,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-10
+Student 17,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-16
+Student 18,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-09
+Student 19,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-12
+Student 20,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-17
+Student 21,Unit 5,Assignment 61,2026-04-07,2026-04-14,Turned in,2026-04-16
+Student 22,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-13
+Student 23,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-11
+Student 24,Unit 5,Assignment 61,2026-04-07,2026-04-14,Graded,2026-04-13
+Student 01,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-17
+Student 02,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-14
+Student 03,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-17
+Student 04,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-14
+Student 05,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-11
+Student 06,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-19
+Student 07,Unit 5,Assignment 62,2026-04-09,2026-04-16,Missing,
+Student 08,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-17
+Student 09,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-11
+Student 10,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-16
+Student 11,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-15
+Student 12,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-14
+Student 13,Unit 5,Assignment 62,2026-04-09,2026-04-16,In progress,
+Student 14,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-14
+Student 15,Unit 5,Assignment 62,2026-04-09,2026-04-16,Missing,
+Student 16,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-11
+Student 17,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-14
+Student 18,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-19
+Student 19,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-17
+Student 20,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-18
+Student 21,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-17
+Student 22,Unit 5,Assignment 62,2026-04-09,2026-04-16,Turned in,2026-04-21
+Student 23,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-12
+Student 24,Unit 5,Assignment 62,2026-04-09,2026-04-16,Graded,2026-04-17
+Student 01,Unit 5,Assignment 63,2026-04-14,2026-04-21,Turned in,2026-04-16
+Student 02,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-17
+Student 03,Unit 5,Assignment 63,2026-04-14,2026-04-21,Turned in,2026-04-21
+Student 04,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-17
+Student 05,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-19
+Student 06,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-20
+Student 07,Unit 5,Assignment 63,2026-04-14,2026-04-21,Missing,
+Student 08,Unit 5,Assignment 63,2026-04-14,2026-04-21,Turned in,2026-04-23
+Student 09,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-17
+Student 10,Unit 5,Assignment 63,2026-04-14,2026-04-21,Turned in,2026-04-21
+Student 11,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-21
+Student 12,Unit 5,Assignment 63,2026-04-14,2026-04-21,Turned in,2026-04-19
+Student 13,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-20
+Student 14,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-21
+Student 15,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-30
+Student 16,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-23
+Student 17,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-24
+Student 18,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-21
+Student 19,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-19
+Student 20,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-22
+Student 21,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-22
+Student 22,Unit 5,Assignment 63,2026-04-14,2026-04-21,In progress,
+Student 23,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-18
+Student 24,Unit 5,Assignment 63,2026-04-14,2026-04-21,Graded,2026-04-24
+Student 01,Unit 5,Assignment 64,2026-04-16,2026-04-23,Excused,
+Student 02,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-25
+Student 03,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-22
+Student 04,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-20
+Student 05,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-24
+Student 06,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-19
+Student 07,Unit 5,Assignment 64,2026-04-16,2026-04-23,Missing,
+Student 08,Unit 5,Assignment 64,2026-04-16,2026-04-23,Turned in,2026-04-19
+Student 09,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-22
+Student 10,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-21
+Student 11,Unit 5,Assignment 64,2026-04-16,2026-04-23,Turned in,2026-04-24
+Student 12,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-20
+Student 13,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-21
+Student 14,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-19
+Student 15,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-05-01
+Student 16,Unit 5,Assignment 64,2026-04-16,2026-04-23,Turned in,2026-04-23
+Student 17,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-24
+Student 18,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-19
+Student 19,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-21
+Student 20,Unit 5,Assignment 64,2026-04-16,2026-04-23,Turned in,2026-04-20
+Student 21,Unit 5,Assignment 64,2026-04-16,2026-04-23,Missing,
+Student 22,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-23
+Student 23,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-21
+Student 24,Unit 5,Assignment 64,2026-04-16,2026-04-23,Graded,2026-04-22
+Student 01,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-26
+Student 02,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-25
+Student 03,Unit 6,Assignment 65,2026-04-21,2026-04-28,Turned in,2026-04-23
+Student 04,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-23
+Student 05,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-23
+Student 06,Unit 6,Assignment 65,2026-04-21,2026-04-28,Missing,
+Student 07,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-05-03
+Student 08,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-27
+Student 09,Unit 6,Assignment 65,2026-04-21,2026-04-28,Turned in,2026-04-24
+Student 10,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-27
+Student 11,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-27
+Student 12,Unit 6,Assignment 65,2026-04-21,2026-04-28,Missing,
+Student 13,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-26
+Student 14,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-23
+Student 15,Unit 6,Assignment 65,2026-04-21,2026-04-28,Missing,
+Student 16,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-25
+Student 17,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-24
+Student 18,Unit 6,Assignment 65,2026-04-21,2026-04-28,In progress,
+Student 19,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-27
+Student 20,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-25
+Student 21,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-29
+Student 22,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-26
+Student 23,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-30
+Student 24,Unit 6,Assignment 65,2026-04-21,2026-04-28,Graded,2026-04-24
+Student 01,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-29
+Student 02,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-26
+Student 03,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-29
+Student 04,Unit 6,Assignment 66,2026-04-23,2026-04-30,Missing,
+Student 05,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-27
+Student 06,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-05-03
+Student 07,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-05-04
+Student 08,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-26
+Student 09,Unit 6,Assignment 66,2026-04-23,2026-04-30,Missing,
+Student 10,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-05-03
+Student 11,Unit 6,Assignment 66,2026-04-23,2026-04-30,Turned in,2026-04-30
+Student 12,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-05-02
+Student 13,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-25
+Student 14,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-05-02
+Student 15,Unit 6,Assignment 66,2026-04-23,2026-04-30,Missing,
+Student 16,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-29
+Student 17,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-28
+Student 18,Unit 6,Assignment 66,2026-04-23,2026-04-30,Turned in,2026-05-03
+Student 19,Unit 6,Assignment 66,2026-04-23,2026-04-30,Turned in,2026-05-03
+Student 20,Unit 6,Assignment 66,2026-04-23,2026-04-30,Turned in,2026-04-29
+Student 21,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-05-03
+Student 22,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-30
+Student 23,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-29
+Student 24,Unit 6,Assignment 66,2026-04-23,2026-04-30,Graded,2026-04-26
+Student 01,Unit 6,Assignment 67,2026-04-28,2026-05-05,Missing,
+Student 02,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-02
+Student 03,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-05
+Student 04,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-04
+Student 05,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-06
+Student 06,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-08
+Student 07,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-13
+Student 08,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-02
+Student 09,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-08
+Student 10,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-06
+Student 11,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-03
+Student 12,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-04-30
+Student 13,Unit 6,Assignment 67,2026-04-28,2026-05-05,Turned in,2026-05-05
+Student 14,Unit 6,Assignment 67,2026-04-28,2026-05-05,Missing,
+Student 15,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-11
+Student 16,Unit 6,Assignment 67,2026-04-28,2026-05-05,Turned in,2026-05-03
+Student 17,Unit 6,Assignment 67,2026-04-28,2026-05-05,Turned in,2026-05-05
+Student 18,Unit 6,Assignment 67,2026-04-28,2026-05-05,Turned in,2026-05-07
+Student 19,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-07
+Student 20,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-02
+Student 21,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-03
+Student 22,Unit 6,Assignment 67,2026-04-28,2026-05-05,Missing,
+Student 23,Unit 6,Assignment 67,2026-04-28,2026-05-05,Graded,2026-05-06
+Student 24,Unit 6,Assignment 67,2026-04-28,2026-05-05,Turned in,2026-05-04
+Student 01,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-04
+Student 02,Unit 6,Assignment 68,2026-04-30,2026-05-07,Turned in,2026-05-07
+Student 03,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-08
+Student 04,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-10
+Student 05,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-07
+Student 06,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-04
+Student 07,Unit 6,Assignment 68,2026-04-30,2026-05-07,Missing,
+Student 08,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-06
+Student 09,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-03
+Student 10,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-03
+Student 11,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-02
+Student 12,Unit 6,Assignment 68,2026-04-30,2026-05-07,Turned in,2026-05-04
+Student 13,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-09
+Student 14,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-03
+Student 15,Unit 6,Assignment 68,2026-04-30,2026-05-07,Missing,
+Student 16,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-04
+Student 17,Unit 6,Assignment 68,2026-04-30,2026-05-07,Turned in,2026-05-09
+Student 18,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-06
+Student 19,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-07
+Student 20,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-04
+Student 21,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-05
+Student 22,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-08
+Student 23,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-09
+Student 24,Unit 6,Assignment 68,2026-04-30,2026-05-07,Graded,2026-05-08
+Student 01,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-11
+Student 02,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-07
+Student 03,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-08
+Student 04,Unit 6,Assignment 69,2026-05-05,2026-05-12,Turned in,2026-05-08
+Student 05,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-11
+Student 06,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-12
+Student 07,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-20
+Student 08,Unit 6,Assignment 69,2026-05-05,2026-05-12,Missing,
+Student 09,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-14
+Student 10,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-10
+Student 11,Unit 6,Assignment 69,2026-05-05,2026-05-12,Missing,
+Student 12,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-14
+Student 13,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-11
+Student 14,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-07
+Student 15,Unit 6,Assignment 69,2026-05-05,2026-05-12,Excused,
+Student 16,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-14
+Student 17,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-08
+Student 18,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-12
+Student 19,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-09
+Student 20,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-08
+Student 21,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-13
+Student 22,Unit 6,Assignment 69,2026-05-05,2026-05-12,In progress,
+Student 23,Unit 6,Assignment 69,2026-05-05,2026-05-12,Turned in,2026-05-07
+Student 24,Unit 6,Assignment 69,2026-05-05,2026-05-12,Graded,2026-05-07
+Student 01,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-12
+Student 02,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-10
+Student 03,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-13
+Student 04,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-10
+Student 05,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-13
+Student 06,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-12
+Student 07,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-23
+Student 08,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-13
+Student 09,Unit 6,Assignment 70,2026-05-07,2026-05-14,Missing,
+Student 10,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-09
+Student 11,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-17
+Student 12,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-09
+Student 13,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-13
+Student 14,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-09
+Student 15,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-17
+Student 16,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-13
+Student 17,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-17
+Student 18,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-17
+Student 19,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-17
+Student 20,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-09
+Student 21,Unit 6,Assignment 70,2026-05-07,2026-05-14,Turned in,2026-05-09
+Student 22,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-17
+Student 23,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-14
+Student 24,Unit 6,Assignment 70,2026-05-07,2026-05-14,Graded,2026-05-14
+Student 01,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-15
+Student 02,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-21
+Student 03,Unit 6,Assignment 71,2026-05-12,2026-05-19,Turned in,2026-05-21
+Student 04,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-21
+Student 05,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-18
+Student 06,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-20
+Student 07,Unit 6,Assignment 71,2026-05-12,2026-05-19,Missing,
+Student 08,Unit 6,Assignment 71,2026-05-12,2026-05-19,Excused,
+Student 09,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-21
+Student 10,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-14
+Student 11,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-22
+Student 12,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-14
+Student 13,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-16
+Student 14,Unit 6,Assignment 71,2026-05-12,2026-05-19,Turned in,2026-05-16
+Student 15,Unit 6,Assignment 71,2026-05-12,2026-05-19,In progress,
+Student 16,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-18
+Student 17,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-15
+Student 18,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-17
+Student 19,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-15
+Student 20,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-15
+Student 21,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-22
+Student 22,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-17
+Student 23,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-16
+Student 24,Unit 6,Assignment 71,2026-05-12,2026-05-19,Graded,2026-05-19
+Student 01,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-23
+Student 02,Unit 6,Assignment 72,2026-05-14,2026-05-21,Turned in,2026-05-21
+Student 03,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-19
+Student 04,Unit 6,Assignment 72,2026-05-14,2026-05-21,In progress,
+Student 05,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-21
+Student 06,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-22
+Student 07,Unit 6,Assignment 72,2026-05-14,2026-05-21,Missing,
+Student 08,Unit 6,Assignment 72,2026-05-14,2026-05-21,In progress,
+Student 09,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-18
+Student 10,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-16
+Student 11,Unit 6,Assignment 72,2026-05-14,2026-05-21,Turned in,2026-05-22
+Student 12,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-20
+Student 13,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-24
+Student 14,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-19
+Student 15,Unit 6,Assignment 72,2026-05-14,2026-05-21,Missing,
+Student 16,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-22
+Student 17,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-20
+Student 18,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-23
+Student 19,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-18
+Student 20,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-19
+Student 21,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-21
+Student 22,Unit 6,Assignment 72,2026-05-14,2026-05-21,Missing,
+Student 23,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-20
+Student 24,Unit 6,Assignment 72,2026-05-14,2026-05-21,Graded,2026-05-16
+Student 01,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-22
+Student 02,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-23
+Student 03,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-24
+Student 04,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-21
+Student 05,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-24
+Student 06,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-29
+Student 07,Unit 6,Assignment 73,2026-05-19,2026-05-26,Missing,
+Student 08,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-26
+Student 09,Unit 6,Assignment 73,2026-05-19,2026-05-26,Turned in,2026-05-25
+Student 10,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-26
+Student 11,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-26
+Student 12,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-28
+Student 13,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-21
+Student 14,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-25
+Student 15,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-29
+Student 16,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-29
+Student 17,Unit 6,Assignment 73,2026-05-19,2026-05-26,Missing,
+Student 18,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-26
+Student 19,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-23
+Student 20,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-25
+Student 21,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-23
+Student 22,Unit 6,Assignment 73,2026-05-19,2026-05-26,Missing,
+Student 23,Unit 6,Assignment 73,2026-05-19,2026-05-26,Graded,2026-05-24
+Student 24,Unit 6,Assignment 73,2026-05-19,2026-05-26,Turned in,2026-05-27
+Student 01,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-28
+Student 02,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-31
+Student 03,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-25
+Student 04,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-27
+Student 05,Unit 6,Assignment 74,2026-05-21,2026-05-28,Turned in,2026-05-29
+Student 06,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-23
+Student 07,Unit 6,Assignment 74,2026-05-21,2026-05-28,Turned in,2026-06-05
+Student 08,Unit 6,Assignment 74,2026-05-21,2026-05-28,Missing,
+Student 09,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-26
+Student 10,Unit 6,Assignment 74,2026-05-21,2026-05-28,Turned in,2026-05-28
+Student 11,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-28
+Student 12,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-30
+Student 13,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-28
+Student 14,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-29
+Student 15,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-06-05
+Student 16,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-30
+Student 17,Unit 6,Assignment 74,2026-05-21,2026-05-28,Turned in,2026-05-26
+Student 18,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-31
+Student 19,Unit 6,Assignment 74,2026-05-21,2026-05-28,Turned in,2026-05-26
+Student 20,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-28
+Student 21,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-29
+Student 22,Unit 6,Assignment 74,2026-05-21,2026-05-28,Turned in,2026-06-05
+Student 23,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-28
+Student 24,Unit 6,Assignment 74,2026-05-21,2026-05-28,Graded,2026-05-25
+Student 01,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-04
+Student 02,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-04
+Student 03,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-01
+Student 04,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-03
+Student 05,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-05-29
+Student 06,Unit 6,Assignment 75,2026-05-26,2026-06-02,Turned in,2026-06-04
+Student 07,Unit 6,Assignment 75,2026-05-26,2026-06-02,Missing,
+Student 08,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-05
+Student 09,Unit 6,Assignment 75,2026-05-26,2026-06-02,Turned in,2026-06-05
+Student 10,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-01
+Student 11,Unit 6,Assignment 75,2026-05-26,2026-06-02,Excused,
+Student 12,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-01
+Student 13,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-05-30
+Student 14,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-01
+Student 15,Unit 6,Assignment 75,2026-05-26,2026-06-02,In progress,
+Student 16,Unit 6,Assignment 75,2026-05-26,2026-06-02,Turned in,2026-05-31
+Student 17,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-04
+Student 18,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-05-28
+Student 19,Unit 6,Assignment 75,2026-05-26,2026-06-02,Missing,
+Student 20,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-04
+Student 21,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-04
+Student 22,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-06-08
+Student 23,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-05-29
+Student 24,Unit 6,Assignment 75,2026-05-26,2026-06-02,Graded,2026-05-31
+Student 01,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-06-05
+Student 02,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-05-31
+Student 03,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-06-06
+Student 04,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-02
+Student 05,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-05-30
+Student 06,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-06-03
+Student 07,Unit 6,Assignment 76,2026-05-28,2026-06-04,Missing,
+Student 08,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-04
+Student 09,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-06
+Student 10,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-01
+Student 11,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-05
+Student 12,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-01
+Student 13,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-04
+Student 14,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-05-31
+Student 15,Unit 6,Assignment 76,2026-05-28,2026-06-04,In progress,
+Student 16,Unit 6,Assignment 76,2026-05-28,2026-06-04,Missing,
+Student 17,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-03
+Student 18,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-05-30
+Student 19,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-05-31
+Student 20,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-05-31
+Student 21,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-05
+Student 22,Unit 6,Assignment 76,2026-05-28,2026-06-04,Graded,2026-06-10
+Student 23,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-05-30
+Student 24,Unit 6,Assignment 76,2026-05-28,2026-06-04,Turned in,2026-06-01
+Student 01,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-06
+Student 02,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-05
+Student 03,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-08
+Student 04,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-08
+Student 05,Unit 6,Assignment 77,2026-06-02,2026-06-09,Excused,
+Student 06,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-07
+Student 07,Unit 6,Assignment 77,2026-06-02,2026-06-09,Missing,
+Student 08,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-07
+Student 09,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-07
+Student 10,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-12
+Student 11,Unit 6,Assignment 77,2026-06-02,2026-06-09,In progress,
+Student 12,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-12
+Student 13,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-06
+Student 14,Unit 6,Assignment 77,2026-06-02,2026-06-09,Turned in,2026-06-11
+Student 15,Unit 6,Assignment 77,2026-06-02,2026-06-09,Missing,
+Student 16,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-06
+Student 17,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-06
+Student 18,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-04
+Student 19,Unit 6,Assignment 77,2026-06-02,2026-06-09,Turned in,2026-06-04
+Student 20,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-12
+Student 21,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-09
+Student 22,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-16
+Student 23,Unit 6,Assignment 77,2026-06-02,2026-06-09,Graded,2026-06-07
+Student 24,Unit 6,Assignment 77,2026-06-02,2026-06-09,Turned in,2026-06-04
+Student 01,Unit 6,Assignment 78,2026-06-04,2026-06-11,Turned in,2026-06-14
+Student 02,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-09
+Student 03,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-12
+Student 04,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-08
+Student 05,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-10
+Student 06,Unit 6,Assignment 78,2026-06-04,2026-06-11,Missing,
+Student 07,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-17
+Student 08,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-14
+Student 09,Unit 6,Assignment 78,2026-06-04,2026-06-11,Excused,
+Student 10,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-14
+Student 11,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-07
+Student 12,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-08
+Student 13,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-14
+Student 14,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-09
+Student 15,Unit 6,Assignment 78,2026-06-04,2026-06-11,In progress,
+Student 16,Unit 6,Assignment 78,2026-06-04,2026-06-11,Turned in,2026-06-10
+Student 17,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-09
+Student 18,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-13
+Student 19,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-14
+Student 20,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-11
+Student 21,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-09
+Student 22,Unit 6,Assignment 78,2026-06-04,2026-06-11,Missing,
+Student 23,Unit 6,Assignment 78,2026-06-04,2026-06-11,Graded,2026-06-06
+Student 24,Unit 6,Assignment 78,2026-06-04,2026-06-11,Missing,
+Student 01,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-30
+Student 02,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-30
+Student 03,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-03
+Student 04,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-01
+Student 05,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-29
+Student 06,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-01
+Student 07,Unit 8,Assignment 79,2026-08-25,2026-09-01,Missing,
+Student 08,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-27
+Student 09,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-02
+Student 10,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-27
+Student 11,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-31
+Student 12,Unit 8,Assignment 79,2026-08-25,2026-09-01,Turned in,2026-09-01
+Student 13,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-29
+Student 14,Unit 8,Assignment 79,2026-08-25,2026-09-01,Turned in,2026-08-27
+Student 15,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-31
+Student 16,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-03
+Student 17,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-30
+Student 18,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-03
+Student 19,Unit 8,Assignment 79,2026-08-25,2026-09-01,Turned in,2026-08-29
+Student 20,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-09-03
+Student 21,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-28
+Student 22,Unit 8,Assignment 79,2026-08-25,2026-09-01,Missing,
+Student 23,Unit 8,Assignment 79,2026-08-25,2026-09-01,Turned in,2026-08-30
+Student 24,Unit 8,Assignment 79,2026-08-25,2026-09-01,Graded,2026-08-30
+Student 01,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-08-29
+Student 02,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-06
+Student 03,Unit 8,Assignment 80,2026-08-27,2026-09-03,Turned in,2026-09-02
+Student 04,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-08-31
+Student 05,Unit 8,Assignment 80,2026-08-27,2026-09-03,Missing,
+Student 06,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-01
+Student 07,Unit 8,Assignment 80,2026-08-27,2026-09-03,Missing,
+Student 08,Unit 8,Assignment 80,2026-08-27,2026-09-03,Turned in,2026-09-06
+Student 09,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-02
+Student 10,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-03
+Student 11,Unit 8,Assignment 80,2026-08-27,2026-09-03,Turned in,2026-08-29
+Student 12,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-08-31
+Student 13,Unit 8,Assignment 80,2026-08-27,2026-09-03,Turned in,2026-08-31
+Student 14,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-02
+Student 15,Unit 8,Assignment 80,2026-08-27,2026-09-03,Missing,
+Student 16,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-08-30
+Student 17,Unit 8,Assignment 80,2026-08-27,2026-09-03,Turned in,2026-09-01
+Student 18,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-01
+Student 19,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-08-30
+Student 20,Unit 8,Assignment 80,2026-08-27,2026-09-03,Turned in,2026-08-30
+Student 21,Unit 8,Assignment 80,2026-08-27,2026-09-03,In progress,
+Student 22,Unit 8,Assignment 80,2026-08-27,2026-09-03,Missing,
+Student 23,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-09-05
+Student 24,Unit 8,Assignment 80,2026-08-27,2026-09-03,Graded,2026-08-31
+Student 01,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-11
+Student 02,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-04
+Student 03,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-11
+Student 04,Unit 8,Assignment 81,2026-09-01,2026-09-08,Missing,
+Student 05,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-07
+Student 06,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-07
+Student 07,Unit 8,Assignment 81,2026-09-01,2026-09-08,Missing,
+Student 08,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-06
+Student 09,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-09
+Student 10,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-10
+Student 11,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-04
+Student 12,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-08
+Student 13,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-03
+Student 14,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-06
+Student 15,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-09
+Student 16,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-04
+Student 17,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-09
+Student 18,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-04
+Student 19,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-09
+Student 20,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-03
+Student 21,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-07
+Student 22,Unit 8,Assignment 81,2026-09-01,2026-09-08,Missing,
+Student 23,Unit 8,Assignment 81,2026-09-01,2026-09-08,Turned in,2026-09-05
+Student 24,Unit 8,Assignment 81,2026-09-01,2026-09-08,Graded,2026-09-08
+Student 01,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-09
+Student 02,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-09
+Student 03,Unit 8,Assignment 82,2026-09-03,2026-09-10,In progress,
+Student 04,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-06
+Student 05,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-08
+Student 06,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-05
+Student 07,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-09
+Student 08,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-12
+Student 09,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-12
+Student 10,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-06
+Student 11,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-10
+Student 12,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-06
+Student 13,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-06
+Student 14,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-06
+Student 15,Unit 8,Assignment 82,2026-09-03,2026-09-10,Missing,
+Student 16,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-07
+Student 17,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-08
+Student 18,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-06
+Student 19,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-12
+Student 20,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-10
+Student 21,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-12
+Student 22,Unit 8,Assignment 82,2026-09-03,2026-09-10,Turned in,2026-09-18
+Student 23,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-13
+Student 24,Unit 8,Assignment 82,2026-09-03,2026-09-10,Graded,2026-09-13
+Student 01,Unit 8,Assignment 83,2026-09-08,2026-09-15,In progress,
+Student 02,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-17
+Student 03,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-17
+Student 04,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-10
+Student 05,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-16
+Student 06,Unit 8,Assignment 83,2026-09-08,2026-09-15,Excused,
+Student 07,Unit 8,Assignment 83,2026-09-08,2026-09-15,Missing,
+Student 08,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-12
+Student 09,Unit 8,Assignment 83,2026-09-08,2026-09-15,Turned in,2026-09-10
+Student 10,Unit 8,Assignment 83,2026-09-08,2026-09-15,Turned in,2026-09-16
+Student 11,Unit 8,Assignment 83,2026-09-08,2026-09-15,Turned in,2026-09-18
+Student 12,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-11
+Student 13,Unit 8,Assignment 83,2026-09-08,2026-09-15,Turned in,2026-09-12
+Student 14,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-13
+Student 15,Unit 8,Assignment 83,2026-09-08,2026-09-15,Missing,
+Student 16,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-10
+Student 17,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-17
+Student 18,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-15
+Student 19,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-12
+Student 20,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-14
+Student 21,Unit 8,Assignment 83,2026-09-08,2026-09-15,Turned in,2026-09-14
+Student 22,Unit 8,Assignment 83,2026-09-08,2026-09-15,Missing,
+Student 23,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-17
+Student 24,Unit 8,Assignment 83,2026-09-08,2026-09-15,Graded,2026-09-11
+Student 01,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-18
+Student 02,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-18
+Student 03,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-19
+Student 04,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-16
+Student 05,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-20
+Student 06,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-19
+Student 07,Unit 8,Assignment 84,2026-09-10,2026-09-17,Missing,
+Student 08,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-12
+Student 09,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-12
+Student 10,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-18
+Student 11,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-19
+Student 12,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-19
+Student 13,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-14
+Student 14,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-14
+Student 15,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-24
+Student 16,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-12
+Student 17,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-16
+Student 18,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-20
+Student 19,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-14
+Student 20,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-19
+Student 21,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-12
+Student 22,Unit 8,Assignment 84,2026-09-10,2026-09-17,Graded,2026-09-23
+Student 23,Unit 8,Assignment 84,2026-09-10,2026-09-17,Turned in,2026-09-20
+Student 24,Unit 8,Assignment 84,2026-09-10,2026-09-17,Excused,
+Student 01,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-23
+Student 02,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-17
+Student 03,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-22
+Student 04,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-19
+Student 05,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-24
+Student 06,Unit 1,Assignment 85,2026-09-15,2026-09-22,Turned in,2026-09-18
+Student 07,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-26
+Student 08,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-24
+Student 09,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-24
+Student 10,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-17
+Student 11,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-21
+Student 12,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-18
+Student 13,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-19
+Student 14,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-22
+Student 15,Unit 1,Assignment 85,2026-09-15,2026-09-22,Missing,
+Student 16,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-25
+Student 17,Unit 1,Assignment 85,2026-09-15,2026-09-22,Turned in,2026-09-24
+Student 18,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-19
+Student 19,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-18
+Student 20,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-17
+Student 21,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-20
+Student 22,Unit 1,Assignment 85,2026-09-15,2026-09-22,Missing,
+Student 23,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-18
+Student 24,Unit 1,Assignment 85,2026-09-15,2026-09-22,Graded,2026-09-22
+Student 01,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-23
+Student 02,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-26
+Student 03,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-24
+Student 04,Unit 1,Assignment 86,2026-09-17,2026-09-24,Missing,
+Student 05,Unit 1,Assignment 86,2026-09-17,2026-09-24,Turned in,2026-09-27
+Student 06,Unit 1,Assignment 86,2026-09-17,2026-09-24,Turned in,2026-09-22
+Student 07,Unit 1,Assignment 86,2026-09-17,2026-09-24,Missing,
+Student 08,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-24
+Student 09,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-19
+Student 10,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-26
+Student 11,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-26
+Student 12,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-19
+Student 13,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-27
+Student 14,Unit 1,Assignment 86,2026-09-17,2026-09-24,Turned in,2026-09-23
+Student 15,Unit 1,Assignment 86,2026-09-17,2026-09-24,Missing,
+Student 16,Unit 1,Assignment 86,2026-09-17,2026-09-24,Turned in,2026-09-23
+Student 17,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-26
+Student 18,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-23
+Student 19,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-21
+Student 20,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-20
+Student 21,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-26
+Student 22,Unit 1,Assignment 86,2026-09-17,2026-09-24,Missing,
+Student 23,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-27
+Student 24,Unit 1,Assignment 86,2026-09-17,2026-09-24,Graded,2026-09-23
+Student 01,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-27
+Student 02,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-10-02
+Student 03,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-29
+Student 04,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-26
+Student 05,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-26
+Student 06,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-27
+Student 07,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-29
+Student 08,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-10-02
+Student 09,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-24
+Student 10,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-29
+Student 11,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-09-30
+Student 12,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-09-28
+Student 13,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-28
+Student 14,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-09-24
+Student 15,Unit 1,Assignment 87,2026-09-22,2026-09-29,Missing,
+Student 16,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-09-26
+Student 17,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-27
+Student 18,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-09-29
+Student 19,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-30
+Student 20,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-26
+Student 21,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-09-25
+Student 22,Unit 1,Assignment 87,2026-09-22,2026-09-29,Turned in,2026-10-01
+Student 23,Unit 1,Assignment 87,2026-09-22,2026-09-29,Excused,
+Student 24,Unit 1,Assignment 87,2026-09-22,2026-09-29,Graded,2026-09-25
+Student 01,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-10-02
+Student 02,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-26
+Student 03,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-09-29
+Student 04,Unit 1,Assignment 88,2026-09-24,2026-10-01,In progress,
+Student 05,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-29
+Student 06,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-10-04
+Student 07,Unit 1,Assignment 88,2026-09-24,2026-10-01,Missing,
+Student 08,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-28
+Student 09,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-29
+Student 10,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-10-01
+Student 11,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-10-02
+Student 12,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-29
+Student 13,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-10-01
+Student 14,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-09-28
+Student 15,Unit 1,Assignment 88,2026-09-24,2026-10-01,Missing,
+Student 16,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-10-04
+Student 17,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-28
+Student 18,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-26
+Student 19,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-27
+Student 20,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-09-29
+Student 21,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-30
+Student 22,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-10-06
+Student 23,Unit 1,Assignment 88,2026-09-24,2026-10-01,Turned in,2026-10-03
+Student 24,Unit 1,Assignment 88,2026-09-24,2026-10-01,Graded,2026-09-26
+Student 01,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-09
+Student 02,Unit 1,Assignment 89,2026-09-29,2026-10-06,Graded,2026-10-02
+Student 03,Unit 1,Assignment 89,2026-09-29,2026-10-06,Graded,2026-10-03
+Student 04,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-07
+Student 05,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-04
+Student 06,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-09
+Student 07,Unit 1,Assignment 89,2026-09-29,2026-10-06,Missing,
+Student 08,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-09
+Student 09,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-04
+Student 10,Unit 1,Assignment 89,2026-09-29,2026-10-06,Graded,2026-10-02
+Student 11,Unit 1,Assignment 89,2026-09-29,2026-10-06,Graded,2026-10-01
+Student 12,Unit 1,Assignment 89,2026-09-29,2026-10-06,Graded,2026-10-02
+Student 13,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-09
+Student 14,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-03
+Student 15,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-05
+Student 16,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-08
+Student 17,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-06
+Student 18,Unit 1,Assignment 89,2026-09-29,2026-10-06,Graded,2026-10-01
+Student 19,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-05
+Student 20,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-07
+Student 21,Unit 1,Assignment 89,2026-09-29,2026-10-06,In progress,
+Student 22,Unit 1,Assignment 89,2026-09-29,2026-10-06,In progress,
+Student 23,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-07
+Student 24,Unit 1,Assignment 89,2026-09-29,2026-10-06,Turned in,2026-10-04
+Student 01,Unit 1,Assignment 90,2026-10-01,2026-10-08,In progress,
+Student 02,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-09
+Student 03,Unit 1,Assignment 90,2026-10-01,2026-10-08,Missing,
+Student 04,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-09
+Student 05,Unit 1,Assignment 90,2026-10-01,2026-10-08,In progress,
+Student 06,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-03
+Student 07,Unit 1,Assignment 90,2026-10-01,2026-10-08,In progress,
+Student 08,Unit 1,Assignment 90,2026-10-01,2026-10-08,In progress,
+Student 09,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-05
+Student 10,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-09
+Student 11,Unit 1,Assignment 90,2026-10-01,2026-10-08,Missing,
+Student 12,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-05
+Student 13,Unit 1,Assignment 90,2026-10-01,2026-10-08,Excused,
+Student 14,Unit 1,Assignment 90,2026-10-01,2026-10-08,Missing,
+Student 15,Unit 1,Assignment 90,2026-10-01,2026-10-08,In progress,
+Student 16,Unit 1,Assignment 90,2026-10-01,2026-10-08,Missing,
+Student 17,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-05
+Student 18,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-07
+Student 19,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-09
+Student 20,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-04
+Student 21,Unit 1,Assignment 90,2026-10-01,2026-10-08,Graded,2026-10-03
+Student 22,Unit 1,Assignment 90,2026-10-01,2026-10-08,Missing,
+Student 23,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-04
+Student 24,Unit 1,Assignment 90,2026-10-01,2026-10-08,Turned in,2026-10-07
+Student 01,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 02,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 03,Unit 1,Assignment 91,2026-10-06,2026-10-13,Turned in,2026-10-09
+Student 04,Unit 1,Assignment 91,2026-10-06,2026-10-13,Turned in,2026-10-08
+Student 05,Unit 1,Assignment 91,2026-10-06,2026-10-13,Excused,
+Student 06,Unit 1,Assignment 91,2026-10-06,2026-10-13,Excused,
+Student 07,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 08,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 09,Unit 1,Assignment 91,2026-10-06,2026-10-13,Turned in,2026-10-09
+Student 10,Unit 1,Assignment 91,2026-10-06,2026-10-13,Turned in,2026-10-08
+Student 11,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 12,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 13,Unit 1,Assignment 91,2026-10-06,2026-10-13,Turned in,2026-10-08
+Student 14,Unit 1,Assignment 91,2026-10-06,2026-10-13,Excused,
+Student 15,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 16,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 17,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 18,Unit 1,Assignment 91,2026-10-06,2026-10-13,Turned in,2026-10-09
+Student 19,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 20,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 21,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 22,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 23,Unit 1,Assignment 91,2026-10-06,2026-10-13,In progress,
+Student 24,Unit 1,Assignment 91,2026-10-06,2026-10-13,Not started,
+Student 01,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 02,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 03,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 04,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 05,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 06,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 07,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 08,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 09,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 10,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 11,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 12,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 13,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 14,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 15,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 16,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 17,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 18,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 19,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 20,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 21,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 22,Unit 1,Assignment 92,2026-10-08,2026-10-15,Not started,
+Student 23,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
+Student 24,Unit 1,Assignment 92,2026-10-08,2026-10-15,In progress,
