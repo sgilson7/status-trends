@@ -4,6 +4,10 @@ Stage 9, written by the agent. `C5 Consolidate in your own words`.
 
 12 October 2026. A fresh session starts from this file, not from memory.
 
+## 19 October 2026: T1, footer contrast
+
+`TRIAGE.md` T1, published under the grant recorded in `BRIEF.md` (Autonomy). The light theme's `--muted` text grey went from #77756f (4.30:1 on the page) to #6e6c66 (4.90:1), which fixes the axe colour-contrast failure on the footer (2 nodes); the saved-chart stylesheet uses the same grey. `./scripts/check.sh` on the T1 tree: BUILDER CHECK PASSED (92 core tests, 144 browser-check passes across three engines). `./scripts/prove-privacy.sh`: five of five planted leaks caught. axe-core WCAG 2.1 AA on the built page: 0 violations, fresh, light and dark. With a sample loaded axe still reports three non-contrast rules; they are notebook row 23, the person's.
+
 ## What changed
 
 Status Trends was built from the Builder template in one session and deployed with the person's approval:

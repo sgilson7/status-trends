@@ -36,6 +36,8 @@ Status Trends: a one-page static tool. The person exports issues from Jira (or a
 
 The plan is approved in advance: the person asked for the MVP to be built and deployed without stopping. The agent may plan, build, test, commit, create the public repository `sgilson7/status-trends`, publish its GitHub Pages site, and add the tool to sgilson7.github.io and deploy that site. It may never add a network request, a third-party script, font or service, a model, browser storage, analytics, or any route for data to leave the tab.
 
+Publish grant, 2026-10-19, in the person's words: "ok execute all of the changes you recommend to increase feasabilitiy, i approve make deploy in all builder made repos, and make deploy in the website, keep track of all changes made in the design log here" This covers publishing T1 (`TRIAGE.md`) to gh-pages and the live browser check that follows. It adds nothing to what the agent may never do.
+
 ## Allowed core dependencies
 
 `serde`, `serde_json` (reference default). No others.

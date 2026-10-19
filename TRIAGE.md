@@ -6,4 +6,4 @@ One row per concrete change. Say what you did, what you expected, and what happe
 
 | # | What I did | Expected | What happened | Change wanted | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | | | | | |
+| T1 | 2026-10-19. Sam, after a K-12 classroom feasibility review of the tool, wrote: "ok execute all of the changes you recommend to increase feasabilitiy, i approve make deploy in all builder made repos, and make deploy in the website, keep track of all changes made in the design log here" | The page meets WCAG 2.1 AA, as a school adoption review would require. | An axe-core WCAG 2.1 AA audit of the live page found one colour-contrast failure: the footer text (`p[data-text="footer_about"]` and its source link, 2 nodes) at #77756f on #f9f7f2, 4.30:1, under the 4.5:1 minimum. | Raise the footer text to at least 4.5:1 in both themes and keep the muted look. | done: `--muted` light #77756f to #6e6c66 (4.90:1 on the page), and the saved-chart stylesheet to match; dark theme unchanged (it passed). Notebook rows 22 and 23. |
