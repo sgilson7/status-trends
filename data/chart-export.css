@@ -1,6 +1,6 @@
 /* Carried inside a saved chart (SVG), so it draws the same outside the page. Light colours. */
 .export { background: #fcfcfb; }
-text { font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #77756f; }
+text { font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6e6c66; }
 .bar-label { fill: #52514e; font-size: 12px; font-weight: 600; }
 .target-label { fill: #52514e; font-size: 12px; }
 .grid { stroke: #e7e5de; stroke-width: 1; }
