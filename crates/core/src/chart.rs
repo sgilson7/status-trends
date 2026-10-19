@@ -226,6 +226,9 @@ fn hit(f: &Frame, i: usize, tip: usize, guide: bool) -> Mark {
         vec![("x", x), ("y", TOP), ("width", f.band), ("height", PLOT_H)],
     );
     area.attrs.push(("tabindex", "0".to_string()));
+    // The page names the area with its tip (`aria-label`), which ARIA only
+    // allows on an element with a role; "img" fits a focusable data point.
+    area.attrs.push(("role", "img".to_string()));
     area.tip = Some(tip);
     let mut g = mark("g", "hit", vec![]);
     if guide {
@@ -575,6 +578,33 @@ mod tests {
         let hits: Vec<&Mark> = c.marks.iter().filter(|m| m.class == "hit").collect();
         assert_eq!(hits.len(), 2);
         assert_eq!(hits[1].children[0].tip, Some(1));
+    }
+
+    #[test]
+    fn every_hit_area_is_focusable_with_a_role_that_allows_a_label() {
+        let c = two_columns();
+        let areas: Vec<&Mark> = c
+            .marks
+            .iter()
+            .filter(|m| m.class == "hit")
+            .flat_map(|g| g.children.iter())
+            .filter(|m| m.class == "hit-area")
+            .collect();
+        assert_eq!(areas.len(), 2);
+        for a in areas {
+            let has =
+                |k: &str, v: &str| a.attrs.iter().any(|(ak, av)| *ak == k && av.as_str() == v);
+            assert!(
+                has("tabindex", "0"),
+                "hit area not focusable: {:?}",
+                a.attrs
+            );
+            assert!(
+                has("role", "img"),
+                "hit area has no role for its label: {:?}",
+                a.attrs
+            );
+        }
     }
 
     #[test]

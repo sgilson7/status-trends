@@ -4,9 +4,13 @@ Stage 9, written by the agent. `C5 Consolidate in your own words`.
 
 12 October 2026. A fresh session starts from this file, not from memory.
 
+## 19 October 2026: T2, the remaining WCAG 2.1 AA findings
+
+`TRIAGE.md` T2, same grant. The core now gives each chart hit area `role="img"`, so the tip the page puts in its `aria-label` is allowed (new test `every_hit_area_is_focusable_with_a_role_that_allows_a_label`, watched failing). The paste box is labelled by its summary, and the period and group table wrappers are focusable regions named by their headings, all from existing strings (notebook row 24). `./scripts/check.sh` on the T2 tree: BUILDER CHECK PASSED (93 core tests, 144 browser-check passes across three engines). `./scripts/prove-privacy.sh`: five of five caught. axe-core WCAG 2.1 AA on the built page: 0 violations in 22 states (light and dark; fresh, each sample loaded, year, quarter and month views, every panel opened). Row 23 is done.
+
 ## 19 October 2026: T1, footer contrast
 
-`TRIAGE.md` T1, published under the grant recorded in `BRIEF.md` (Autonomy). The light theme's `--muted` text grey went from #77756f (4.30:1 on the page) to #6e6c66 (4.90:1), which fixes the axe colour-contrast failure on the footer (2 nodes); the saved-chart stylesheet uses the same grey. `./scripts/check.sh` on the T1 tree: BUILDER CHECK PASSED (92 core tests, 144 browser-check passes across three engines). `./scripts/prove-privacy.sh`: five of five planted leaks caught. axe-core WCAG 2.1 AA on the built page: 0 violations, fresh, light and dark. With a sample loaded axe still reports three non-contrast rules; they are notebook row 23, the person's.
+`TRIAGE.md` T1, published under the grant recorded in `BRIEF.md` (Autonomy). The light theme's `--muted` text grey went from #77756f (4.30:1 on the page) to #6e6c66 (4.90:1), which fixes the axe colour-contrast failure on the footer (2 nodes); the saved-chart stylesheet uses the same grey. `./scripts/check.sh` on the T1 tree: BUILDER CHECK PASSED (92 core tests, 144 browser-check passes across three engines). `./scripts/prove-privacy.sh`: five of five planted leaks caught. axe-core WCAG 2.1 AA on the built page: 0 violations, fresh, light and dark. With a sample loaded axe still reported three non-contrast rules (notebook row 23); T2 fixed them.
 
 ## What changed
 
