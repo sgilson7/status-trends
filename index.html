@@ -56,8 +56,8 @@
         <button type="button" id="sample-class" data-text="sample_class"></button>
       </div>
       <details class="paste">
-        <summary data-text="paste_label"></summary>
-        <textarea id="paste" rows="6" spellcheck="false" autocomplete="off"></textarea>
+        <summary id="paste-summary" data-text="paste_label"></summary>
+        <textarea id="paste" aria-labelledby="paste-summary" rows="6" spellcheck="false" autocomplete="off"></textarea>
         <button type="button" id="use-paste" data-text="paste_button"></button>
       </details>
       <details class="help">
@@ -176,12 +176,12 @@
               <button type="button" id="print" data-text="print"></button>
             </div>
           </div>
-          <div class="table-wrap"><table id="period-table" class="data"></table></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="table-heading"><table id="period-table" class="data"></table></div>
         </section>
 
         <section id="group-section" class="panel" aria-labelledby="group-heading">
           <h2 id="group-heading" data-text="group_heading"></h2>
-          <div class="table-wrap"><table id="group-table" class="data"></table></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="group-heading"><table id="group-table" class="data"></table></div>
         </section>
       </div>
     </div>
